@@ -3,14 +3,14 @@
 @section('card-header')
     <div class="card-header">Courses</div>
     <div class="container d-flex justify-content-start m-2">
-        <div class="row col-2 mr-2">
-            <a class="btn btn-default" href="/manage">
-                Back
+        <div class="row col-6 mr-2">
+            <a class="btn btn-success" href="{{ route('courses.create') }}">
+                Add
             </a>
         </div>
-        <div class="row col-2 mr-2">
-            <a class="btn btn-success" href="courses/create">
-                Add
+        <div class="row col-6 mr-2 justify-content-end">
+            <a class="btn btn-info" href="{{ route('photos.index') }}">
+                Photos
             </a>
         </div>
     </div>
@@ -34,8 +34,10 @@
                             <form method="POST" action="courses/{{$course->id}}" onsubmit="return confirm('Do you really want to delete?');">
                                 {!! csrf_field() !!}
                                 <input type="hidden" name="_method" value="DELETE">
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="submit" class="btn btn-danger mr-2">Delete</button>
                             </form>
+                            <a href="{{ route('topics.filter', $course->id) }}" class="btn btn-primary mr-2">Topics</a>
+                            <a href="{{ route('quests.filter', $course->id) }}" class="btn btn-warning mr-2">Quests</a>
                         </div>
                     </div>
                 @endif

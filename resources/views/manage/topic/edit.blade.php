@@ -5,7 +5,7 @@
 
 <div class="container d-flex justify-content-start m-2">
     <div class="row col-2 mr-2">
-        <a class="btn btn-default" href="/topics">
+        <a class="btn btn-default" href="{{ route('topics.filter', $topic->course_id) }}">
             Back
         </a>
     </div>

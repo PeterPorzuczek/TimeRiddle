@@ -4,12 +4,12 @@
     <div class="card-header">Quests</div>
     <div class="container d-flex justify-content-start m-2">
         <div class="row col-2 mr-2">
-            <a class="btn btn-default" href="/manage">
+            <a class="btn btn-default" href="{{ route('courses.index') }}">
                 Back
             </a>
         </div>
         <div class="row col-2 mr-2">
-            <a class="btn btn-success" href="quests/create">
+            <a class="btn btn-success" href="{{ route('quests.create') }}">
                 Add
             </a>
         </div>
@@ -27,9 +27,9 @@
                             </h4>
                         </div>
                         <div class="row mb-2">
-                            <a href="quests/{{ $quest->id }}" class="btn btn-info mr-2">Detail</a>
-                            <a href="quests/{{ $quest->id }}/edit" class="btn btn-success mr-2">Edit</a>
-                            <form method="POST" action="quests/{{ $quest->id }}" onsubmit="return confirm('Do you really want to delete?');">
+                            <a href="{{ route('quests.show', $quest->id) }}" class="btn btn-info mr-2">Detail</a>
+                            <a href="{{ route('quests.edit', $quest->id) }}" class="btn btn-success mr-2">Edit</a>
+                            <form method="POST" action="{{action('QuestController@destroy', $quest->id)}}" onsubmit="return confirm('Do you really want to delete?');">
                                 {!! csrf_field() !!}
                                 <input type="hidden" name="_method" value="DELETE">
                                 <button type="submit" class="btn btn-danger">Delete</button>

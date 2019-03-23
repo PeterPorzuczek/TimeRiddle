@@ -4,12 +4,12 @@
     <div class="card-header">Topics</div>
     <div class="container d-flex justify-content-start m-2">
         <div class="row col-2 mr-2">
-            <a class="btn btn-default" href="/manage">
+            <a class="btn btn-default" href="{{ route('courses.index') }}">
                 Back
             </a>
         </div>
         <div class="row col-2 mr-2">
-            <a class="btn btn-success" href="topics/create">
+            <a class="btn btn-success" href="{{ route('topics.create') }}">
                 Add
             </a>
         </div>
@@ -27,13 +27,14 @@
                             </h4>
                         </div>
                         <div class="row mb-2">
-                            <a href="topics/{{ $topic->id }}" class="btn btn-info mr-2">Detail</a>
-                            <a href="topics/{{ $topic->id }}/edit" class="btn btn-success mr-2">Edit</a>
-                            <form method="POST" action="topics/{{$topic->id}}" onsubmit="return confirm('Do you really want to delete?');">
+                            <a href="{{ route('topics.show', $topic->id) }}" class="btn btn-info mr-2">Detail</a>
+                            <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-success mr-2">Edit</a>
+                            <form method="POST" action="{{action('TopicController@destroy', $topic->id)}}" onsubmit="return confirm('Do you really want to delete?');">
                                 {!! csrf_field() !!}
                                 <input type="hidden" name="_method" value="DELETE">
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="submit" class="btn btn-danger mr-2">Delete</button>
                             </form>
+                            <a href="{{ route('quests.filter', $topic->course_id) }}" class="btn btn-warning mr-2">Quests</a>
                         </div>
                     </div>
                 @endif

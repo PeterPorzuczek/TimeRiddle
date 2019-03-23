@@ -16,15 +16,19 @@ Route::get('/learn/{courseName}/{coursePassword}', 'LearnController@learn');
 
 Auth::routes();
 
-Route::get('/manage', 'ManageController@index');
+Route::get('/courses', 'ManageController@index');
 
 Route::get('/photos', 'PhotoController@index');
 
 Route::resource('photos', 'PhotoController');
 
+Route::get('/quests/filter/{courseId?}', 'QuestController@index')->name('quests.filter');
+
 Route::get('/quests', 'QuestController@index');
 
 Route::resource('quests', 'QuestController');
+
+Route::get('/topics/filter/{courseId?}', 'TopicController@index')->name('topics.filter');
 
 Route::get('/topics', 'TopicController@index');
 

@@ -21,11 +21,15 @@ class TopicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($courseId = null)
     {
         $userId = auth()->user()->id;
         $user = User::find($userId);
         $courses = $user->courses;
+
+        if (!empty($courseId)) {
+            $courses = [$user->courses->find($courseId)];
+        }
 
         $topics = new Collection();
         foreach ($courses as $course) {
@@ -88,7 +92,7 @@ class TopicController extends Controller
 
             $topic->save();
 
-            return redirect('/topics')->with('success', 'Topic saved!');
+            return redirect()->route('topics.filter', [$topic->course_id])->with('success', 'Topic saved!');
         }
 
         return redirect('/topics')->with('error', 'Course problems!');
@@ -167,7 +171,7 @@ class TopicController extends Controller
 
             $topic->save();
 
-            return redirect('/topics')->with('success', 'Topic saved!');
+            return redirect()->route('topics.filter', [$topic->course_id])->with('success', 'Topic saved!');
           }
 
           return redirect('/topics')->with('error', 'Course problems!');
@@ -191,6 +195,6 @@ class TopicController extends Controller
 
         $topic->delete();
 
-        return redirect('/topics')->with('success', 'Topic Deleted');
+        return redirect()->route('topics.filter', [$topic->course_id])->with('success', 'Topic Deleted!');
     }
 }

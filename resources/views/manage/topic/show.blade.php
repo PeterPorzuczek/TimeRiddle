@@ -5,7 +5,7 @@
 
 <div class="container d-flex justify-content-start m-2">
     <div class="row col-2 mr-2">
-        <a class="btn btn-default" href="/topics">
+        <a class="btn btn-default" href="{{ route('topics.filter', $topic->course_id) }}">
             Back
         </a>
     </div>
@@ -46,7 +46,7 @@
 
         <div class="row mb-2">
             <a href="{{ $topic->id }}/edit" class="btn btn-success mr-2">Edit</a>
-            <form method="POST" action="{{$topic->id}}" onsubmit="return confirm('Do you really want to delete?');">
+            <form method="POST" action="{{action('TopicController@destroy', $topic->id)}}" onsubmit="return confirm('Do you really want to delete?');">
                 {!! csrf_field() !!}
                 <input type="hidden" name="_method" value="DELETE">
                 <button type="submit" class="btn btn-danger">Delete</button>

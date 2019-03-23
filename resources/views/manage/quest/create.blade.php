@@ -5,7 +5,7 @@
 
 <div class="container d-flex justify-content-start m-2">
     <div class="row col-2 mr-2">
-        <a class="btn btn-default" href="/quests">
+        <a class="btn btn-default" href="{{ url()->previous() }}">
             Back
         </a>
     </div>
@@ -14,7 +14,7 @@
 
 @section('card-content')
 
-<form class="container"action="{{action('QuestController@store')}}" method="POST" enctype="multipart/form-data" onsubmit="return isValidJson()">
+<form class="container" action="{{action('QuestController@store')}}" method="POST" enctype="multipart/form-data" onsubmit="return isValidJson()">
 
     {{csrf_field()}}
 

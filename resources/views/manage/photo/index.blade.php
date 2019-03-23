@@ -4,12 +4,12 @@
 <div class="card-header">Photos</div>
 <div class="container d-flex justify-content-start m-2">
     <div class="row col-2 mr-2">
-        <a class="btn btn-default" href="/manage">
+        <a class="btn btn-default" href="{{ route('courses.index') }}">
             Back
         </a>
     </div>
     <div class="row col-2 mr-2">
-        <a class="btn btn-success" href="photos/create">
+        <a class="btn btn-success" href="{{ route('photos.create') }}">
             Add
         </a>
     </div>
@@ -28,7 +28,7 @@
                         <img class="" style="max-width: 100%; border-radius: 5px; max-height: 200px;" alt="{{$photo->name}}" src="/storage/photos/{{ $photo->file_name }}">
                     </div>
                     <div class="row mb-2">
-                        <form method="POST" action="photos/{{$photo->id}}" onsubmit="return confirm('Do you really want to delete?');">
+                        <form method="POST" action="{{action('PhotoController@destroy', $photo->id)}}" onsubmit="return confirm('Do you really want to delete?');">
                             {!! csrf_field() !!}
                             <input type="hidden" name="_method" value="DELETE">
                             <button type="submit" class="btn btn-danger">Delete</button>

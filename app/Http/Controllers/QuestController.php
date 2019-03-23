@@ -21,11 +21,15 @@ class QuestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($courseId = null)
     {
         $userId = auth()->user()->id;
         $user = User::find($userId);
         $courses = $user->courses;
+
+        if (!empty($courseId)) {
+            $courses = [$user->courses->find($courseId)];
+        }
 
         $topics = new Collection();
         foreach ($courses as $course) {
@@ -46,7 +50,6 @@ class QuestController extends Controller
         }
 
         return view('manage.quest.index')->with('quests', $quests);
-
     }
 
     /**
@@ -122,7 +125,7 @@ class QuestController extends Controller
 
               $quest->save();
 
-              return redirect('/quests')->with('success', 'Quest saved!');
+              return redirect()->route('quests.filter', [$quest->topic->course_id])->with('success', 'Quest saved!');
           }
 
           return redirect('/quests')->with('error', 'Course problems!');
@@ -228,7 +231,7 @@ class QuestController extends Controller
 
               $quest->save();
 
-              return redirect('/quests')->with('success', 'Quest saved!');
+              return redirect()->route('quests.filter', [$quest->topic->course_id])->with('success', 'Quest saved!');
           }
 
           return redirect('/quests')->with('error', 'Course problems!');
@@ -254,6 +257,6 @@ class QuestController extends Controller
 
         $quest->delete();
 
-        return redirect('/quests')->with('success', 'Quest Deleted');
+        return redirect()->route('quests.filter', [$quest->topic->course_id])->with('success', 'Quest Deleted');
     }
 }
