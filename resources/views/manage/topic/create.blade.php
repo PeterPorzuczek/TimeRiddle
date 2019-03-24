@@ -32,7 +32,11 @@
         <select class="form-control" name="course_id">
             @if(count($courses) > 0)
                 @foreach($courses as $course)
-                    <option value="{{$course->id}}">{{$course->name}}</option>
+                    <option value="{{$course->id}}"
+                    @if ($course->id == $courseId)
+                        selected="selected"
+                    @endif
+                    >{{$course->name}}</option>
                 @endforeach
             @endif
         </select>

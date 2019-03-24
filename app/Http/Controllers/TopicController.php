@@ -44,7 +44,9 @@ class TopicController extends Controller
             $topic = $topic->with('quests');
         }
 
-        return view('manage.topic.index')->with('topics', $topics);
+        return !empty($courseId)
+        ? view('manage.topic.index')->with(['topics'=> $topics, 'courseId'=> $courseId])
+        : view('manage.topic.index')->with('topics', $topics);
     }
 
     /**
@@ -52,13 +54,15 @@ class TopicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         $userId = auth()->user()->id;
 
         $user = User::find($userId);
 
-        return view('manage.topic.create')->with('courses', $user->courses);
+        return !empty($request->input('courseId'))
+        ? view('manage.topic.create')->with(['courses'=> $user->courses, 'courseId'=> $request->input('courseId') ])
+        : view('manage.topic.create')->with('courses', $user->courses);
     }
 
     /**

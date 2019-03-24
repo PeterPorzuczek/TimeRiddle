@@ -49,7 +49,9 @@ class QuestController extends Controller
             $quest = $quest->with('topic');
         }
 
-        return view('manage.quest.index')->with('quests', $quests);
+        return !empty($courseId)
+        ? view('manage.quest.index')->with(['quests'=> $quests, 'courseId'=> $courseId])
+        : view('manage.quest.index')->with('quests', $quests);
     }
 
     /**
@@ -57,15 +59,19 @@ class QuestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         $userId = auth()->user()->id;
         $user = User::find($userId);
         $courses = $user->courses;
 
         $topics = new Collection();
-        foreach ($courses as $course) {
-            $topics = $topics->merge($course->topics);
+        if(!empty($request->input('courseId'))) {
+            $topics = $courses->find($request->input('courseId'))->topics;
+        } else {
+            foreach ($courses as $course) {
+                $topics = $topics->merge($course->topics);
+            }
         }
 
         foreach ($topics as &$topic) {

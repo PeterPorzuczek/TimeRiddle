@@ -9,7 +9,13 @@
             </a>
         </div>
         <div class="row col-2 mr-2">
-            <a class="btn btn-success" href="{{ route('topics.create') }}">
+            <a class="btn btn-success"
+            @if(!empty($courseId))
+            href="{{ route('topics.create',  ['courseId'=>$courseId]) }}"
+            @else
+            href="{{ route('topics.create') }}"
+            @endif
+            >
                 Add
             </a>
         </div>
