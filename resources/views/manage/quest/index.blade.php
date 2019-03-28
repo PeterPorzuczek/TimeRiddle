@@ -4,7 +4,7 @@
     <div class="card-header">Quests</div>
     <div class="container d-flex justify-content-start m-2">
         <div class="row col-2 mr-2">
-            <a class="btn btn-default" href="{{ route('courses.index') }}">
+            <a class="btn btn-default" href="{{ url()->previous() }}">
                 Back
             </a>
         </div>

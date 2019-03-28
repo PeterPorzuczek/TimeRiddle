@@ -21,7 +21,7 @@ class QuestController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($courseId = null)
+    public function index($courseId = null, $topicId = null)
     {
         $userId = auth()->user()->id;
         $user = User::find($userId);
@@ -31,27 +31,33 @@ class QuestController extends Controller
             $courses = [$user->courses->find($courseId)];
         }
 
-        $topics = new Collection();
-        foreach ($courses as $course) {
-            $topics = $topics->merge($course->topics);
-        }
-
-        foreach ($topics as &$topic) {
-            $topic = $topic->with('course');
-        }
-
         $quests = new Collection();
-        foreach ($topics as $topic) {
-            $quests = $quests->merge($topic->quests);
-        }
+        if (!empty($topicId)) {
+            $topic = $courses[0]->topics->find($topicId);
+            $quests = $topic->quests;
+        } else {
+            $topics = new Collection();
+            foreach ($courses as $course) {
+                $topics = $topics->merge($course->topics);
+            }
 
-        foreach ($quests as &$quest) {
-            $quest = $quest->with('topic');
+            foreach ($topics as &$topic) {
+                $topic = $topic->with('course');
+            }
+
+            $quests = new Collection();
+            foreach ($topics as $topic) {
+                $quests = $quests->merge($topic->quests);
+            }
+
+            foreach ($quests as &$quest) {
+                $quest = $quest->with('topic');
+            }
         }
 
         return !empty($courseId)
-        ? view('manage.quest.index')->with(['quests'=> $quests, 'courseId'=> $courseId])
-        : view('manage.quest.index')->with('quests', $quests);
+            ? view('manage.quest.index')->with(['quests'=> $quests, 'courseId'=> $courseId])
+            : view('manage.quest.index')->with('quests', $quests);
     }
 
     /**

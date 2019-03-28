@@ -22,6 +22,8 @@ Route::get('/photos', 'PhotoController@index');
 
 Route::resource('photos', 'PhotoController');
 
+Route::get('/quests/filter/{courseId?}/{topicId?}', 'QuestController@index')->name('quests.topics.filter');
+
 Route::get('/quests/filter/{courseId?}', 'QuestController@index')->name('quests.filter');
 
 Route::get('/quests', 'QuestController@index');
