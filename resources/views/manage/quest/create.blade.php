@@ -31,7 +31,12 @@
         <select class="form-control" name="topic_id">
             @if(count($topics) > 0)
                 @foreach($topics as $topic)
-                    <option value="{{$topic->id}}">{{$topic->name}} - {{$topic->course->name}}</option>
+                    <option value="{{$topic->id}}"
+
+                    @if (!empty($topicId) && $topic->id == $topicId)
+                        selected="selected"
+                    @endif
+                    >{{$topic->name}} - {{$topic->course->name}}</option>
                 @endforeach
             @endif
         </select>

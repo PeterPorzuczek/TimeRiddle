@@ -4,13 +4,21 @@
     <div class="card-header">Quests</div>
     <div class="container d-flex justify-content-start m-2">
         <div class="row col-2 mr-2">
-            <a class="btn btn-default" href="{{ url()->previous() }}">
+            <a class="btn btn-default"
+                @if(!empty($courseId))
+                href="{{ route('topics.filter', $courseId) }}"
+                @else
+                href="{{ route('courses.index') }}"
+                @endif
+                >
                 Back
             </a>
         </div>
         <div class="row col-2 mr-2">
             <a class="btn btn-success"
-                @if(!empty($courseId))
+                @if(!empty($courseId) && !empty($topicId))
+                href="{{ route('quests.create',  ['courseId'=>$courseId,'topicId'=>$topicId]) }}"
+                @elseif(!empty($courseId))
                 href="{{ route('quests.create',  ['courseId'=>$courseId]) }}"
                 @else
                 href="{{ route('quests.create') }}"

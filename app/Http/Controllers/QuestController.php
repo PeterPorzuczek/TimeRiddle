@@ -55,9 +55,13 @@ class QuestController extends Controller
             }
         }
 
-        return !empty($courseId)
+        $altEnd = !empty($courseId)
             ? view('manage.quest.index')->with(['quests'=> $quests, 'courseId'=> $courseId])
             : view('manage.quest.index')->with('quests', $quests);
+
+        return !empty($courseId) && !empty($topicId)
+            ? view('manage.quest.index')->with(['quests'=> $quests, 'courseId'=> $courseId, 'topicId'=> $topicId])
+            : $altEnd;
     }
 
     /**
@@ -84,7 +88,9 @@ class QuestController extends Controller
             $topic = $topic->with('course');
         }
 
-        return view('manage.quest.create')->with('topics', $topics);
+        return !empty($request->input('topicId'))
+            ? view('manage.quest.create')->with(['topics'=>$topics, 'topicId'=>$request->input('topicId')])
+            : view('manage.quest.create')->with('topics', $topics);
     }
 
     /**
