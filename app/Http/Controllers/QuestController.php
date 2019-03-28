@@ -249,7 +249,7 @@ class QuestController extends Controller
 
               $quest->save();
 
-              return redirect()->route('quests.filter', [$quest->topic->course_id])->with('success', 'Quest saved!');
+              return redirect()->route('quests.topics.filter', ["courseId"=>$quest->topic->course_id, "topicId"=>$quest->topic_id])->with('success', 'Quest saved!');
           }
 
           return redirect('/quests')->with('error', 'Course problems!');

@@ -32,7 +32,7 @@
 @section('card-content')
     <div class="container">
         @if(!empty($quests))
-            @foreach($quests as $quest)
+            @foreach($quests->sortBy('index') as $quest)
                 @if(!empty($quest))
                     <div>
                         <div class="row">
