@@ -107,14 +107,14 @@ export default {
 .v-sidebar-menu {
   z-index: 8;
   padding-top: 70px;
-  border-right: 1px dashed #de751f;
+  border-right: 1px dashed #1f74de;
 }
 .vsm-arrow {
   display: none;
 }
 .v-sidebar-menu.white-theme.vsm-default .vsm-item.first-item.open-item>.vsm-link {
-  background: #6c3910;
-  box-shadow: inset 5px 0 0 0 #de751f !important;
+  background: #124582;
+  box-shadow: inset 5px 0 0 0 #1f74de !important;
 }
 .v-sidebar-menu.white-theme .collapse-btn {
   display: none;
@@ -141,11 +141,11 @@ export default {
     border-bottom: 1px dashed #fff;
 }
 .v-sidebar-menu .vsm-item.first-item {
-  border-bottom: 1px dashed #de751f;
+  border-bottom: 1px dashed #1f74de;
 }
 .v-sidebar-menu.white-theme
 .vsm-item.first-item.active-item>.vsm-link {
-  box-shadow: inset 3px 0 0 0 #6c3910 !important;
+  box-shadow: inset 3px 0 0 0 #16529b !important;
 }
 .v-sidebar-menu .vsm-item.mobile-item {
 }
@@ -163,16 +163,17 @@ export default {
 .vsm-item.active-item
 .vsm-link .vsm-title {
   font-weight: bold;
+    color: #16529b;
 }
 .v-sidebar-menu
 .vsm-item.first-item.open-item
 .vsm-dropdown .vsm-list
 .vsm-item.active-item {
-  background-color: #fcd6b7;
-  box-shadow: inset 5px 0 0 0 #6c3910 !important;
+  background-color: #89add8;
+  box-shadow: inset 5px 0 0 0 #16529b !important;
 }
 .v-sidebar-menu.white-theme .vsm-dropdown>.vsm-list {
-  background-color: #fbebde6b;
+  background-color: #deedfb6b;
 }
 .v-sidebar-menu
 .vsm-item.first-item.open-item
@@ -201,7 +202,7 @@ export default {
 .v-sidebar-menu .vsm-badge {
 }
 .v-sidebar-menu.white-theme {
-    background-color: #ffffff9e;
+    background-color: #ffffff;
 }
 @media (max-width: 700px) {
   .v-sidebar-menu.white-theme {

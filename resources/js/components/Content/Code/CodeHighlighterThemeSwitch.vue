@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       themes: ['darker', 'lighter', 'oceanic'],
-      currentTheme: 'darker',
+      currentTheme: 'oceanic',
       addressPrefix: '/lib/rawcdn.githack.com/dutchenkoOleg/prismjs-material-theme/',
       addressMiddle: 'a4515a0a25904e57b43ed09c7b5e54095f27e909/css/',
       codeToggleAllCounter: 0,
@@ -52,7 +52,7 @@ export default {
 <style scoped>
 .code-toggle-all {
   display: inline-flex;
-  background: #de751f1a;
+  background: #1f74de1a;
   margin-right: 20px;
   border: none;
   border-radius: 25px;
@@ -66,7 +66,7 @@ export default {
   outline: none;
   -webkit-transition: all .28s ease-in-out;
   transition: all .28s ease-in-out;
-  color: #de751f;
+  color: #1f74de;
 }
 .code-highlighter-theme-switch {
   opacity: .5;

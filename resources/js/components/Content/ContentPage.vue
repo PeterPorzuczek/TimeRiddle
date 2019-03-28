@@ -4,15 +4,15 @@
       t-sm:t-p-2 t-sm:t--m-2 t-p-8
       t-sm:t-w-full t-w-9/10
       t-shadow-add t-rounded-sm t-relative"
-    style="background: #ffffffc7">
+    style="background: #ffffff">
     <code-highlighter-theme-switch v-if="codeThemeSwitchVisible"/>
     <content-box
         :content="content"
         @showCodeThemeSwitch="codeThemeSwitchVisible=true"
         @hideCodeThemeSwitch="codeThemeSwitchVisible=false"/>
-    <a href="#"
-        class="t-no-underline t-float-right"
-        @click="scrollToTop">/^^^UP^^^/</a>
+    <div
+        class="t-no-underline t-float-right t-text-sm t-font-body"
+        @click="scrollToTop">/^^^UP^^^/</div>
   </div>
 </template>
 

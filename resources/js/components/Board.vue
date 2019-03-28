@@ -1,5 +1,5 @@
 <template>
-  <div v-if="courses.length > 0" class="t-font-body">
+  <div v-if="courses.length > 0" class="">
     <top-bar :title="currentCourse.title" :links="currentCourse.links"/>
     <side-bar :course="[currentCourse]" @select-content="changeCurrentContent" />
     <main-page>

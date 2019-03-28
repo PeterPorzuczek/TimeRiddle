@@ -6,7 +6,7 @@
         class="navbar__title t-w-3/5 t-flex-col
           t-sm:t-text-sm t-sm:t-pt-1 t-sm:t-leading-normal
           t-md:t-text-sm">{{ title }}</h1>
-      <div class="navbar__links t-w-2/5 t-flex-col t-text-right">
+      <div class="navbar__links t-w-2/5 t-flex-col t-text-right t-font-body">
         <a v-for="(link, index) in Object.keys(linksObj)"
           :key="`topbar-link-${index}`"
           :href="linksObj[link]"
@@ -45,7 +45,7 @@ export default {
   z-index: 9;
   padding: .7rem 1.5rem;
   line-height: 2.2rem;
-  border-bottom: 1px dashed #de751f;
+  border-bottom: 1px dashed #1f74de;
   height: 3.6rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

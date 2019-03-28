@@ -1,5 +1,5 @@
 <template>
-  <div class="t-pb-8" style="border-bottom: 1px dashed #de751f">
+  <div class="t-pb-8" style="border-bottom: 1px dashed #1f74de">
     <div v-for="(contentElement, index) in contentElements" :key="`key-${index}`">
       <div v-if="!(index % 2)" style="margin-bottom: 50px;">
         <div v-html="contentElement"/>

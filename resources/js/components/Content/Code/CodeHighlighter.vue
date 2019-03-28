@@ -62,7 +62,7 @@ export default {
   top: -15px;
   display: flex !important;
   right: 25px;
-  background: #de751f1a;
+  background: #1f74de1a;
   border-radius: 25px;
   width: 23px;
   height: 23px;
@@ -73,7 +73,7 @@ export default {
   margin-left: 5px;
   -webkit-transition: all .28s ease-in-out;
   transition: all .28s ease-in-out;
-  color: #de751f;
+  color: #1f74de;
 }
 @media (min-width: 0px) and (max-width: 327px) {
   .code-toggle {

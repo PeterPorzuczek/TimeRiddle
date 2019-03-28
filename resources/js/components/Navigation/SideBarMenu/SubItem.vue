@@ -29,9 +29,8 @@
       </router-link>
     </template>
     <template v-else>
-      <a
+      <div
         class="vsm-link"
-        :href="item.href ? item.href : '#'"
         :disabled="item.disabled"
         @click="linkClick($event, false, item, show)"
       >
@@ -47,7 +46,7 @@
         >{{ item.badge.text }}</span>
         <span class="vsm-title">{{ item.title }}</span>
         <i v-if="item.child" class="vsm-arrow" :class="{'open-arrow' : show}"/>
-      </a>
+      </div>
     </template>
     <template v-if="item.child">
       <transition
