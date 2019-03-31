@@ -152,7 +152,7 @@ li code {
   background-color: #bbbbbb24;
   margin: 2px;
   padding: 5px;
-  font-size: 1rem !important;
+  font-size: 1em !important;
 }
 
 h3 code {
