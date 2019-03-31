@@ -21,12 +21,12 @@
           :key="`topbar-link-${index}`"
           :href="linksObj[link]"
           target="blank"
-          class="navbar__links t-mr-2 t-text-xs t-no-underline"
+          class="navbar__links t-mr-1 t-text-xs t-no-underline"
           :class="`
             t-text-${themeColors.tertiary}
           `"
         >
-          {{ link }} /
+          {{ link }}
           </a>
       </div>
     </div>
