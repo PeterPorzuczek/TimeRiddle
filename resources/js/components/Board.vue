@@ -3,8 +3,8 @@
     <container
         :is-dark="dark"
         :color="theme"
-        :header-background-name=
-            "patterns[Math.floor(Math.random()*patterns.length)]">
+        :background-name=
+            "mainBackgroundPatternName">
         <div
             v-if="courses.length > 0">
             <top-bar
@@ -23,7 +23,7 @@
                     :color="theme"
                     :content="current"
                     :header-background-name=
-                        "patterns[Math.floor(Math.random()*patterns.length)]"/>
+                        "headerBackgroundPatternName"/>
             </main-page>
         </div>
     </container>
@@ -66,6 +66,8 @@ export default {
       ],
       theme: 'blue',
       dark: false,
+      headerBackgroundPatternName: "overcast",
+      mainBackgroundPatternName: "overcast",
     };
   },
   props: {
@@ -78,6 +80,14 @@ export default {
   async created() {
     await this.fetch();
     setInterval(() => this.fetch(), this.refreshRate);
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+        this.changeBackgroundPatterns();
+        window.setInterval(() => {
+            this.changeBackgroundPatterns();
+        }, this.refreshRate);
+    })
   },
   computed: {
     current() {
@@ -139,6 +149,12 @@ export default {
         }
       }
     },
+    changeBackgroundPatterns() {
+        this.headerBackgroundPatternName = this.patterns[
+            Math.floor(Math.random()*this.patterns.length)];
+        this.mainBackgroundPatternName = this.patterns[
+            Math.floor(Math.random()*this.patterns.length)];
+    }
   },
 };
 </script>

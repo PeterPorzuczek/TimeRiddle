@@ -3,7 +3,7 @@
     <div
     class="t-fullscreen"
     :class="`
-        t-bg-hero-${headerBackgroundName}-${themeColors.primary}
+        t-bg-hero-${backgroundName}-${themeColors.primary}
         t-bg-main-${themeColors.hue}
     `"/>
     <div
@@ -20,7 +20,7 @@
 export default {
   name: "Container",
   props: {
-    headerBackgroundName: { type: String, default: 'overcast' }
+    backgroundName: { type: String, default: 'overcast' }
   },
 }
 </script>

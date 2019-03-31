@@ -1845,7 +1845,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       currentCourseQuestId: null,
       patterns: ["overcast", "happy-intersection", "random-shapes", "cutout", "death-star", "steel-beams", "morphing-diamonds", "leaf"],
       theme: 'blue',
-      dark: false
+      dark: false,
+      headerBackgroundPatternName: "overcast",
+      mainBackgroundPatternName: "overcast"
     };
   },
   props: {
@@ -1898,23 +1900,33 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
     return created;
   }(),
+  mounted: function mounted() {
+    this.$nextTick(function () {
+      var _this2 = this;
+
+      this.changeBackgroundPatterns();
+      window.setInterval(function () {
+        _this2.changeBackgroundPatterns();
+      }, this.refreshRate);
+    });
+  },
   computed: {
     current: function current() {
-      var _this2 = this;
+      var _this3 = this;
 
       // eslint-disable-next-line
       var current = this.currentCourse && this.currentCourseTopicId ? !this.currentCourseQuestId ? this.courses[0].topics.find(function (item) {
-        return item.id === _this2.currentCourseTopicId;
+        return item.id === _this3.currentCourseTopicId;
       }) : this.courses[0].topics.find(function (item) {
-        return item.id === _this2.currentCourseTopicId;
+        return item.id === _this3.currentCourseTopicId;
       }).child.find(function (item) {
-        return item.id === _this2.currentCourseQuestId;
+        return item.id === _this3.currentCourseQuestId;
       }) : {};
       var result = current ? current : function () {
-        _this2.currentCourseTopicId = _this2.courses[0].topics[0].id;
-        _this2.currentCourseQuestId = null;
-        return _this2.courses[0].topics.find(function (item) {
-          return item.id === _this2.currentCourseTopicId;
+        _this3.currentCourseTopicId = _this3.courses[0].topics[0].id;
+        _this3.currentCourseQuestId = null;
+        return _this3.courses[0].topics.find(function (item) {
+          return item.id === _this3.currentCourseTopicId;
         });
       }();
       return result;
@@ -1998,6 +2010,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           this.currentCourseQuestId = item.id;
         }
       }
+    },
+    changeBackgroundPatterns: function changeBackgroundPatterns() {
+      this.headerBackgroundPatternName = this.patterns[Math.floor(Math.random() * this.patterns.length)];
+      this.mainBackgroundPatternName = this.patterns[Math.floor(Math.random() * this.patterns.length)];
     }
   }
 });
@@ -2332,7 +2348,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Container",
   props: {
-    headerBackgroundName: {
+    backgroundName: {
       type: String,
       default: 'overcast'
     }
@@ -5384,8 +5400,7 @@ var render = function() {
           attrs: {
             "is-dark": _vm.dark,
             color: _vm.theme,
-            "header-background-name":
-              _vm.patterns[Math.floor(Math.random() * _vm.patterns.length)]
+            "background-name": _vm.mainBackgroundPatternName
           }
         },
         [
@@ -5420,9 +5435,7 @@ var render = function() {
                           color: _vm.theme,
                           content: _vm.current,
                           "header-background-name":
-                            _vm.patterns[
-                              Math.floor(Math.random() * _vm.patterns.length)
-                            ]
+                            _vm.headerBackgroundPatternName
                         }
                       })
                     ],
@@ -5734,7 +5747,7 @@ var render = function() {
       staticClass: "t-fullscreen",
       class:
         "\n        t-bg-hero-" +
-        _vm.headerBackgroundName +
+        _vm.backgroundName +
         "-" +
         _vm.themeColors.primary +
         "\n        t-bg-main-" +
