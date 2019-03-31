@@ -132,6 +132,7 @@ export default {
           && coursesResponse.data && coursesResponse.data.length > 0) {
           const coursesFormatted = this.format(coursesResponse.data);
           this.courses = coursesFormatted;
+          this.theme = this.currentCourse ? this.theme : this.courses[0].theme;
           // eslint-disable-next-line
           this.currentCourse = this.courses[0];
           this.currentCourseTopicId = !this.currentCourseTopicId ? this.courses[0].topics[0].id : this.currentCourseTopicId;

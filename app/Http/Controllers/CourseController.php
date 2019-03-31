@@ -42,7 +42,20 @@ class CourseController extends Controller
      */
     public function create()
     {
-        return view('manage.course.create');
+        $themes = [
+            "grey",
+            "red",
+            "orange",
+            "yellow",
+            "green",
+            "teal",
+            "blue",
+            "indigo",
+            "purple",
+            "pink"
+        ];
+
+        return view('manage.course.create')->with("themes", $themes);
     }
 
     /**
@@ -57,7 +70,8 @@ class CourseController extends Controller
             'name' => 'required',
             'abbreviation' => 'required',
             'password' => 'required',
-            'links' => 'required|valid_json'
+            'links' => 'required|valid_json',
+            'theme' => 'required'
         ]);
 
         $course = new Course;
@@ -66,6 +80,8 @@ class CourseController extends Controller
         $course->password = $request->input('password');
         $course->links = $request->input('links');
         $course->user_id = auth()->user()->id;
+        $course->theme = $request->input('theme');
+        $course->dark = $request->input('dark') === 'dark';
 
         $course->save();
 
@@ -103,7 +119,20 @@ class CourseController extends Controller
 
         $course = $user->courses->find($id);
 
-        return view('manage.course.edit')->with('course', $course);
+        $themes = [
+            "grey",
+            "red",
+            "orange",
+            "yellow",
+            "green",
+            "teal",
+            "blue",
+            "indigo",
+            "purple",
+            "pink"
+        ];
+
+        return view('manage.course.edit')->with(['course'=>$course, 'themes'=>$themes]);
     }
 
     /**
@@ -119,7 +148,8 @@ class CourseController extends Controller
             'name' => 'required',
             'abbreviation' => 'required',
             'password' => 'required',
-            'links' => 'required|valid_json'
+            'links' => 'required|valid_json',
+            'theme' => 'required'
           ]);
 
         $userId = auth()->user()->id;
@@ -133,6 +163,8 @@ class CourseController extends Controller
         $course->password = $request->input('password');
         $course->links = $request->input('links');
         $course->user_id = auth()->user()->id;
+        $course->theme = $request->input('theme');
+        $course->dark = $request->input('dark') === 'dark';
 
         $course->save();
 

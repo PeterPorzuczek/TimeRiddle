@@ -20,7 +20,8 @@ class LearnController extends Controller
             ::select(
                 'id',
                 'name AS title',
-                'links')
+                'links',
+                'theme')
             ->where('abbreviation', '=' , $courseName)
             ->where('password', '=' , $coursePassword)
             ->with([

@@ -77,6 +77,7 @@ export default {
         style="
             margin-left: -32px;
             padding-right: 25px;
+            padding-bottom: 15px;
         ">`);
     },
   },

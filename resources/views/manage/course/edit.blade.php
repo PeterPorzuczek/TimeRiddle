@@ -47,6 +47,29 @@
     </div>
 
     <div class="form-group">
+        <label>Theme</label>
+        <select class="form-control" name="theme">
+            @if(count($themes) > 0)
+                @foreach($themes as $theme)
+                    <option value="{{$theme}}"
+                    @if ($course->theme == $theme)
+                        selected="selected"
+                    @endif
+                    >{{$theme}}</option>
+                @endforeach
+            @endif
+        </select>
+    </div>
+
+    <div class="form-check pb-4">
+        <input type="checkbox" class="form-check-input" id="dark" name="dark" value="dark"
+        @if ($course->dark)
+            checked
+        @endif>
+        <label class="form-check-label" for="public">Dark</label>
+    </div>
+
+    <div class="form-group">
         <button class="btn btn-success">Save</button>
     </div>
 

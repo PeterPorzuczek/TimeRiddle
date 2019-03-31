@@ -22,6 +22,8 @@ class CreateCoursesTable extends Migration
             $table->string('abbreviation')->unique();
             $table->text('password');
             $table->text('links')->nullable();
+            $table->string('theme');
+            $table->boolean('dark');
 
             $table->timestamps();
         });

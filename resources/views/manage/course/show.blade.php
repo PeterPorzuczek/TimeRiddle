@@ -37,6 +37,16 @@
             <div class="row">{{ $course->links }}</div>
         </div>
 
+        <div class="mb-4">
+            <div class="row">Theme</div>
+            <div class="row">{{ $course->theme }}</div>
+        </div>
+
+        <div class="mb-4">
+            <div class="row">Dark</div>
+            <div class="row">{{ $course->dark }}</div>
+        </div>
+
         <div class="row mb-2">
             <a href="{{ $course->id }}/edit" class="btn btn-success mr-2">Edit</a>
             <form method="POST" action="{{$course->id}}" onsubmit="return confirm('Do you really want to delete?');">

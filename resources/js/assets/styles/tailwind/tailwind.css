@@ -75,6 +75,7 @@
 h1, h2, h3, h4, h5, h6 {
   width:100%;
   padding-top: 5px;
+  padding-bottom: 20px;
 }
 p {
   width: 100%;
