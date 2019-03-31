@@ -184,7 +184,7 @@ hr {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #00000030;
+  background-color: #ffffff30;
 }
 
 @tailwind components;

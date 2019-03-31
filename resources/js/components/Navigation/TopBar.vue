@@ -6,11 +6,20 @@
     ? `
       t-shadow-nm-${themeColors.hue}
       t-bg-gradient-l-${themeColors.primary}-dark
-      t-text-${themeColors.contentText}`
+      t-text-${themeColors.contentText}
+      t-border
+      t-border-r-0 t-border-t-0 t-border-b-0
+      t-border-l-8
+      t-border-gradient-b-${themeColors.primary}-dark
+    `
     : `
       t-shadow-nm-${themeColors.hue}
       t-bg-${themeColors.contentBackgroundSecondary}
       t-text-${themeColors.contentText}
+      t-border
+      t-border-r-0 t-border-t-0 t-border-b-0
+      t-border-l-8
+      t-border-gradient-b-${themeColors.primary}
     `]"
     >
     <div class="t-flex">
