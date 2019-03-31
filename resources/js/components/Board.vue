@@ -133,6 +133,7 @@ export default {
           const coursesFormatted = this.format(coursesResponse.data);
           this.courses = coursesFormatted;
           this.theme = Object.keys(this.currentCourse).length > 0 ? this.theme : this.courses[0].theme;
+          this.dark = Object.keys(this.currentCourse).length > 0 ? this.dark : this.courses[0]['is_night'];
           // eslint-disable-next-line
           this.currentCourse = this.courses[0];
           this.currentCourseTopicId = !this.currentCourseTopicId ? this.courses[0].topics[0].id : this.currentCourseTopicId;
