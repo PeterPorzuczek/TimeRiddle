@@ -1,6 +1,13 @@
 <template>
   <div class="code-highlighter-theme-switch">
-    <div @click="toggleAllCodes" class="code-toggle-all" v-html="toggleIcon"></div>
+    <div
+        @click="toggleAllCodes"
+        class="code-toggle-all t-fill-current"
+        :class="`
+            t-text-${themeColors.primary}
+            t-bg-${themeColors.contentBackgroundTertiary}
+        `"
+        v-html="toggleIcon"></div>
     <span class="t-mr-2">Code theme: </span>
     <div class="select-dropdown">
       <select v-model="currentTheme" name="slct" id="slct">
@@ -52,21 +59,14 @@ export default {
 <style scoped>
 .code-toggle-all {
   display: inline-flex;
-  background: #1f74de1a;
-  margin-right: 20px;
-  border: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-radius: 25px;
   width: 23px;
   height: 23px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-left: 5px;
-  outline: none;
-  -webkit-transition: all .28s ease-in-out;
-  transition: all .28s ease-in-out;
-  color: #1f74de;
+  margin-right: 20px;
+
 }
 .code-highlighter-theme-switch {
   opacity: .5;
@@ -80,13 +80,14 @@ export default {
   -ms-user-select: none;
   user-select: none;
   overflow-x: auto;
+  position: relative;
 }
 .code-highlighter-theme-switch:hover {
   opacity: 1;
 }
 .select-dropdown {
   position: relative;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   width: auto;
   float: right;
   max-width: 100%;
@@ -117,6 +118,6 @@ export default {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #aaa;
+  border-top: 5px solid #bbb;
 }
 </style>

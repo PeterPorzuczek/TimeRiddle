@@ -1,21 +1,38 @@
 <template>
   <div
     class="v-sidebar-menu"
-    :class="[!isCollapsed ? 'vsm-default' : 'vsm-collapsed', theme, rtl ? 'rtl' : '']"
+    :class="[
+        !isCollapsed ? 'vsm-default' : 'vsm-collapsed',
+        theme,
+        rtl ? 'rtl' : '',
+        `t-bg-${themeColors.contentBackgroundTertiary}`
+    ]"
     :style="{'width': sidebarWidth}"
     @mouseleave="mouseLeave"
   >
-    <div class="vsm-list">
+    <div
+        class="vsm-list"
+        >
       <template v-for="(item, index) in menu">
         <template v-if="item.header">
           <template v-if="(item.visibleOnCollapse || !isCollapsed) && item.component">
-            <component :is="item.component" :key="index"/>
+            <component
+                :is="item.component"
+                :key="index"
+                :is-dark="isDark"
+                :color="color"/>
           </template>
           <template v-else-if="item.visibleOnCollapse || !isCollapsed">
             <div :key="index" class="vsm-header">{{ item.title }}</div>
           </template>
         </template>
-        <item v-else :key="index" :item="item" :first-item="true" :is-collapsed="isCollapsed"/>
+        <item
+            v-else :key="index"
+            :item="item"
+            :first-item="true"
+            :is-collapsed="isCollapsed"
+            :is-dark="isDark"
+            :color="color"/>
       </template>
     </div>
     <div
@@ -27,7 +44,10 @@
         ? {'right' : '0px'}
         : {'left' : '0px'}, {'z-index' : 30}, {'width' : width}]"
     >
-      <mobile-item :item="mobileItem"/>
+      <mobile-item
+        :is-dark="isDark"
+        :color="color"
+        :item="mobileItem"/>
       <transition name="slide-animation">
         <div
           v-if="mobileItem"
@@ -57,7 +77,12 @@
           @beforeLeave="expandBeforeLeave"
         >
           <div v-if="mobileItem && mobileItem.child" class="vsm-list">
-            <sub-item v-for="(subItem, index) in mobileItem.child" :key="index" :item="subItem"/>
+            <sub-item
+                v-for="(subItem, index) in mobileItem.child"
+                :key="index"
+                :item="subItem"
+                :is-dark="isDark"
+                :color="color"/>
           </div>
         </transition>
       </div>

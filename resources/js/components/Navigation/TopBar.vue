@@ -1,18 +1,33 @@
 <template>
-  <div class="navbar t-shadow-box t-bg-white">
+  <div
+    class="navbar "
+    :class="`
+      t-shadow-nm-${themeColors.hue}
+      t-bg-${themeColors.contentBackgroundSecondary}
+      t-text-${themeColors.contentText}
+    `"
+    >
     <div class="t-flex">
       <span class="t-px-6 t-text-xl"></span>
       <h1
         class="navbar__title t-w-3/5 t-flex-col
           t-sm:t-text-sm t-sm:t-pt-1 t-sm:t-leading-normal
-          t-md:t-text-sm">{{ title }}</h1>
+          t-md:t-text-sm"
+        :class="`
+            t-text-${themeColors.quaternary}
+        `">{{ title }}</h1>
       <div class="navbar__links t-w-2/5 t-flex-col t-text-right t-font-body">
         <a v-for="(link, index) in Object.keys(linksObj)"
           :key="`topbar-link-${index}`"
           :href="linksObj[link]"
           target="blank"
-          class="navbar__links t-mr-2 t-text-xs
-            t-no-underline hover:t-text-orange">{{ link }} /</a>
+          class="navbar__links t-mr-2 t-text-xs t-no-underline"
+          :class="`
+            t-text-${themeColors.tertiary}
+          `"
+        >
+          {{ link }} /
+          </a>
       </div>
     </div>
   </div>
@@ -43,10 +58,9 @@ export default {
   left: 0;
   right: 0;
   z-index: 9;
-  padding: .7rem 1.5rem;
+  padding: .9rem 1.5rem;
   line-height: 2.2rem;
-  border-bottom: 1px dashed #1f74de;
-  height: 3.6rem;
+  height: 4.3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }

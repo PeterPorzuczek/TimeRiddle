@@ -21,11 +21,15 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
+        "tailwind-heropatterns": "0.0.7",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.8"
     },
     "dependencies": {
         "tailwindcss": "^0.7.4",
+        "tailwindcss-border-gradients": "^1.0.1",
+        "tailwindcss-gradients": "^1.1.0",
+        "vue-recomputed": "0.0.1",
         "vue-turbolinks": "^2.0.4"
     }
 }

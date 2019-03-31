@@ -1,6 +1,13 @@
 <template>
   <div>
-    <div @click="showHide" class="code-toggle" v-html="toggleIcon"></div>
+    <div
+        @click="showHide"
+        class="code-toggle t-fill-current"
+        :class="`
+            t-text-${themeColors.primary}
+            t-bg-${themeColors.contentBackgroundTertiary}
+        `"
+        v-html="toggleIcon"></div>
     <div v-show="visible" v-html="addLineNumbersClass(code)"/>
   </div>
 </template>
@@ -42,7 +49,7 @@ export default {
       this.visible = !this.visible;
     },
     addLineNumbersClass(html) {
-      return html.replace(/<pre>/ig, '<pre class="line-numbers t-shadow hover:t-shadow-lg">');
+      return html.replace(/<pre>/ig, '<pre class="line-numbers t-shadow-nm hover:t-shadow-lg">');
     },
     refreshHighlight() {
       this.$nextTick(() => {
@@ -58,22 +65,19 @@ export default {
   display: flex;
 }
 .code-toggle {
-  float: right;
-  top: -15px;
   display: flex !important;
-  right: 25px;
-  background: #1f74de1a;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-radius: 25px;
+  float: right;
+  margin-left: 5px;
+  top: -15px;
+  right: 25px;
   width: 23px;
   height: 23px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-left: 5px;
-  -webkit-transition: all .28s ease-in-out;
-  transition: all .28s ease-in-out;
-  color: #1f74de;
+
 }
 @media (min-width: 0px) and (max-width: 327px) {
   .code-toggle {

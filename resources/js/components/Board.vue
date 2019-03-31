@@ -1,16 +1,39 @@
 <template>
-  <div v-if="courses.length > 0" class="">
-    <top-bar :title="currentCourse.title" :links="currentCourse.links"/>
-    <side-bar :course="[currentCourse]" @select-content="changeCurrentContent" />
-    <main-page>
-      <content-page :content="current"/>
-    </main-page>
+  <div>
+    <container
+        :is-dark="dark"
+        :color="theme"
+        :header-background-name=
+            "patterns[Math.floor(Math.random()*patterns.length)]">
+        <div
+            v-if="courses.length > 0">
+            <top-bar
+                :is-dark="dark"
+                :color="theme"
+                :title="currentCourse.title"
+                :links="currentCourse.links"/>
+            <side-bar
+                :is-dark="dark"
+                :color="theme"
+                :course="[currentCourse]"
+                @select-content="changeCurrentContent"/>
+            <main-page>
+                <content-page
+                    :is-dark="dark"
+                    :color="theme"
+                    :content="current"
+                    :header-background-name=
+                        "patterns[Math.floor(Math.random()*patterns.length)]"/>
+            </main-page>
+        </div>
+    </container>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
 
+import Container from './Navigation/Container.vue';
 import SideBar from './Navigation/SideBar.vue';
 import TopBar from './Navigation/TopBar.vue';
 import MainPage from './Navigation/MainPage.vue';
@@ -19,6 +42,7 @@ import ContentPage from './Content/ContentPage.vue';
 export default {
   name: 'Board',
   components: {
+    Container,
     TopBar,
     SideBar,
     MainPage,
@@ -30,6 +54,18 @@ export default {
       currentCourse: {},
       currentCourseTopicId: null,
       currentCourseQuestId: null,
+      patterns: [
+        "overcast",
+        "happy-intersection",
+        "random-shapes",
+        "cutout",
+        "death-star",
+        "steel-beams",
+        "morphing-diamonds",
+        "leaf"
+      ],
+      theme: 'blue',
+      dark: false,
     };
   },
   props: {

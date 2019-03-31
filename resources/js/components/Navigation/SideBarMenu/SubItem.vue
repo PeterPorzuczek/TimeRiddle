@@ -9,6 +9,16 @@
     <template v-if="isRouterLink">
       <router-link
         class="vsm-link"
+        :class="[
+            show ? `
+            t-bg-gradient-l-${themeColors.primary}
+            t-border
+            t-border-r-0 t-border-t-0 t-border-b-0
+            t-border-l-8
+            t-border-gradient-b-${themeColors.primary}
+            ` : '',
+            isDark ? 't-opacity-75' : ''
+        ]"
         :to="item.href"
         :disabled="item.disabled"
         :event="item.disabled ? '' : 'click'"
@@ -24,13 +34,31 @@
           class="vsm-badge"
           :class="[item.badge.class ? item.badge.class : 'default-badge']"
         >{{ item.badge.text }}</span>
-        <span class="vsm-title">{{ item.title }}</span>
+        <span
+            class="vsm-title"
+            :class="[
+                active ? `
+                t-text-${themeColors.contentTextActive}
+                ` : `t-text-${themeColors.contentText}`
+            ]">
+            {{ item.title }}
+        </span>
         <i v-if="item.child" class="vsm-arrow" :class="{'open-arrow' : show}"/>
       </router-link>
     </template>
     <template v-else>
       <div
         class="vsm-link"
+        :class="[
+            active ? `
+            t-bg-gradient-l-${themeColors.primary}
+            t-border
+            t-border-r-0 t-border-t-0 t-border-b-0
+            t-border-l-8
+            t-border-gradient-b-${themeColors.primary}
+            ` : '',
+            isDark ? 't-opacity-75' : ''
+        ]"
         :disabled="item.disabled"
         @click="linkClick($event, false, item, show)"
       >
@@ -44,7 +72,15 @@
           class="vsm-badge"
           :class="[item.badge.class ? item.badge.class : 'default-badge']"
         >{{ item.badge.text }}</span>
-        <span class="vsm-title">{{ item.title }}</span>
+        <span
+            class="vsm-title"
+            :class="[
+                active ? `
+                t-text-${themeColors.contentTextActive}
+                ` : `t-text-${themeColors.contentText}`
+            ]">
+        {{ item.title }}
+        </span>
         <i v-if="item.child" class="vsm-arrow" :class="{'open-arrow' : show}"/>
       </div>
     </template>
@@ -56,8 +92,14 @@
         @beforeLeave="expandBeforeLeave"
       >
         <div v-if="show" class="vsm-dropdown">
-          <div class="vsm-list">
-            <item v-for="(subItem, index) in item.child" :key="index" :item="subItem"/>
+          <div
+            class="vsm-list">
+            <item
+                v-for="(subItem, index) in item.child"
+                :key="index"
+                :item="subItem"
+                :is-dark="isDark"
+                :color="color"/>
           </div>
         </div>
       </transition>
