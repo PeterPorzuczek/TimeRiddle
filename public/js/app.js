@@ -2148,7 +2148,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'CodeHighlighterThemeSwitch',
@@ -5675,8 +5674,6 @@ var render = function() {
       domProps: { innerHTML: _vm._s(_vm.toggleIcon) },
       on: { click: _vm.toggleAllCodes }
     }),
-    _vm._v(" "),
-    _c("span", { staticClass: "t-mr-2" }, [_vm._v("Code theme: ")]),
     _vm._v(" "),
     _c(
       "div",

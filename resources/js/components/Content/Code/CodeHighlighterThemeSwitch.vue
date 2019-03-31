@@ -8,7 +8,6 @@
             t-bg-${themeColors.contentBackgroundTertiary}
         `"
         v-html="toggleIcon"></div>
-    <span class="t-mr-2">Code theme: </span>
     <div class="select-dropdown t-py-1 t-flex t-justify-center t-items-center">
       <select v-model="currentTheme">
         <option
