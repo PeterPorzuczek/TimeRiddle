@@ -12,7 +12,7 @@
         t-text-${themeColors.contentText}
     `">
     <div
-      class="content-page__header t-sm:t-hidden"
+      class="content-page__header t-md:hidden t-sm:t-hidden"
       :class="`
         t-bg-hero-${headerBackgroundName}-${themeColors.primary}
       `"></div>

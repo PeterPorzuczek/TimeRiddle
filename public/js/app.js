@@ -5825,7 +5825,7 @@ var render = function() {
     },
     [
       _c("div", {
-        staticClass: "content-page__header t-sm:t-hidden",
+        staticClass: "content-page__header t-md:hidden t-sm:t-hidden",
         class:
           "\n      t-bg-hero-" +
           _vm.headerBackgroundName +
