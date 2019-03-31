@@ -16,6 +16,7 @@
             t-border-r-0 t-border-t-0 t-border-b-0
             t-border-l-8
             t-border-gradient-b-${themeColors.primary}
+            t-shadow-md
             ` : '',
             isDark ? 't-opacity-75' : ''
         ]"
@@ -56,6 +57,7 @@
             t-border-r-0 t-border-t-0 t-border-b-0
             t-border-l-8
             t-border-gradient-b-${themeColors.primary}
+            t-shadow-md
             ` : '',
             isDark ? 't-opacity-75' : ''
         ]"

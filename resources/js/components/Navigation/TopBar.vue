@@ -1,11 +1,17 @@
 <template>
   <div
     class="navbar "
-    :class="`
+    :class="[
+    isDark
+    ? `
+      t-shadow-nm-${themeColors.hue}
+      t-bg-gradient-l-${themeColors.primary}-dark
+      t-text-${themeColors.contentText}`
+    : `
       t-shadow-nm-${themeColors.hue}
       t-bg-${themeColors.contentBackgroundSecondary}
       t-text-${themeColors.contentText}
-    `"
+    `]"
     >
     <div class="t-flex">
       <span class="t-px-6 t-text-xl"></span>

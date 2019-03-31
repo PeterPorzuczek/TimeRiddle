@@ -2,10 +2,17 @@
 <div>
     <div
     class="t-fullscreen"
-    :class="`
-        t-bg-hero-${backgroundName}-${themeColors.primary}
-        t-bg-main-${themeColors.hue}
-    `"/>
+    :class="[
+      isDark
+    ? `
+      t-bg-hero-${backgroundName}-${themeColors.primary}
+      t-bg-main-${themeColors.hue}
+      t-bg-${themeColors.primary}-darkest
+    `
+    : `
+      t-bg-hero-${backgroundName}-${themeColors.primary}
+      t-bg-main-${themeColors.hue}
+    `]"/>
     <div
         class="t-font-main"
         :class="`

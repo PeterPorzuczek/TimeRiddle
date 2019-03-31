@@ -27,13 +27,13 @@ const colorSchemeMixin = {
           contentText: dark
             ? "white" : "black",
           contentBackgroundPrimary: dark
-            ? "content-dark" : 'content-light',
+            ? `${color}-darkest` : 'content-light',
           contentBackgroundSecondary: dark
-            ? "grey-dark" : 'grey-light',
+            ? `${color}-dark` : 'grey-light',
           contentBackgroundTertiary: dark
-            ? "grey-darker" : 'grey-lighter',
+            ? `${color}-darker` : 'grey-lighter',
           contentBackgroundQuaternary: dark
-            ? "grey-darkest" : 'grey-lightest',
+            ? `${color}-darkest` : 'grey-lightest',
           primary: color,
           secondary: dark
             ? `${color}-light` : `${color}-dark`,

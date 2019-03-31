@@ -768,7 +768,7 @@ config.shadows = {
   box: '0 10px 40px -6px rgba(0,0,0,.03)',
   'inner-sm': 'inset 0 -1px 0 0 rgba(0,0,0,.2),1px 1px 2px 0 rgba(0,0,0,.2)',
   'nm-light': '0 2px 12px 0 #dfe3eb',
-  'nm-dark': '0 2px 12px 0 #2d2f31'
+  'nm-dark': '0 2px 12px 0 #0000005e'
 };
 
 /*
@@ -972,15 +972,25 @@ config.plugins = [
       'l': 'to left',
     },
     gradients: {
+        'grey-dark': [colors['grey-darker'], colors['grey-darkest']],
         'grey': [colors['grey-light'], colors['grey']],
+        'red-dark': [colors['red-darker'], colors['red-darkest']],
         'red': [colors['red-light'], colors['red-dark']],
+        'orange-dark': [colors['orange-darker'], colors['orange-darkest']],
         'orange': [colors['orange-light'], colors['orange-dark']],
+        'yellow-dark': [colors['yellow-darker'], colors['yellow-darkest']],
         'yellow': [colors['yellow-light'], colors['yellow-dark']],
+        'green-dark': [colors['green-darker'], colors['green-darkest']],
         'green': [colors['green-light'], colors['green-dark']],
+        'teal-dark': [colors['teal-darker'], colors['teal-darkest']],
         'teal': [colors['teal-light'], colors['teal-dark']],
+        'blue-dark': [colors['blue-darker'], colors['blue-darkest']],
         'blue': [colors['blue-light'], colors['blue-dark']],
+        'indigo-dark': [colors['indigo-darker'], colors['indigo-darkest']],
         'indigo': [colors['indigo-light'], colors['indigo-dark']],
+        'purple-dark': [colors['purple-darker'], colors['purple-darkest']],
         'purple': [colors['purple-light'], colors['purple-dark']],
+        'pink-dark': [colors['pink-darker'], colors['pink-darkest']],
         'pink': [colors['pink-light'], colors['pink-dark']],
     },
   }),
