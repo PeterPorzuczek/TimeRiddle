@@ -152,7 +152,7 @@ li code {
   background-color: #bbbbbb24;
   margin: 2px;
   padding: 5px;
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
 }
 
 h3 code {
@@ -4666,183 +4666,183 @@ hr {
 }
 
 .t-border-gradient-t-red {
-  -o-border-image: linear-gradient(to top, #ef5753, #e3342f) 1;
-     border-image: linear-gradient(to top, #ef5753, #e3342f) 1;
+  -o-border-image: linear-gradient(to top, #ef5753, #cc1f1a) 1;
+     border-image: linear-gradient(to top, #ef5753, #cc1f1a) 1;
 }
 
 .t-border-gradient-r-red {
-  -o-border-image: linear-gradient(to right, #ef5753, #e3342f) 1;
-     border-image: linear-gradient(to right, #ef5753, #e3342f) 1;
+  -o-border-image: linear-gradient(to right, #ef5753, #cc1f1a) 1;
+     border-image: linear-gradient(to right, #ef5753, #cc1f1a) 1;
 }
 
 .t-border-gradient-b-red {
-  -o-border-image: linear-gradient(to bottom, #ef5753, #e3342f) 1;
-     border-image: linear-gradient(to bottom, #ef5753, #e3342f) 1;
+  -o-border-image: linear-gradient(to bottom, #ef5753, #cc1f1a) 1;
+     border-image: linear-gradient(to bottom, #ef5753, #cc1f1a) 1;
 }
 
 .t-border-gradient-l-red {
-  -o-border-image: linear-gradient(to left, #ef5753, #e3342f) 1;
-     border-image: linear-gradient(to left, #ef5753, #e3342f) 1;
+  -o-border-image: linear-gradient(to left, #ef5753, #cc1f1a) 1;
+     border-image: linear-gradient(to left, #ef5753, #cc1f1a) 1;
 }
 
 .t-border-gradient-t-orange {
-  -o-border-image: linear-gradient(to top, #faad63, #f6993f) 1;
-     border-image: linear-gradient(to top, #faad63, #f6993f) 1;
+  -o-border-image: linear-gradient(to top, #faad63, #de751f) 1;
+     border-image: linear-gradient(to top, #faad63, #de751f) 1;
 }
 
 .t-border-gradient-r-orange {
-  -o-border-image: linear-gradient(to right, #faad63, #f6993f) 1;
-     border-image: linear-gradient(to right, #faad63, #f6993f) 1;
+  -o-border-image: linear-gradient(to right, #faad63, #de751f) 1;
+     border-image: linear-gradient(to right, #faad63, #de751f) 1;
 }
 
 .t-border-gradient-b-orange {
-  -o-border-image: linear-gradient(to bottom, #faad63, #f6993f) 1;
-     border-image: linear-gradient(to bottom, #faad63, #f6993f) 1;
+  -o-border-image: linear-gradient(to bottom, #faad63, #de751f) 1;
+     border-image: linear-gradient(to bottom, #faad63, #de751f) 1;
 }
 
 .t-border-gradient-l-orange {
-  -o-border-image: linear-gradient(to left, #faad63, #f6993f) 1;
-     border-image: linear-gradient(to left, #faad63, #f6993f) 1;
+  -o-border-image: linear-gradient(to left, #faad63, #de751f) 1;
+     border-image: linear-gradient(to left, #faad63, #de751f) 1;
 }
 
 .t-border-gradient-t-yellow {
-  -o-border-image: linear-gradient(to top, #fff382, #ffed4a) 1;
-     border-image: linear-gradient(to top, #fff382, #ffed4a) 1;
+  -o-border-image: linear-gradient(to top, #fff382, #f2d024) 1;
+     border-image: linear-gradient(to top, #fff382, #f2d024) 1;
 }
 
 .t-border-gradient-r-yellow {
-  -o-border-image: linear-gradient(to right, #fff382, #ffed4a) 1;
-     border-image: linear-gradient(to right, #fff382, #ffed4a) 1;
+  -o-border-image: linear-gradient(to right, #fff382, #f2d024) 1;
+     border-image: linear-gradient(to right, #fff382, #f2d024) 1;
 }
 
 .t-border-gradient-b-yellow {
-  -o-border-image: linear-gradient(to bottom, #fff382, #ffed4a) 1;
-     border-image: linear-gradient(to bottom, #fff382, #ffed4a) 1;
+  -o-border-image: linear-gradient(to bottom, #fff382, #f2d024) 1;
+     border-image: linear-gradient(to bottom, #fff382, #f2d024) 1;
 }
 
 .t-border-gradient-l-yellow {
-  -o-border-image: linear-gradient(to left, #fff382, #ffed4a) 1;
-     border-image: linear-gradient(to left, #fff382, #ffed4a) 1;
+  -o-border-image: linear-gradient(to left, #fff382, #f2d024) 1;
+     border-image: linear-gradient(to left, #fff382, #f2d024) 1;
 }
 
 .t-border-gradient-t-green {
-  -o-border-image: linear-gradient(to top, #51d88a, #38c172) 1;
-     border-image: linear-gradient(to top, #51d88a, #38c172) 1;
+  -o-border-image: linear-gradient(to top, #51d88a, #1f9d55) 1;
+     border-image: linear-gradient(to top, #51d88a, #1f9d55) 1;
 }
 
 .t-border-gradient-r-green {
-  -o-border-image: linear-gradient(to right, #51d88a, #38c172) 1;
-     border-image: linear-gradient(to right, #51d88a, #38c172) 1;
+  -o-border-image: linear-gradient(to right, #51d88a, #1f9d55) 1;
+     border-image: linear-gradient(to right, #51d88a, #1f9d55) 1;
 }
 
 .t-border-gradient-b-green {
-  -o-border-image: linear-gradient(to bottom, #51d88a, #38c172) 1;
-     border-image: linear-gradient(to bottom, #51d88a, #38c172) 1;
+  -o-border-image: linear-gradient(to bottom, #51d88a, #1f9d55) 1;
+     border-image: linear-gradient(to bottom, #51d88a, #1f9d55) 1;
 }
 
 .t-border-gradient-l-green {
-  -o-border-image: linear-gradient(to left, #51d88a, #38c172) 1;
-     border-image: linear-gradient(to left, #51d88a, #38c172) 1;
+  -o-border-image: linear-gradient(to left, #51d88a, #1f9d55) 1;
+     border-image: linear-gradient(to left, #51d88a, #1f9d55) 1;
 }
 
 .t-border-gradient-t-teal {
-  -o-border-image: linear-gradient(to top, #64d5ca, #4dc0b5) 1;
-     border-image: linear-gradient(to top, #64d5ca, #4dc0b5) 1;
+  -o-border-image: linear-gradient(to top, #64d5ca, #38a89d) 1;
+     border-image: linear-gradient(to top, #64d5ca, #38a89d) 1;
 }
 
 .t-border-gradient-r-teal {
-  -o-border-image: linear-gradient(to right, #64d5ca, #4dc0b5) 1;
-     border-image: linear-gradient(to right, #64d5ca, #4dc0b5) 1;
+  -o-border-image: linear-gradient(to right, #64d5ca, #38a89d) 1;
+     border-image: linear-gradient(to right, #64d5ca, #38a89d) 1;
 }
 
 .t-border-gradient-b-teal {
-  -o-border-image: linear-gradient(to bottom, #64d5ca, #4dc0b5) 1;
-     border-image: linear-gradient(to bottom, #64d5ca, #4dc0b5) 1;
+  -o-border-image: linear-gradient(to bottom, #64d5ca, #38a89d) 1;
+     border-image: linear-gradient(to bottom, #64d5ca, #38a89d) 1;
 }
 
 .t-border-gradient-l-teal {
-  -o-border-image: linear-gradient(to left, #64d5ca, #4dc0b5) 1;
-     border-image: linear-gradient(to left, #64d5ca, #4dc0b5) 1;
+  -o-border-image: linear-gradient(to left, #64d5ca, #38a89d) 1;
+     border-image: linear-gradient(to left, #64d5ca, #38a89d) 1;
 }
 
 .t-border-gradient-t-blue {
-  -o-border-image: linear-gradient(to top, #6cb2eb, #3490dc) 1;
-     border-image: linear-gradient(to top, #6cb2eb, #3490dc) 1;
+  -o-border-image: linear-gradient(to top, #6cb2eb, #2779bd) 1;
+     border-image: linear-gradient(to top, #6cb2eb, #2779bd) 1;
 }
 
 .t-border-gradient-r-blue {
-  -o-border-image: linear-gradient(to right, #6cb2eb, #3490dc) 1;
-     border-image: linear-gradient(to right, #6cb2eb, #3490dc) 1;
+  -o-border-image: linear-gradient(to right, #6cb2eb, #2779bd) 1;
+     border-image: linear-gradient(to right, #6cb2eb, #2779bd) 1;
 }
 
 .t-border-gradient-b-blue {
-  -o-border-image: linear-gradient(to bottom, #6cb2eb, #3490dc) 1;
-     border-image: linear-gradient(to bottom, #6cb2eb, #3490dc) 1;
+  -o-border-image: linear-gradient(to bottom, #6cb2eb, #2779bd) 1;
+     border-image: linear-gradient(to bottom, #6cb2eb, #2779bd) 1;
 }
 
 .t-border-gradient-l-blue {
-  -o-border-image: linear-gradient(to left, #6cb2eb, #3490dc) 1;
-     border-image: linear-gradient(to left, #6cb2eb, #3490dc) 1;
+  -o-border-image: linear-gradient(to left, #6cb2eb, #2779bd) 1;
+     border-image: linear-gradient(to left, #6cb2eb, #2779bd) 1;
 }
 
 .t-border-gradient-t-indigo {
-  -o-border-image: linear-gradient(to top, #7886d7, #6574cd) 1;
-     border-image: linear-gradient(to top, #7886d7, #6574cd) 1;
+  -o-border-image: linear-gradient(to top, #7886d7, #5661b3) 1;
+     border-image: linear-gradient(to top, #7886d7, #5661b3) 1;
 }
 
 .t-border-gradient-r-indigo {
-  -o-border-image: linear-gradient(to right, #7886d7, #6574cd) 1;
-     border-image: linear-gradient(to right, #7886d7, #6574cd) 1;
+  -o-border-image: linear-gradient(to right, #7886d7, #5661b3) 1;
+     border-image: linear-gradient(to right, #7886d7, #5661b3) 1;
 }
 
 .t-border-gradient-b-indigo {
-  -o-border-image: linear-gradient(to bottom, #7886d7, #6574cd) 1;
-     border-image: linear-gradient(to bottom, #7886d7, #6574cd) 1;
+  -o-border-image: linear-gradient(to bottom, #7886d7, #5661b3) 1;
+     border-image: linear-gradient(to bottom, #7886d7, #5661b3) 1;
 }
 
 .t-border-gradient-l-indigo {
-  -o-border-image: linear-gradient(to left, #7886d7, #6574cd) 1;
-     border-image: linear-gradient(to left, #7886d7, #6574cd) 1;
+  -o-border-image: linear-gradient(to left, #7886d7, #5661b3) 1;
+     border-image: linear-gradient(to left, #7886d7, #5661b3) 1;
 }
 
 .t-border-gradient-t-purple {
-  -o-border-image: linear-gradient(to top, #a779e9, #9561e2) 1;
-     border-image: linear-gradient(to top, #a779e9, #9561e2) 1;
+  -o-border-image: linear-gradient(to top, #a779e9, #794acf) 1;
+     border-image: linear-gradient(to top, #a779e9, #794acf) 1;
 }
 
 .t-border-gradient-r-purple {
-  -o-border-image: linear-gradient(to right, #a779e9, #9561e2) 1;
-     border-image: linear-gradient(to right, #a779e9, #9561e2) 1;
+  -o-border-image: linear-gradient(to right, #a779e9, #794acf) 1;
+     border-image: linear-gradient(to right, #a779e9, #794acf) 1;
 }
 
 .t-border-gradient-b-purple {
-  -o-border-image: linear-gradient(to bottom, #a779e9, #9561e2) 1;
-     border-image: linear-gradient(to bottom, #a779e9, #9561e2) 1;
+  -o-border-image: linear-gradient(to bottom, #a779e9, #794acf) 1;
+     border-image: linear-gradient(to bottom, #a779e9, #794acf) 1;
 }
 
 .t-border-gradient-l-purple {
-  -o-border-image: linear-gradient(to left, #a779e9, #9561e2) 1;
-     border-image: linear-gradient(to left, #a779e9, #9561e2) 1;
+  -o-border-image: linear-gradient(to left, #a779e9, #794acf) 1;
+     border-image: linear-gradient(to left, #a779e9, #794acf) 1;
 }
 
 .t-border-gradient-t-pink {
-  -o-border-image: linear-gradient(to top, #fa7ea8, #f66d9b) 1;
-     border-image: linear-gradient(to top, #fa7ea8, #f66d9b) 1;
+  -o-border-image: linear-gradient(to top, #fa7ea8, #eb5286) 1;
+     border-image: linear-gradient(to top, #fa7ea8, #eb5286) 1;
 }
 
 .t-border-gradient-r-pink {
-  -o-border-image: linear-gradient(to right, #fa7ea8, #f66d9b) 1;
-     border-image: linear-gradient(to right, #fa7ea8, #f66d9b) 1;
+  -o-border-image: linear-gradient(to right, #fa7ea8, #eb5286) 1;
+     border-image: linear-gradient(to right, #fa7ea8, #eb5286) 1;
 }
 
 .t-border-gradient-b-pink {
-  -o-border-image: linear-gradient(to bottom, #fa7ea8, #f66d9b) 1;
-     border-image: linear-gradient(to bottom, #fa7ea8, #f66d9b) 1;
+  -o-border-image: linear-gradient(to bottom, #fa7ea8, #eb5286) 1;
+     border-image: linear-gradient(to bottom, #fa7ea8, #eb5286) 1;
 }
 
 .t-border-gradient-l-pink {
-  -o-border-image: linear-gradient(to left, #fa7ea8, #f66d9b) 1;
-     border-image: linear-gradient(to left, #fa7ea8, #f66d9b) 1;
+  -o-border-image: linear-gradient(to left, #fa7ea8, #eb5286) 1;
+     border-image: linear-gradient(to left, #fa7ea8, #eb5286) 1;
 }
 
 .t-bg-gradient-t-grey {
@@ -4862,147 +4862,147 @@ hr {
 }
 
 .t-bg-gradient-t-red {
-  background-image: linear-gradient(to top, #ef5753, #e3342f);
+  background-image: linear-gradient(to top, #ef5753, #cc1f1a);
 }
 
 .t-bg-gradient-r-red {
-  background-image: linear-gradient(to right, #ef5753, #e3342f);
+  background-image: linear-gradient(to right, #ef5753, #cc1f1a);
 }
 
 .t-bg-gradient-b-red {
-  background-image: linear-gradient(to bottom, #ef5753, #e3342f);
+  background-image: linear-gradient(to bottom, #ef5753, #cc1f1a);
 }
 
 .t-bg-gradient-l-red {
-  background-image: linear-gradient(to left, #ef5753, #e3342f);
+  background-image: linear-gradient(to left, #ef5753, #cc1f1a);
 }
 
 .t-bg-gradient-t-orange {
-  background-image: linear-gradient(to top, #faad63, #f6993f);
+  background-image: linear-gradient(to top, #faad63, #de751f);
 }
 
 .t-bg-gradient-r-orange {
-  background-image: linear-gradient(to right, #faad63, #f6993f);
+  background-image: linear-gradient(to right, #faad63, #de751f);
 }
 
 .t-bg-gradient-b-orange {
-  background-image: linear-gradient(to bottom, #faad63, #f6993f);
+  background-image: linear-gradient(to bottom, #faad63, #de751f);
 }
 
 .t-bg-gradient-l-orange {
-  background-image: linear-gradient(to left, #faad63, #f6993f);
+  background-image: linear-gradient(to left, #faad63, #de751f);
 }
 
 .t-bg-gradient-t-yellow {
-  background-image: linear-gradient(to top, #fff382, #ffed4a);
+  background-image: linear-gradient(to top, #fff382, #f2d024);
 }
 
 .t-bg-gradient-r-yellow {
-  background-image: linear-gradient(to right, #fff382, #ffed4a);
+  background-image: linear-gradient(to right, #fff382, #f2d024);
 }
 
 .t-bg-gradient-b-yellow {
-  background-image: linear-gradient(to bottom, #fff382, #ffed4a);
+  background-image: linear-gradient(to bottom, #fff382, #f2d024);
 }
 
 .t-bg-gradient-l-yellow {
-  background-image: linear-gradient(to left, #fff382, #ffed4a);
+  background-image: linear-gradient(to left, #fff382, #f2d024);
 }
 
 .t-bg-gradient-t-green {
-  background-image: linear-gradient(to top, #51d88a, #38c172);
+  background-image: linear-gradient(to top, #51d88a, #1f9d55);
 }
 
 .t-bg-gradient-r-green {
-  background-image: linear-gradient(to right, #51d88a, #38c172);
+  background-image: linear-gradient(to right, #51d88a, #1f9d55);
 }
 
 .t-bg-gradient-b-green {
-  background-image: linear-gradient(to bottom, #51d88a, #38c172);
+  background-image: linear-gradient(to bottom, #51d88a, #1f9d55);
 }
 
 .t-bg-gradient-l-green {
-  background-image: linear-gradient(to left, #51d88a, #38c172);
+  background-image: linear-gradient(to left, #51d88a, #1f9d55);
 }
 
 .t-bg-gradient-t-teal {
-  background-image: linear-gradient(to top, #64d5ca, #4dc0b5);
+  background-image: linear-gradient(to top, #64d5ca, #38a89d);
 }
 
 .t-bg-gradient-r-teal {
-  background-image: linear-gradient(to right, #64d5ca, #4dc0b5);
+  background-image: linear-gradient(to right, #64d5ca, #38a89d);
 }
 
 .t-bg-gradient-b-teal {
-  background-image: linear-gradient(to bottom, #64d5ca, #4dc0b5);
+  background-image: linear-gradient(to bottom, #64d5ca, #38a89d);
 }
 
 .t-bg-gradient-l-teal {
-  background-image: linear-gradient(to left, #64d5ca, #4dc0b5);
+  background-image: linear-gradient(to left, #64d5ca, #38a89d);
 }
 
 .t-bg-gradient-t-blue {
-  background-image: linear-gradient(to top, #6cb2eb, #3490dc);
+  background-image: linear-gradient(to top, #6cb2eb, #2779bd);
 }
 
 .t-bg-gradient-r-blue {
-  background-image: linear-gradient(to right, #6cb2eb, #3490dc);
+  background-image: linear-gradient(to right, #6cb2eb, #2779bd);
 }
 
 .t-bg-gradient-b-blue {
-  background-image: linear-gradient(to bottom, #6cb2eb, #3490dc);
+  background-image: linear-gradient(to bottom, #6cb2eb, #2779bd);
 }
 
 .t-bg-gradient-l-blue {
-  background-image: linear-gradient(to left, #6cb2eb, #3490dc);
+  background-image: linear-gradient(to left, #6cb2eb, #2779bd);
 }
 
 .t-bg-gradient-t-indigo {
-  background-image: linear-gradient(to top, #7886d7, #6574cd);
+  background-image: linear-gradient(to top, #7886d7, #5661b3);
 }
 
 .t-bg-gradient-r-indigo {
-  background-image: linear-gradient(to right, #7886d7, #6574cd);
+  background-image: linear-gradient(to right, #7886d7, #5661b3);
 }
 
 .t-bg-gradient-b-indigo {
-  background-image: linear-gradient(to bottom, #7886d7, #6574cd);
+  background-image: linear-gradient(to bottom, #7886d7, #5661b3);
 }
 
 .t-bg-gradient-l-indigo {
-  background-image: linear-gradient(to left, #7886d7, #6574cd);
+  background-image: linear-gradient(to left, #7886d7, #5661b3);
 }
 
 .t-bg-gradient-t-purple {
-  background-image: linear-gradient(to top, #a779e9, #9561e2);
+  background-image: linear-gradient(to top, #a779e9, #794acf);
 }
 
 .t-bg-gradient-r-purple {
-  background-image: linear-gradient(to right, #a779e9, #9561e2);
+  background-image: linear-gradient(to right, #a779e9, #794acf);
 }
 
 .t-bg-gradient-b-purple {
-  background-image: linear-gradient(to bottom, #a779e9, #9561e2);
+  background-image: linear-gradient(to bottom, #a779e9, #794acf);
 }
 
 .t-bg-gradient-l-purple {
-  background-image: linear-gradient(to left, #a779e9, #9561e2);
+  background-image: linear-gradient(to left, #a779e9, #794acf);
 }
 
 .t-bg-gradient-t-pink {
-  background-image: linear-gradient(to top, #fa7ea8, #f66d9b);
+  background-image: linear-gradient(to top, #fa7ea8, #eb5286);
 }
 
 .t-bg-gradient-r-pink {
-  background-image: linear-gradient(to right, #fa7ea8, #f66d9b);
+  background-image: linear-gradient(to right, #fa7ea8, #eb5286);
 }
 
 .t-bg-gradient-b-pink {
-  background-image: linear-gradient(to bottom, #fa7ea8, #f66d9b);
+  background-image: linear-gradient(to bottom, #fa7ea8, #eb5286);
 }
 
 .t-bg-gradient-l-pink {
-  background-image: linear-gradient(to left, #fa7ea8, #f66d9b);
+  background-image: linear-gradient(to left, #fa7ea8, #eb5286);
 }
 
 .t-bg-hero-overcast-grey {
@@ -9723,183 +9723,183 @@ hr {
   }
 
   .t-sm\:t-border-gradient-t-red {
-    -o-border-image: linear-gradient(to top, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to top, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to top, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to top, #ef5753, #cc1f1a) 1;
   }
 
   .t-sm\:t-border-gradient-r-red {
-    -o-border-image: linear-gradient(to right, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to right, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to right, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to right, #ef5753, #cc1f1a) 1;
   }
 
   .t-sm\:t-border-gradient-b-red {
-    -o-border-image: linear-gradient(to bottom, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to bottom, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to bottom, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to bottom, #ef5753, #cc1f1a) 1;
   }
 
   .t-sm\:t-border-gradient-l-red {
-    -o-border-image: linear-gradient(to left, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to left, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to left, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to left, #ef5753, #cc1f1a) 1;
   }
 
   .t-sm\:t-border-gradient-t-orange {
-    -o-border-image: linear-gradient(to top, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to top, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to top, #faad63, #de751f) 1;
+       border-image: linear-gradient(to top, #faad63, #de751f) 1;
   }
 
   .t-sm\:t-border-gradient-r-orange {
-    -o-border-image: linear-gradient(to right, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to right, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to right, #faad63, #de751f) 1;
+       border-image: linear-gradient(to right, #faad63, #de751f) 1;
   }
 
   .t-sm\:t-border-gradient-b-orange {
-    -o-border-image: linear-gradient(to bottom, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to bottom, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to bottom, #faad63, #de751f) 1;
+       border-image: linear-gradient(to bottom, #faad63, #de751f) 1;
   }
 
   .t-sm\:t-border-gradient-l-orange {
-    -o-border-image: linear-gradient(to left, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to left, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to left, #faad63, #de751f) 1;
+       border-image: linear-gradient(to left, #faad63, #de751f) 1;
   }
 
   .t-sm\:t-border-gradient-t-yellow {
-    -o-border-image: linear-gradient(to top, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to top, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to top, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to top, #fff382, #f2d024) 1;
   }
 
   .t-sm\:t-border-gradient-r-yellow {
-    -o-border-image: linear-gradient(to right, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to right, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to right, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to right, #fff382, #f2d024) 1;
   }
 
   .t-sm\:t-border-gradient-b-yellow {
-    -o-border-image: linear-gradient(to bottom, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to bottom, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to bottom, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to bottom, #fff382, #f2d024) 1;
   }
 
   .t-sm\:t-border-gradient-l-yellow {
-    -o-border-image: linear-gradient(to left, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to left, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to left, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to left, #fff382, #f2d024) 1;
   }
 
   .t-sm\:t-border-gradient-t-green {
-    -o-border-image: linear-gradient(to top, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to top, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to top, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to top, #51d88a, #1f9d55) 1;
   }
 
   .t-sm\:t-border-gradient-r-green {
-    -o-border-image: linear-gradient(to right, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to right, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to right, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to right, #51d88a, #1f9d55) 1;
   }
 
   .t-sm\:t-border-gradient-b-green {
-    -o-border-image: linear-gradient(to bottom, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to bottom, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to bottom, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to bottom, #51d88a, #1f9d55) 1;
   }
 
   .t-sm\:t-border-gradient-l-green {
-    -o-border-image: linear-gradient(to left, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to left, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to left, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to left, #51d88a, #1f9d55) 1;
   }
 
   .t-sm\:t-border-gradient-t-teal {
-    -o-border-image: linear-gradient(to top, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to top, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to top, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to top, #64d5ca, #38a89d) 1;
   }
 
   .t-sm\:t-border-gradient-r-teal {
-    -o-border-image: linear-gradient(to right, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to right, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to right, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to right, #64d5ca, #38a89d) 1;
   }
 
   .t-sm\:t-border-gradient-b-teal {
-    -o-border-image: linear-gradient(to bottom, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to bottom, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to bottom, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to bottom, #64d5ca, #38a89d) 1;
   }
 
   .t-sm\:t-border-gradient-l-teal {
-    -o-border-image: linear-gradient(to left, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to left, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to left, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to left, #64d5ca, #38a89d) 1;
   }
 
   .t-sm\:t-border-gradient-t-blue {
-    -o-border-image: linear-gradient(to top, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to top, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to top, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to top, #6cb2eb, #2779bd) 1;
   }
 
   .t-sm\:t-border-gradient-r-blue {
-    -o-border-image: linear-gradient(to right, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to right, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to right, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to right, #6cb2eb, #2779bd) 1;
   }
 
   .t-sm\:t-border-gradient-b-blue {
-    -o-border-image: linear-gradient(to bottom, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to bottom, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to bottom, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to bottom, #6cb2eb, #2779bd) 1;
   }
 
   .t-sm\:t-border-gradient-l-blue {
-    -o-border-image: linear-gradient(to left, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to left, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to left, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to left, #6cb2eb, #2779bd) 1;
   }
 
   .t-sm\:t-border-gradient-t-indigo {
-    -o-border-image: linear-gradient(to top, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to top, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to top, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to top, #7886d7, #5661b3) 1;
   }
 
   .t-sm\:t-border-gradient-r-indigo {
-    -o-border-image: linear-gradient(to right, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to right, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to right, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to right, #7886d7, #5661b3) 1;
   }
 
   .t-sm\:t-border-gradient-b-indigo {
-    -o-border-image: linear-gradient(to bottom, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to bottom, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to bottom, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to bottom, #7886d7, #5661b3) 1;
   }
 
   .t-sm\:t-border-gradient-l-indigo {
-    -o-border-image: linear-gradient(to left, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to left, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to left, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to left, #7886d7, #5661b3) 1;
   }
 
   .t-sm\:t-border-gradient-t-purple {
-    -o-border-image: linear-gradient(to top, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to top, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to top, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to top, #a779e9, #794acf) 1;
   }
 
   .t-sm\:t-border-gradient-r-purple {
-    -o-border-image: linear-gradient(to right, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to right, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to right, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to right, #a779e9, #794acf) 1;
   }
 
   .t-sm\:t-border-gradient-b-purple {
-    -o-border-image: linear-gradient(to bottom, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to bottom, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to bottom, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to bottom, #a779e9, #794acf) 1;
   }
 
   .t-sm\:t-border-gradient-l-purple {
-    -o-border-image: linear-gradient(to left, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to left, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to left, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to left, #a779e9, #794acf) 1;
   }
 
   .t-sm\:t-border-gradient-t-pink {
-    -o-border-image: linear-gradient(to top, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to top, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to top, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to top, #fa7ea8, #eb5286) 1;
   }
 
   .t-sm\:t-border-gradient-r-pink {
-    -o-border-image: linear-gradient(to right, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to right, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to right, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to right, #fa7ea8, #eb5286) 1;
   }
 
   .t-sm\:t-border-gradient-b-pink {
-    -o-border-image: linear-gradient(to bottom, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to bottom, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to bottom, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to bottom, #fa7ea8, #eb5286) 1;
   }
 
   .t-sm\:t-border-gradient-l-pink {
-    -o-border-image: linear-gradient(to left, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to left, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to left, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to left, #fa7ea8, #eb5286) 1;
   }
 
   .t-sm\:t-bg-gradient-t-grey {
@@ -9919,147 +9919,147 @@ hr {
   }
 
   .t-sm\:t-bg-gradient-t-red {
-    background-image: linear-gradient(to top, #ef5753, #e3342f);
+    background-image: linear-gradient(to top, #ef5753, #cc1f1a);
   }
 
   .t-sm\:t-bg-gradient-r-red {
-    background-image: linear-gradient(to right, #ef5753, #e3342f);
+    background-image: linear-gradient(to right, #ef5753, #cc1f1a);
   }
 
   .t-sm\:t-bg-gradient-b-red {
-    background-image: linear-gradient(to bottom, #ef5753, #e3342f);
+    background-image: linear-gradient(to bottom, #ef5753, #cc1f1a);
   }
 
   .t-sm\:t-bg-gradient-l-red {
-    background-image: linear-gradient(to left, #ef5753, #e3342f);
+    background-image: linear-gradient(to left, #ef5753, #cc1f1a);
   }
 
   .t-sm\:t-bg-gradient-t-orange {
-    background-image: linear-gradient(to top, #faad63, #f6993f);
+    background-image: linear-gradient(to top, #faad63, #de751f);
   }
 
   .t-sm\:t-bg-gradient-r-orange {
-    background-image: linear-gradient(to right, #faad63, #f6993f);
+    background-image: linear-gradient(to right, #faad63, #de751f);
   }
 
   .t-sm\:t-bg-gradient-b-orange {
-    background-image: linear-gradient(to bottom, #faad63, #f6993f);
+    background-image: linear-gradient(to bottom, #faad63, #de751f);
   }
 
   .t-sm\:t-bg-gradient-l-orange {
-    background-image: linear-gradient(to left, #faad63, #f6993f);
+    background-image: linear-gradient(to left, #faad63, #de751f);
   }
 
   .t-sm\:t-bg-gradient-t-yellow {
-    background-image: linear-gradient(to top, #fff382, #ffed4a);
+    background-image: linear-gradient(to top, #fff382, #f2d024);
   }
 
   .t-sm\:t-bg-gradient-r-yellow {
-    background-image: linear-gradient(to right, #fff382, #ffed4a);
+    background-image: linear-gradient(to right, #fff382, #f2d024);
   }
 
   .t-sm\:t-bg-gradient-b-yellow {
-    background-image: linear-gradient(to bottom, #fff382, #ffed4a);
+    background-image: linear-gradient(to bottom, #fff382, #f2d024);
   }
 
   .t-sm\:t-bg-gradient-l-yellow {
-    background-image: linear-gradient(to left, #fff382, #ffed4a);
+    background-image: linear-gradient(to left, #fff382, #f2d024);
   }
 
   .t-sm\:t-bg-gradient-t-green {
-    background-image: linear-gradient(to top, #51d88a, #38c172);
+    background-image: linear-gradient(to top, #51d88a, #1f9d55);
   }
 
   .t-sm\:t-bg-gradient-r-green {
-    background-image: linear-gradient(to right, #51d88a, #38c172);
+    background-image: linear-gradient(to right, #51d88a, #1f9d55);
   }
 
   .t-sm\:t-bg-gradient-b-green {
-    background-image: linear-gradient(to bottom, #51d88a, #38c172);
+    background-image: linear-gradient(to bottom, #51d88a, #1f9d55);
   }
 
   .t-sm\:t-bg-gradient-l-green {
-    background-image: linear-gradient(to left, #51d88a, #38c172);
+    background-image: linear-gradient(to left, #51d88a, #1f9d55);
   }
 
   .t-sm\:t-bg-gradient-t-teal {
-    background-image: linear-gradient(to top, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to top, #64d5ca, #38a89d);
   }
 
   .t-sm\:t-bg-gradient-r-teal {
-    background-image: linear-gradient(to right, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to right, #64d5ca, #38a89d);
   }
 
   .t-sm\:t-bg-gradient-b-teal {
-    background-image: linear-gradient(to bottom, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to bottom, #64d5ca, #38a89d);
   }
 
   .t-sm\:t-bg-gradient-l-teal {
-    background-image: linear-gradient(to left, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to left, #64d5ca, #38a89d);
   }
 
   .t-sm\:t-bg-gradient-t-blue {
-    background-image: linear-gradient(to top, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to top, #6cb2eb, #2779bd);
   }
 
   .t-sm\:t-bg-gradient-r-blue {
-    background-image: linear-gradient(to right, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to right, #6cb2eb, #2779bd);
   }
 
   .t-sm\:t-bg-gradient-b-blue {
-    background-image: linear-gradient(to bottom, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to bottom, #6cb2eb, #2779bd);
   }
 
   .t-sm\:t-bg-gradient-l-blue {
-    background-image: linear-gradient(to left, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to left, #6cb2eb, #2779bd);
   }
 
   .t-sm\:t-bg-gradient-t-indigo {
-    background-image: linear-gradient(to top, #7886d7, #6574cd);
+    background-image: linear-gradient(to top, #7886d7, #5661b3);
   }
 
   .t-sm\:t-bg-gradient-r-indigo {
-    background-image: linear-gradient(to right, #7886d7, #6574cd);
+    background-image: linear-gradient(to right, #7886d7, #5661b3);
   }
 
   .t-sm\:t-bg-gradient-b-indigo {
-    background-image: linear-gradient(to bottom, #7886d7, #6574cd);
+    background-image: linear-gradient(to bottom, #7886d7, #5661b3);
   }
 
   .t-sm\:t-bg-gradient-l-indigo {
-    background-image: linear-gradient(to left, #7886d7, #6574cd);
+    background-image: linear-gradient(to left, #7886d7, #5661b3);
   }
 
   .t-sm\:t-bg-gradient-t-purple {
-    background-image: linear-gradient(to top, #a779e9, #9561e2);
+    background-image: linear-gradient(to top, #a779e9, #794acf);
   }
 
   .t-sm\:t-bg-gradient-r-purple {
-    background-image: linear-gradient(to right, #a779e9, #9561e2);
+    background-image: linear-gradient(to right, #a779e9, #794acf);
   }
 
   .t-sm\:t-bg-gradient-b-purple {
-    background-image: linear-gradient(to bottom, #a779e9, #9561e2);
+    background-image: linear-gradient(to bottom, #a779e9, #794acf);
   }
 
   .t-sm\:t-bg-gradient-l-purple {
-    background-image: linear-gradient(to left, #a779e9, #9561e2);
+    background-image: linear-gradient(to left, #a779e9, #794acf);
   }
 
   .t-sm\:t-bg-gradient-t-pink {
-    background-image: linear-gradient(to top, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to top, #fa7ea8, #eb5286);
   }
 
   .t-sm\:t-bg-gradient-r-pink {
-    background-image: linear-gradient(to right, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to right, #fa7ea8, #eb5286);
   }
 
   .t-sm\:t-bg-gradient-b-pink {
-    background-image: linear-gradient(to bottom, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to bottom, #fa7ea8, #eb5286);
   }
 
   .t-sm\:t-bg-gradient-l-pink {
-    background-image: linear-gradient(to left, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to left, #fa7ea8, #eb5286);
   }
 }
 
@@ -14461,183 +14461,183 @@ hr {
   }
 
   .t-md\:t-border-gradient-t-red {
-    -o-border-image: linear-gradient(to top, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to top, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to top, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to top, #ef5753, #cc1f1a) 1;
   }
 
   .t-md\:t-border-gradient-r-red {
-    -o-border-image: linear-gradient(to right, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to right, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to right, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to right, #ef5753, #cc1f1a) 1;
   }
 
   .t-md\:t-border-gradient-b-red {
-    -o-border-image: linear-gradient(to bottom, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to bottom, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to bottom, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to bottom, #ef5753, #cc1f1a) 1;
   }
 
   .t-md\:t-border-gradient-l-red {
-    -o-border-image: linear-gradient(to left, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to left, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to left, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to left, #ef5753, #cc1f1a) 1;
   }
 
   .t-md\:t-border-gradient-t-orange {
-    -o-border-image: linear-gradient(to top, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to top, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to top, #faad63, #de751f) 1;
+       border-image: linear-gradient(to top, #faad63, #de751f) 1;
   }
 
   .t-md\:t-border-gradient-r-orange {
-    -o-border-image: linear-gradient(to right, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to right, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to right, #faad63, #de751f) 1;
+       border-image: linear-gradient(to right, #faad63, #de751f) 1;
   }
 
   .t-md\:t-border-gradient-b-orange {
-    -o-border-image: linear-gradient(to bottom, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to bottom, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to bottom, #faad63, #de751f) 1;
+       border-image: linear-gradient(to bottom, #faad63, #de751f) 1;
   }
 
   .t-md\:t-border-gradient-l-orange {
-    -o-border-image: linear-gradient(to left, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to left, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to left, #faad63, #de751f) 1;
+       border-image: linear-gradient(to left, #faad63, #de751f) 1;
   }
 
   .t-md\:t-border-gradient-t-yellow {
-    -o-border-image: linear-gradient(to top, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to top, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to top, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to top, #fff382, #f2d024) 1;
   }
 
   .t-md\:t-border-gradient-r-yellow {
-    -o-border-image: linear-gradient(to right, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to right, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to right, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to right, #fff382, #f2d024) 1;
   }
 
   .t-md\:t-border-gradient-b-yellow {
-    -o-border-image: linear-gradient(to bottom, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to bottom, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to bottom, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to bottom, #fff382, #f2d024) 1;
   }
 
   .t-md\:t-border-gradient-l-yellow {
-    -o-border-image: linear-gradient(to left, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to left, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to left, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to left, #fff382, #f2d024) 1;
   }
 
   .t-md\:t-border-gradient-t-green {
-    -o-border-image: linear-gradient(to top, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to top, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to top, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to top, #51d88a, #1f9d55) 1;
   }
 
   .t-md\:t-border-gradient-r-green {
-    -o-border-image: linear-gradient(to right, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to right, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to right, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to right, #51d88a, #1f9d55) 1;
   }
 
   .t-md\:t-border-gradient-b-green {
-    -o-border-image: linear-gradient(to bottom, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to bottom, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to bottom, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to bottom, #51d88a, #1f9d55) 1;
   }
 
   .t-md\:t-border-gradient-l-green {
-    -o-border-image: linear-gradient(to left, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to left, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to left, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to left, #51d88a, #1f9d55) 1;
   }
 
   .t-md\:t-border-gradient-t-teal {
-    -o-border-image: linear-gradient(to top, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to top, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to top, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to top, #64d5ca, #38a89d) 1;
   }
 
   .t-md\:t-border-gradient-r-teal {
-    -o-border-image: linear-gradient(to right, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to right, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to right, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to right, #64d5ca, #38a89d) 1;
   }
 
   .t-md\:t-border-gradient-b-teal {
-    -o-border-image: linear-gradient(to bottom, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to bottom, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to bottom, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to bottom, #64d5ca, #38a89d) 1;
   }
 
   .t-md\:t-border-gradient-l-teal {
-    -o-border-image: linear-gradient(to left, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to left, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to left, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to left, #64d5ca, #38a89d) 1;
   }
 
   .t-md\:t-border-gradient-t-blue {
-    -o-border-image: linear-gradient(to top, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to top, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to top, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to top, #6cb2eb, #2779bd) 1;
   }
 
   .t-md\:t-border-gradient-r-blue {
-    -o-border-image: linear-gradient(to right, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to right, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to right, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to right, #6cb2eb, #2779bd) 1;
   }
 
   .t-md\:t-border-gradient-b-blue {
-    -o-border-image: linear-gradient(to bottom, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to bottom, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to bottom, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to bottom, #6cb2eb, #2779bd) 1;
   }
 
   .t-md\:t-border-gradient-l-blue {
-    -o-border-image: linear-gradient(to left, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to left, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to left, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to left, #6cb2eb, #2779bd) 1;
   }
 
   .t-md\:t-border-gradient-t-indigo {
-    -o-border-image: linear-gradient(to top, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to top, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to top, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to top, #7886d7, #5661b3) 1;
   }
 
   .t-md\:t-border-gradient-r-indigo {
-    -o-border-image: linear-gradient(to right, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to right, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to right, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to right, #7886d7, #5661b3) 1;
   }
 
   .t-md\:t-border-gradient-b-indigo {
-    -o-border-image: linear-gradient(to bottom, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to bottom, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to bottom, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to bottom, #7886d7, #5661b3) 1;
   }
 
   .t-md\:t-border-gradient-l-indigo {
-    -o-border-image: linear-gradient(to left, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to left, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to left, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to left, #7886d7, #5661b3) 1;
   }
 
   .t-md\:t-border-gradient-t-purple {
-    -o-border-image: linear-gradient(to top, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to top, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to top, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to top, #a779e9, #794acf) 1;
   }
 
   .t-md\:t-border-gradient-r-purple {
-    -o-border-image: linear-gradient(to right, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to right, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to right, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to right, #a779e9, #794acf) 1;
   }
 
   .t-md\:t-border-gradient-b-purple {
-    -o-border-image: linear-gradient(to bottom, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to bottom, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to bottom, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to bottom, #a779e9, #794acf) 1;
   }
 
   .t-md\:t-border-gradient-l-purple {
-    -o-border-image: linear-gradient(to left, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to left, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to left, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to left, #a779e9, #794acf) 1;
   }
 
   .t-md\:t-border-gradient-t-pink {
-    -o-border-image: linear-gradient(to top, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to top, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to top, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to top, #fa7ea8, #eb5286) 1;
   }
 
   .t-md\:t-border-gradient-r-pink {
-    -o-border-image: linear-gradient(to right, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to right, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to right, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to right, #fa7ea8, #eb5286) 1;
   }
 
   .t-md\:t-border-gradient-b-pink {
-    -o-border-image: linear-gradient(to bottom, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to bottom, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to bottom, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to bottom, #fa7ea8, #eb5286) 1;
   }
 
   .t-md\:t-border-gradient-l-pink {
-    -o-border-image: linear-gradient(to left, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to left, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to left, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to left, #fa7ea8, #eb5286) 1;
   }
 
   .t-md\:t-bg-gradient-t-grey {
@@ -14657,147 +14657,147 @@ hr {
   }
 
   .t-md\:t-bg-gradient-t-red {
-    background-image: linear-gradient(to top, #ef5753, #e3342f);
+    background-image: linear-gradient(to top, #ef5753, #cc1f1a);
   }
 
   .t-md\:t-bg-gradient-r-red {
-    background-image: linear-gradient(to right, #ef5753, #e3342f);
+    background-image: linear-gradient(to right, #ef5753, #cc1f1a);
   }
 
   .t-md\:t-bg-gradient-b-red {
-    background-image: linear-gradient(to bottom, #ef5753, #e3342f);
+    background-image: linear-gradient(to bottom, #ef5753, #cc1f1a);
   }
 
   .t-md\:t-bg-gradient-l-red {
-    background-image: linear-gradient(to left, #ef5753, #e3342f);
+    background-image: linear-gradient(to left, #ef5753, #cc1f1a);
   }
 
   .t-md\:t-bg-gradient-t-orange {
-    background-image: linear-gradient(to top, #faad63, #f6993f);
+    background-image: linear-gradient(to top, #faad63, #de751f);
   }
 
   .t-md\:t-bg-gradient-r-orange {
-    background-image: linear-gradient(to right, #faad63, #f6993f);
+    background-image: linear-gradient(to right, #faad63, #de751f);
   }
 
   .t-md\:t-bg-gradient-b-orange {
-    background-image: linear-gradient(to bottom, #faad63, #f6993f);
+    background-image: linear-gradient(to bottom, #faad63, #de751f);
   }
 
   .t-md\:t-bg-gradient-l-orange {
-    background-image: linear-gradient(to left, #faad63, #f6993f);
+    background-image: linear-gradient(to left, #faad63, #de751f);
   }
 
   .t-md\:t-bg-gradient-t-yellow {
-    background-image: linear-gradient(to top, #fff382, #ffed4a);
+    background-image: linear-gradient(to top, #fff382, #f2d024);
   }
 
   .t-md\:t-bg-gradient-r-yellow {
-    background-image: linear-gradient(to right, #fff382, #ffed4a);
+    background-image: linear-gradient(to right, #fff382, #f2d024);
   }
 
   .t-md\:t-bg-gradient-b-yellow {
-    background-image: linear-gradient(to bottom, #fff382, #ffed4a);
+    background-image: linear-gradient(to bottom, #fff382, #f2d024);
   }
 
   .t-md\:t-bg-gradient-l-yellow {
-    background-image: linear-gradient(to left, #fff382, #ffed4a);
+    background-image: linear-gradient(to left, #fff382, #f2d024);
   }
 
   .t-md\:t-bg-gradient-t-green {
-    background-image: linear-gradient(to top, #51d88a, #38c172);
+    background-image: linear-gradient(to top, #51d88a, #1f9d55);
   }
 
   .t-md\:t-bg-gradient-r-green {
-    background-image: linear-gradient(to right, #51d88a, #38c172);
+    background-image: linear-gradient(to right, #51d88a, #1f9d55);
   }
 
   .t-md\:t-bg-gradient-b-green {
-    background-image: linear-gradient(to bottom, #51d88a, #38c172);
+    background-image: linear-gradient(to bottom, #51d88a, #1f9d55);
   }
 
   .t-md\:t-bg-gradient-l-green {
-    background-image: linear-gradient(to left, #51d88a, #38c172);
+    background-image: linear-gradient(to left, #51d88a, #1f9d55);
   }
 
   .t-md\:t-bg-gradient-t-teal {
-    background-image: linear-gradient(to top, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to top, #64d5ca, #38a89d);
   }
 
   .t-md\:t-bg-gradient-r-teal {
-    background-image: linear-gradient(to right, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to right, #64d5ca, #38a89d);
   }
 
   .t-md\:t-bg-gradient-b-teal {
-    background-image: linear-gradient(to bottom, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to bottom, #64d5ca, #38a89d);
   }
 
   .t-md\:t-bg-gradient-l-teal {
-    background-image: linear-gradient(to left, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to left, #64d5ca, #38a89d);
   }
 
   .t-md\:t-bg-gradient-t-blue {
-    background-image: linear-gradient(to top, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to top, #6cb2eb, #2779bd);
   }
 
   .t-md\:t-bg-gradient-r-blue {
-    background-image: linear-gradient(to right, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to right, #6cb2eb, #2779bd);
   }
 
   .t-md\:t-bg-gradient-b-blue {
-    background-image: linear-gradient(to bottom, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to bottom, #6cb2eb, #2779bd);
   }
 
   .t-md\:t-bg-gradient-l-blue {
-    background-image: linear-gradient(to left, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to left, #6cb2eb, #2779bd);
   }
 
   .t-md\:t-bg-gradient-t-indigo {
-    background-image: linear-gradient(to top, #7886d7, #6574cd);
+    background-image: linear-gradient(to top, #7886d7, #5661b3);
   }
 
   .t-md\:t-bg-gradient-r-indigo {
-    background-image: linear-gradient(to right, #7886d7, #6574cd);
+    background-image: linear-gradient(to right, #7886d7, #5661b3);
   }
 
   .t-md\:t-bg-gradient-b-indigo {
-    background-image: linear-gradient(to bottom, #7886d7, #6574cd);
+    background-image: linear-gradient(to bottom, #7886d7, #5661b3);
   }
 
   .t-md\:t-bg-gradient-l-indigo {
-    background-image: linear-gradient(to left, #7886d7, #6574cd);
+    background-image: linear-gradient(to left, #7886d7, #5661b3);
   }
 
   .t-md\:t-bg-gradient-t-purple {
-    background-image: linear-gradient(to top, #a779e9, #9561e2);
+    background-image: linear-gradient(to top, #a779e9, #794acf);
   }
 
   .t-md\:t-bg-gradient-r-purple {
-    background-image: linear-gradient(to right, #a779e9, #9561e2);
+    background-image: linear-gradient(to right, #a779e9, #794acf);
   }
 
   .t-md\:t-bg-gradient-b-purple {
-    background-image: linear-gradient(to bottom, #a779e9, #9561e2);
+    background-image: linear-gradient(to bottom, #a779e9, #794acf);
   }
 
   .t-md\:t-bg-gradient-l-purple {
-    background-image: linear-gradient(to left, #a779e9, #9561e2);
+    background-image: linear-gradient(to left, #a779e9, #794acf);
   }
 
   .t-md\:t-bg-gradient-t-pink {
-    background-image: linear-gradient(to top, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to top, #fa7ea8, #eb5286);
   }
 
   .t-md\:t-bg-gradient-r-pink {
-    background-image: linear-gradient(to right, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to right, #fa7ea8, #eb5286);
   }
 
   .t-md\:t-bg-gradient-b-pink {
-    background-image: linear-gradient(to bottom, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to bottom, #fa7ea8, #eb5286);
   }
 
   .t-md\:t-bg-gradient-l-pink {
-    background-image: linear-gradient(to left, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to left, #fa7ea8, #eb5286);
   }
 }
 
@@ -19199,183 +19199,183 @@ hr {
   }
 
   .t-lg\:t-border-gradient-t-red {
-    -o-border-image: linear-gradient(to top, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to top, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to top, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to top, #ef5753, #cc1f1a) 1;
   }
 
   .t-lg\:t-border-gradient-r-red {
-    -o-border-image: linear-gradient(to right, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to right, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to right, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to right, #ef5753, #cc1f1a) 1;
   }
 
   .t-lg\:t-border-gradient-b-red {
-    -o-border-image: linear-gradient(to bottom, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to bottom, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to bottom, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to bottom, #ef5753, #cc1f1a) 1;
   }
 
   .t-lg\:t-border-gradient-l-red {
-    -o-border-image: linear-gradient(to left, #ef5753, #e3342f) 1;
-       border-image: linear-gradient(to left, #ef5753, #e3342f) 1;
+    -o-border-image: linear-gradient(to left, #ef5753, #cc1f1a) 1;
+       border-image: linear-gradient(to left, #ef5753, #cc1f1a) 1;
   }
 
   .t-lg\:t-border-gradient-t-orange {
-    -o-border-image: linear-gradient(to top, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to top, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to top, #faad63, #de751f) 1;
+       border-image: linear-gradient(to top, #faad63, #de751f) 1;
   }
 
   .t-lg\:t-border-gradient-r-orange {
-    -o-border-image: linear-gradient(to right, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to right, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to right, #faad63, #de751f) 1;
+       border-image: linear-gradient(to right, #faad63, #de751f) 1;
   }
 
   .t-lg\:t-border-gradient-b-orange {
-    -o-border-image: linear-gradient(to bottom, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to bottom, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to bottom, #faad63, #de751f) 1;
+       border-image: linear-gradient(to bottom, #faad63, #de751f) 1;
   }
 
   .t-lg\:t-border-gradient-l-orange {
-    -o-border-image: linear-gradient(to left, #faad63, #f6993f) 1;
-       border-image: linear-gradient(to left, #faad63, #f6993f) 1;
+    -o-border-image: linear-gradient(to left, #faad63, #de751f) 1;
+       border-image: linear-gradient(to left, #faad63, #de751f) 1;
   }
 
   .t-lg\:t-border-gradient-t-yellow {
-    -o-border-image: linear-gradient(to top, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to top, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to top, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to top, #fff382, #f2d024) 1;
   }
 
   .t-lg\:t-border-gradient-r-yellow {
-    -o-border-image: linear-gradient(to right, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to right, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to right, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to right, #fff382, #f2d024) 1;
   }
 
   .t-lg\:t-border-gradient-b-yellow {
-    -o-border-image: linear-gradient(to bottom, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to bottom, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to bottom, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to bottom, #fff382, #f2d024) 1;
   }
 
   .t-lg\:t-border-gradient-l-yellow {
-    -o-border-image: linear-gradient(to left, #fff382, #ffed4a) 1;
-       border-image: linear-gradient(to left, #fff382, #ffed4a) 1;
+    -o-border-image: linear-gradient(to left, #fff382, #f2d024) 1;
+       border-image: linear-gradient(to left, #fff382, #f2d024) 1;
   }
 
   .t-lg\:t-border-gradient-t-green {
-    -o-border-image: linear-gradient(to top, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to top, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to top, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to top, #51d88a, #1f9d55) 1;
   }
 
   .t-lg\:t-border-gradient-r-green {
-    -o-border-image: linear-gradient(to right, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to right, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to right, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to right, #51d88a, #1f9d55) 1;
   }
 
   .t-lg\:t-border-gradient-b-green {
-    -o-border-image: linear-gradient(to bottom, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to bottom, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to bottom, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to bottom, #51d88a, #1f9d55) 1;
   }
 
   .t-lg\:t-border-gradient-l-green {
-    -o-border-image: linear-gradient(to left, #51d88a, #38c172) 1;
-       border-image: linear-gradient(to left, #51d88a, #38c172) 1;
+    -o-border-image: linear-gradient(to left, #51d88a, #1f9d55) 1;
+       border-image: linear-gradient(to left, #51d88a, #1f9d55) 1;
   }
 
   .t-lg\:t-border-gradient-t-teal {
-    -o-border-image: linear-gradient(to top, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to top, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to top, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to top, #64d5ca, #38a89d) 1;
   }
 
   .t-lg\:t-border-gradient-r-teal {
-    -o-border-image: linear-gradient(to right, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to right, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to right, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to right, #64d5ca, #38a89d) 1;
   }
 
   .t-lg\:t-border-gradient-b-teal {
-    -o-border-image: linear-gradient(to bottom, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to bottom, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to bottom, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to bottom, #64d5ca, #38a89d) 1;
   }
 
   .t-lg\:t-border-gradient-l-teal {
-    -o-border-image: linear-gradient(to left, #64d5ca, #4dc0b5) 1;
-       border-image: linear-gradient(to left, #64d5ca, #4dc0b5) 1;
+    -o-border-image: linear-gradient(to left, #64d5ca, #38a89d) 1;
+       border-image: linear-gradient(to left, #64d5ca, #38a89d) 1;
   }
 
   .t-lg\:t-border-gradient-t-blue {
-    -o-border-image: linear-gradient(to top, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to top, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to top, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to top, #6cb2eb, #2779bd) 1;
   }
 
   .t-lg\:t-border-gradient-r-blue {
-    -o-border-image: linear-gradient(to right, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to right, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to right, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to right, #6cb2eb, #2779bd) 1;
   }
 
   .t-lg\:t-border-gradient-b-blue {
-    -o-border-image: linear-gradient(to bottom, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to bottom, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to bottom, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to bottom, #6cb2eb, #2779bd) 1;
   }
 
   .t-lg\:t-border-gradient-l-blue {
-    -o-border-image: linear-gradient(to left, #6cb2eb, #3490dc) 1;
-       border-image: linear-gradient(to left, #6cb2eb, #3490dc) 1;
+    -o-border-image: linear-gradient(to left, #6cb2eb, #2779bd) 1;
+       border-image: linear-gradient(to left, #6cb2eb, #2779bd) 1;
   }
 
   .t-lg\:t-border-gradient-t-indigo {
-    -o-border-image: linear-gradient(to top, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to top, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to top, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to top, #7886d7, #5661b3) 1;
   }
 
   .t-lg\:t-border-gradient-r-indigo {
-    -o-border-image: linear-gradient(to right, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to right, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to right, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to right, #7886d7, #5661b3) 1;
   }
 
   .t-lg\:t-border-gradient-b-indigo {
-    -o-border-image: linear-gradient(to bottom, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to bottom, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to bottom, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to bottom, #7886d7, #5661b3) 1;
   }
 
   .t-lg\:t-border-gradient-l-indigo {
-    -o-border-image: linear-gradient(to left, #7886d7, #6574cd) 1;
-       border-image: linear-gradient(to left, #7886d7, #6574cd) 1;
+    -o-border-image: linear-gradient(to left, #7886d7, #5661b3) 1;
+       border-image: linear-gradient(to left, #7886d7, #5661b3) 1;
   }
 
   .t-lg\:t-border-gradient-t-purple {
-    -o-border-image: linear-gradient(to top, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to top, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to top, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to top, #a779e9, #794acf) 1;
   }
 
   .t-lg\:t-border-gradient-r-purple {
-    -o-border-image: linear-gradient(to right, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to right, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to right, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to right, #a779e9, #794acf) 1;
   }
 
   .t-lg\:t-border-gradient-b-purple {
-    -o-border-image: linear-gradient(to bottom, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to bottom, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to bottom, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to bottom, #a779e9, #794acf) 1;
   }
 
   .t-lg\:t-border-gradient-l-purple {
-    -o-border-image: linear-gradient(to left, #a779e9, #9561e2) 1;
-       border-image: linear-gradient(to left, #a779e9, #9561e2) 1;
+    -o-border-image: linear-gradient(to left, #a779e9, #794acf) 1;
+       border-image: linear-gradient(to left, #a779e9, #794acf) 1;
   }
 
   .t-lg\:t-border-gradient-t-pink {
-    -o-border-image: linear-gradient(to top, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to top, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to top, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to top, #fa7ea8, #eb5286) 1;
   }
 
   .t-lg\:t-border-gradient-r-pink {
-    -o-border-image: linear-gradient(to right, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to right, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to right, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to right, #fa7ea8, #eb5286) 1;
   }
 
   .t-lg\:t-border-gradient-b-pink {
-    -o-border-image: linear-gradient(to bottom, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to bottom, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to bottom, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to bottom, #fa7ea8, #eb5286) 1;
   }
 
   .t-lg\:t-border-gradient-l-pink {
-    -o-border-image: linear-gradient(to left, #fa7ea8, #f66d9b) 1;
-       border-image: linear-gradient(to left, #fa7ea8, #f66d9b) 1;
+    -o-border-image: linear-gradient(to left, #fa7ea8, #eb5286) 1;
+       border-image: linear-gradient(to left, #fa7ea8, #eb5286) 1;
   }
 
   .t-lg\:t-bg-gradient-t-grey {
@@ -19395,146 +19395,146 @@ hr {
   }
 
   .t-lg\:t-bg-gradient-t-red {
-    background-image: linear-gradient(to top, #ef5753, #e3342f);
+    background-image: linear-gradient(to top, #ef5753, #cc1f1a);
   }
 
   .t-lg\:t-bg-gradient-r-red {
-    background-image: linear-gradient(to right, #ef5753, #e3342f);
+    background-image: linear-gradient(to right, #ef5753, #cc1f1a);
   }
 
   .t-lg\:t-bg-gradient-b-red {
-    background-image: linear-gradient(to bottom, #ef5753, #e3342f);
+    background-image: linear-gradient(to bottom, #ef5753, #cc1f1a);
   }
 
   .t-lg\:t-bg-gradient-l-red {
-    background-image: linear-gradient(to left, #ef5753, #e3342f);
+    background-image: linear-gradient(to left, #ef5753, #cc1f1a);
   }
 
   .t-lg\:t-bg-gradient-t-orange {
-    background-image: linear-gradient(to top, #faad63, #f6993f);
+    background-image: linear-gradient(to top, #faad63, #de751f);
   }
 
   .t-lg\:t-bg-gradient-r-orange {
-    background-image: linear-gradient(to right, #faad63, #f6993f);
+    background-image: linear-gradient(to right, #faad63, #de751f);
   }
 
   .t-lg\:t-bg-gradient-b-orange {
-    background-image: linear-gradient(to bottom, #faad63, #f6993f);
+    background-image: linear-gradient(to bottom, #faad63, #de751f);
   }
 
   .t-lg\:t-bg-gradient-l-orange {
-    background-image: linear-gradient(to left, #faad63, #f6993f);
+    background-image: linear-gradient(to left, #faad63, #de751f);
   }
 
   .t-lg\:t-bg-gradient-t-yellow {
-    background-image: linear-gradient(to top, #fff382, #ffed4a);
+    background-image: linear-gradient(to top, #fff382, #f2d024);
   }
 
   .t-lg\:t-bg-gradient-r-yellow {
-    background-image: linear-gradient(to right, #fff382, #ffed4a);
+    background-image: linear-gradient(to right, #fff382, #f2d024);
   }
 
   .t-lg\:t-bg-gradient-b-yellow {
-    background-image: linear-gradient(to bottom, #fff382, #ffed4a);
+    background-image: linear-gradient(to bottom, #fff382, #f2d024);
   }
 
   .t-lg\:t-bg-gradient-l-yellow {
-    background-image: linear-gradient(to left, #fff382, #ffed4a);
+    background-image: linear-gradient(to left, #fff382, #f2d024);
   }
 
   .t-lg\:t-bg-gradient-t-green {
-    background-image: linear-gradient(to top, #51d88a, #38c172);
+    background-image: linear-gradient(to top, #51d88a, #1f9d55);
   }
 
   .t-lg\:t-bg-gradient-r-green {
-    background-image: linear-gradient(to right, #51d88a, #38c172);
+    background-image: linear-gradient(to right, #51d88a, #1f9d55);
   }
 
   .t-lg\:t-bg-gradient-b-green {
-    background-image: linear-gradient(to bottom, #51d88a, #38c172);
+    background-image: linear-gradient(to bottom, #51d88a, #1f9d55);
   }
 
   .t-lg\:t-bg-gradient-l-green {
-    background-image: linear-gradient(to left, #51d88a, #38c172);
+    background-image: linear-gradient(to left, #51d88a, #1f9d55);
   }
 
   .t-lg\:t-bg-gradient-t-teal {
-    background-image: linear-gradient(to top, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to top, #64d5ca, #38a89d);
   }
 
   .t-lg\:t-bg-gradient-r-teal {
-    background-image: linear-gradient(to right, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to right, #64d5ca, #38a89d);
   }
 
   .t-lg\:t-bg-gradient-b-teal {
-    background-image: linear-gradient(to bottom, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to bottom, #64d5ca, #38a89d);
   }
 
   .t-lg\:t-bg-gradient-l-teal {
-    background-image: linear-gradient(to left, #64d5ca, #4dc0b5);
+    background-image: linear-gradient(to left, #64d5ca, #38a89d);
   }
 
   .t-lg\:t-bg-gradient-t-blue {
-    background-image: linear-gradient(to top, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to top, #6cb2eb, #2779bd);
   }
 
   .t-lg\:t-bg-gradient-r-blue {
-    background-image: linear-gradient(to right, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to right, #6cb2eb, #2779bd);
   }
 
   .t-lg\:t-bg-gradient-b-blue {
-    background-image: linear-gradient(to bottom, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to bottom, #6cb2eb, #2779bd);
   }
 
   .t-lg\:t-bg-gradient-l-blue {
-    background-image: linear-gradient(to left, #6cb2eb, #3490dc);
+    background-image: linear-gradient(to left, #6cb2eb, #2779bd);
   }
 
   .t-lg\:t-bg-gradient-t-indigo {
-    background-image: linear-gradient(to top, #7886d7, #6574cd);
+    background-image: linear-gradient(to top, #7886d7, #5661b3);
   }
 
   .t-lg\:t-bg-gradient-r-indigo {
-    background-image: linear-gradient(to right, #7886d7, #6574cd);
+    background-image: linear-gradient(to right, #7886d7, #5661b3);
   }
 
   .t-lg\:t-bg-gradient-b-indigo {
-    background-image: linear-gradient(to bottom, #7886d7, #6574cd);
+    background-image: linear-gradient(to bottom, #7886d7, #5661b3);
   }
 
   .t-lg\:t-bg-gradient-l-indigo {
-    background-image: linear-gradient(to left, #7886d7, #6574cd);
+    background-image: linear-gradient(to left, #7886d7, #5661b3);
   }
 
   .t-lg\:t-bg-gradient-t-purple {
-    background-image: linear-gradient(to top, #a779e9, #9561e2);
+    background-image: linear-gradient(to top, #a779e9, #794acf);
   }
 
   .t-lg\:t-bg-gradient-r-purple {
-    background-image: linear-gradient(to right, #a779e9, #9561e2);
+    background-image: linear-gradient(to right, #a779e9, #794acf);
   }
 
   .t-lg\:t-bg-gradient-b-purple {
-    background-image: linear-gradient(to bottom, #a779e9, #9561e2);
+    background-image: linear-gradient(to bottom, #a779e9, #794acf);
   }
 
   .t-lg\:t-bg-gradient-l-purple {
-    background-image: linear-gradient(to left, #a779e9, #9561e2);
+    background-image: linear-gradient(to left, #a779e9, #794acf);
   }
 
   .t-lg\:t-bg-gradient-t-pink {
-    background-image: linear-gradient(to top, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to top, #fa7ea8, #eb5286);
   }
 
   .t-lg\:t-bg-gradient-r-pink {
-    background-image: linear-gradient(to right, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to right, #fa7ea8, #eb5286);
   }
 
   .t-lg\:t-bg-gradient-b-pink {
-    background-image: linear-gradient(to bottom, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to bottom, #fa7ea8, #eb5286);
   }
 
   .t-lg\:t-bg-gradient-l-pink {
-    background-image: linear-gradient(to left, #fa7ea8, #f66d9b);
+    background-image: linear-gradient(to left, #fa7ea8, #eb5286);
   }
 }
