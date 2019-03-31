@@ -12,14 +12,17 @@
         t-text-${themeColors.contentText}
     `">
     <div
-      class="content-page__header"
+      class="content-page__header t-sm:t-hidden"
       :class="`
         t-bg-hero-${headerBackgroundName}-${themeColors.primary}
       `"></div>
-    <code-highlighter-theme-switch
-        v-if="codeThemeSwitchVisible"
-        :is-dark="isDark"
-        :color="color"/>
+    <div class="t-inline-flex t-relative t-float-right">
+        <code-highlighter-theme-switch
+            v-if="codeThemeSwitchVisible"
+            :is-dark="isDark"
+            :color="color"/>
+        <slot />
+    </div>
     <content-box
         :is-dark="isDark"
         :color="color"

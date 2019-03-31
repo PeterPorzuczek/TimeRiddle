@@ -23,7 +23,13 @@
                     :color="theme"
                     :content="current"
                     :header-background-name=
-                        "headerBackgroundPatternName"/>
+                        "headerBackgroundPatternName">
+                    <theme-changer
+                        :is-dark="dark"
+                        :color="theme"
+                        @hue-change="changeHue"
+                        @theme-change="changeTheme"/>
+                </content-page>
             </main-page>
         </div>
     </container>
@@ -38,6 +44,7 @@ import SideBar from './Navigation/SideBar.vue';
 import TopBar from './Navigation/TopBar.vue';
 import MainPage from './Navigation/MainPage.vue';
 import ContentPage from './Content/ContentPage.vue';
+import ThemeChanger from './Content/ThemeChanger.vue';
 
 export default {
   name: 'Board',
@@ -47,6 +54,7 @@ export default {
     SideBar,
     MainPage,
     ContentPage,
+    ThemeChanger
   },
   data() {
     return {
@@ -64,7 +72,7 @@ export default {
         "morphing-diamonds",
         "leaf"
       ],
-      theme: 'blue',
+      theme: 'orange',
       dark: false,
       headerBackgroundPatternName: "overcast",
       mainBackgroundPatternName: "overcast",
@@ -154,6 +162,12 @@ export default {
             Math.floor(Math.random()*this.patterns.length)];
         this.mainBackgroundPatternName = this.patterns[
             Math.floor(Math.random()*this.patterns.length)];
+    },
+    changeHue(value){
+        this.dark = value;
+    },
+    changeTheme(value){
+        this.theme = value;
     }
   },
 };

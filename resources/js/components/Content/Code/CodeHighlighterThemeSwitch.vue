@@ -9,8 +9,8 @@
         `"
         v-html="toggleIcon"></div>
     <span class="t-mr-2">Code theme: </span>
-    <div class="select-dropdown">
-      <select v-model="currentTheme" name="slct" id="slct">
+    <div class="select-dropdown t-py-1 t-flex t-justify-center t-items-center">
+      <select v-model="currentTheme">
         <option
           v-for="(theme, index) in themes"
           :key="`theme-${index}-${theme}`"
@@ -81,6 +81,9 @@ export default {
   user-select: none;
   overflow-x: auto;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .code-highlighter-theme-switch:hover {
   opacity: 1;

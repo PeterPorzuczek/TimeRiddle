@@ -119,9 +119,6 @@ export default {
 .vsm-arrow {
   display: none;
 }
-.v-sidebar-menu.white-theme.vsm-default .vsm-item.first-item.open-item>.vsm-link {
-
-}
 .v-sidebar-menu.white-theme .collapse-btn {
   display: none;
 }
@@ -136,13 +133,6 @@ export default {
 
 .v-sidebar-menu .vsm-item {
     border-bottom: 1px solid #7373730f;
-}
-.v-sidebar-menu .vsm-item.first-item {
-}
-.v-sidebar-menu.white-theme
-.vsm-item.first-item.active-item>.vsm-link {
-}
-.v-sidebar-menu .vsm-item.mobile-item {
 }
 .v-sidebar-menu .vsm-item.open-item {
   border-bottom: 1px solid #7373730f;
@@ -162,30 +152,13 @@ export default {
 .v-sidebar-menu
 .vsm-item.first-item.open-item
 .vsm-dropdown .vsm-list
-.vsm-item.active-item {
-}
-.v-sidebar-menu.white-theme .vsm-dropdown>.vsm-list {
-  /* background-color: #fafafa; */
-}
-.v-sidebar-menu
-.vsm-item.first-item.open-item
-.vsm-dropdown .vsm-list
 .vsm-item .vsm-link .vsm-title {
   font-weight: normal;
 }
 .v-sidebar-menu .vsm-item .vsm-link .vsm-title {
   font-weight: normal;
 }
-.v-sidebar-menu .vsm-item.parent-active-item {
-}
 .v-sidebar-menu .vsm-link {
     overflow: hidden !important;
-}
-
-.v-sidebar-menu.white-theme {
-}
-@media (max-width: 700px) {
-  .v-sidebar-menu.white-theme {
-  }
 }
 </style>
