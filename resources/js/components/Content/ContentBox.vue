@@ -23,6 +23,7 @@ export default {
   },
   props: {
     content: { type: Object, default: () => ({}) },
+    headerBackgroundName: { type: String, default: 'overcast' }
   },
   computed: {
     contentElements() {
@@ -47,6 +48,7 @@ export default {
       let content = html;
       content = this.addBorderClass(content);
       content = this.addH1Class(content);
+      content = this.addToFirstH1Class(content);
       content = this.addH2Class(content);
 
       return content
@@ -55,7 +57,7 @@ export default {
       return html.replace(/<blockquote>/ig, `<blockquote class="t-border-gradient-t-${this.themeColors.primary}">`);
     },
     addH1Class(html) {
-      return html.replace(/<h1>/ig, `
+      return html.replace(/<h1/g, `
       <h1 class="
             t-text-${this.themeColors.quaternary}
             t-border t-border-r-0 t-border-t-0 t-border-b-0
@@ -64,13 +66,33 @@ export default {
         "
         style="
             margin-left: -32px;
-        ">`);
+            padding-right: 25px;
+        "
+        `);
+    },
+    addToFirstH1Class(html) {
+      return html.replace(/<h1/, `
+      <h1 style="
+            margin-left: -32px;
+            padding-right: 25px;
+            padding-top: 65px;
+            margin-top: -40px;
+            transition: all .28s ease-in-out;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08), 0 1px 5px 0 rgba(0,0,0,0.06);
+        "
+        class="
+            t-text-${this.themeColors.quaternary}
+            t-border t-border-r-0 t-border-t-0 t-border-b-0
+            t-border-l-8 t-border-gradient-t-${this.themeColors.primary}
+            t-pl-8 t-pb-2
+            t-bg-hero-${this.headerBackgroundName}-${this.themeColors.primary}-low
+        "`);
     },
     addH2Class(html) {
       return html.replace(/<h2>/ig, `
       <h2 class="
             t-text-${this.themeColors.tertiary}
-            t-border t-border-r-0 t-border-t-0 t-border-b-4
+            t-border t-border-r-0 t-border-t-0 t-border-b-8
             t-border-l-8 t-border-gradient-b-${this.themeColors.primary}
             t-pl-8 t-pb-2
         "

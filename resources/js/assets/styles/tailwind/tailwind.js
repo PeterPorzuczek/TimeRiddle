@@ -1030,6 +1030,7 @@ config.plugins = [
     },
     opacity: {
       default: "0.1",
+      "low": "0.03"
     }
   })
 ];

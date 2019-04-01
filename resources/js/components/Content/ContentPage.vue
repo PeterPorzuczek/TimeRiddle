@@ -11,11 +11,6 @@
         t-bg-${themeColors.contentBackgroundPrimary}
         t-text-${themeColors.contentText}
     `">
-    <div
-      class="content-page__header t-md:hidden t-sm:t-hidden"
-      :class="`
-        t-bg-hero-${headerBackgroundName}-${themeColors.primary}
-      `"></div>
     <div class="t-inline-flex t-relative t-float-right">
         <code-highlighter-theme-switch
             v-if="codeThemeSwitchVisible"
@@ -27,6 +22,7 @@
         :is-dark="isDark"
         :color="color"
         :content="content"
+        :header-background-name="headerBackgroundName"
         @showCodeThemeSwitch="codeThemeSwitchVisible=true"
         @hideCodeThemeSwitch="codeThemeSwitchVisible=false"/>
     <div
@@ -61,16 +57,3 @@ export default {
   },
 };
 </script>
-<style>
-.content-page__header {
-  position: absolute;
-  width: 115%;
-  height: 111px;
-  padding: 0px;
-  margin: 0px;
-  margin-left: -32px;
-  margin-top: -35px;
-  opacity: 0.5;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08), 0 1px 5px 0 rgba(0,0,0,0.06);
-}
-</style>

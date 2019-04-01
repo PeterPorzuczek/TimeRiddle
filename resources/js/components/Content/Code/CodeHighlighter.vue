@@ -49,7 +49,7 @@ export default {
       this.visible = !this.visible;
     },
     addLineNumbersClass(html) {
-      return html.replace(/<pre>/ig, '<pre class="line-numbers t-shadow-nm hover:t-shadow-lg">');
+      return html.replace(/<pre>/ig, '<pre class="line-numbers t-shadow hover:t-shadow-lg">');
     },
     refreshHighlight() {
       this.$nextTick(() => {

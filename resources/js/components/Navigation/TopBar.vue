@@ -4,25 +4,21 @@
     :class="[
     isDark
     ? `
-      t-shadow-nm-${themeColors.hue}
       t-bg-gradient-l-${themeColors.primary}-dark
-      t-text-${themeColors.contentText}
-      t-border
-      t-border-r-0 t-border-t-0 t-border-b-0
-      t-border-l-8
       t-border-gradient-b-${themeColors.primary}-dark
     `
     : `
-      t-shadow-nm-${themeColors.hue}
       t-bg-${themeColors.contentBackgroundSecondary}
+      t-border-gradient-b-${themeColors.primary}
+    `, `
+      t-shadow-nm-${themeColors.hue}
       t-text-${themeColors.contentText}
       t-border
       t-border-r-0 t-border-t-0 t-border-b-0
       t-border-l-8
-      t-border-gradient-b-${themeColors.primary}
     `]"
     >
-    <div class="t-flex">
+    <div class="t-flex t-w-full">
       <span class="t-px-6 t-text-xl"></span>
       <h1
         class="navbar__title t-w-3/5 t-flex-col
@@ -78,6 +74,8 @@ export default {
   height: 4.3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 .navbar__title {
   margin: 0px;

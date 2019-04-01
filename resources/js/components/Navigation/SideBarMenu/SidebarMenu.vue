@@ -178,6 +178,9 @@ export default {
       }, 600);
     });
   },
+  mounted() {
+    this.activeShow = this.$children.length > 0 ? this.$children[0]._uid : null;
+  },
   methods: {
     mouseLeave() {
       this.mobileItem = null;
