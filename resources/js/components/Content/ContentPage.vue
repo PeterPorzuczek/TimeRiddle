@@ -13,7 +13,7 @@
     `">
     <div class="t-inline-flex t-relative t-float-right">
         <code-highlighter-theme-switch
-            v-if="codeThemeSwitchVisible"
+            v-show="codeThemeSwitchVisible"
             :is-dark="isDark"
             :color="color"/>
         <slot />
