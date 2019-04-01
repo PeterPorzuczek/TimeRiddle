@@ -341,3 +341,11 @@
     color: #262626;
     background-color: #f2f2f22e
 }
+
+
+@media (max-width: 452px) {
+    .v-sidebar-menu{
+        overflow-y: scroll;
+        padding-bottom: 50px;
+    }
+  }

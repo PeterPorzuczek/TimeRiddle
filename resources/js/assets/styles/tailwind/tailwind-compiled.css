@@ -176,6 +176,9 @@ blockquote {
   padding: .5rem 2.5rem .5rem 2.5rem;
   border-left-width: .5rem;
   border-left-style: solid;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
   margin: 1rem 0 2rem 0;
   background-color: #d0d0d02e;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .08), 0 1px 5px 0 rgba(0, 0, 0, .06);
@@ -221,6 +224,12 @@ hr {
 ::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: #ffffff30;
+}
+
+@media (max-width: 752px) {
+  img {
+    width: 99%;
+  }
 }
 
 .t-container {
