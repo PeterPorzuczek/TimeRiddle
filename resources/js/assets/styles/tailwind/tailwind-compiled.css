@@ -193,6 +193,11 @@ pre {
   padding-right: 0;
 }
 
+code[class*=language-],
+pre[class*=language-] {
+  text-shadow: 0 1px transparent;
+}
+
 .token.operator,
 .token.url {
   background: none;
