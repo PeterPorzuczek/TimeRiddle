@@ -149,6 +149,7 @@ export default {
       if (item.content) {
         if (this.current.content !== item.content) {
           this.$root.$emit('reset-view');
+          window.scrollTo(0, 0);
         }
         if (item.child) {
           this.currentCourseTopicId = item.id;
