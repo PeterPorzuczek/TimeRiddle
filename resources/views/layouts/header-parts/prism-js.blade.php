@@ -14,6 +14,6 @@
     <script src="/lib/cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-csharp.min.js"></script>
     <script src="/lib/cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-javascript.js"></script>
     <script src="/lib/cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js"></script>
-
+    <script src="/lib/cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js"></script>
     <script src="/lib/cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-css-extras.min.js"></script>
     <script src="/lib/cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-css.min.js"></script>
