@@ -32,12 +32,15 @@
           :key="`topbar-link-${index}`"
           :href="linksObj[link]"
           target="blank"
-          style="border-radius: 30px"
-          class="navbar__links t-mr-1 t-text-xs t-no-underline t-shadow"
-          :class="`
+          style="border-radius: 30px;"
+          class="link t-mr-1 t-text-xs t-no-underline t-shadow
+            t-p-1 t-px-2 t-rounded-full hover:t-opacity-100"
+          :class="[`
             t-text-${themeColors.tertiary}
             hover:t-shadow-md-${themeColors.primary}
-          `"
+            t-bg-gradient-r-${themeColors.primary}`,
+            isDark ? `t-opacity-75` : `t-opacity-75`
+            ]"
         >
           {{ link }}
           </a>

@@ -27,12 +27,19 @@
         @hideCodeThemeSwitch="codeThemeSwitchVisible=false"/>
     <div
         @click="scrollToTop"
-        style="width: 20px;height: 35px;display: flex;justify-content: center;align-items: center;"
+        style="width: 20px;height: 35px;display: flex;justify-content: center;align-items: center;
+            position: fixed; right: 25px; bottom: 25px; z-index: 1;"
         class="t-no-underline t-float-right t-text-sm t-font-body
-         t-bg-grey-lightest t-text-grey t-px-2 t-rounded-full t-shadow"
-        :class="`hover:t-shadow-md-${themeColors.primary}`"
+         t-text-grey t-px-2 t-rounded-full t-shadow
+         hover:t-opacity-100"
+        :class="[
+            `hover:t-shadow-md-${themeColors.primary}`,
+            isDark
+                ? `t-bg-gradient-b-${themeColors.primary}-dark t-opacity-75`
+                : `t-bg-gradient-t-${themeColors.primary} t-text-white t-opacity-25`
+        ]"
         >
-        UP
+        ▲
         </div>
   </div>
 </template>

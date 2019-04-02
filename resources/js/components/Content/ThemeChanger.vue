@@ -4,7 +4,15 @@
     <input type="checkbox" v-model="dark">
     <span class="slider round" :class="`t-bg-${themeColors.primary}`"></span>
   </label>
-  <div class="select-dropdown t-mx-2 t-py-1 t-flex t-justify-center t-items-center">
+  <div
+        class="select-dropdown t-py-1 t-ml-4 t-flex t-justify-center
+            t-rounded-full t-items-center t-opacity-50 hover:t-opacity-100"
+        :class="[
+        isDark
+                ? `t-bg-gradient-r-${themeColors.primary}`
+                : `t-bg-gradient-l-${themeColors.primary} t-text-white`
+        ]"
+    >
     <select v-model="currentTheme">
       <option
         v-for="(theme, index) in themes"
@@ -123,11 +131,9 @@ input:checked + .slider:before {
 
 .select-dropdown {
   position: relative;
-  background-color: #fafafa;
   width: auto;
   float: right;
   max-width: 100%;
-  border-radius: 2px;
 }
 .select-dropdown select {
   max-width: 100%;

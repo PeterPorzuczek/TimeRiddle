@@ -5,7 +5,7 @@
   /* background: #494b4e; */
 }
 
-.t-dark a, .t-dark a:visited {
+.t-dark a:not(.link), .t-dark a:visited {
   color: white;
   background: #ffffff1c;
   padding: 2px;
@@ -15,7 +15,7 @@
   text-decoration: none;
 }
 
-.t-light a, .t-light a:visited  {
+.t-light a:not(.link), .t-light a:visited  {
   color: black;
   background: #7373731c;
   padding: 2px;
@@ -85,6 +85,9 @@ p {
   width: 100%;
   text-align: justify;
   line-height: 1.5rem;
+}
+ul {
+  list-style-type: circle;
 }
 li {
   text-align: justify;
