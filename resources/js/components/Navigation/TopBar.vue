@@ -27,14 +27,16 @@
         :class="`
             t-text-${themeColors.quaternary}
         `">{{ title }}</h1>
-      <div class="navbar__links t-w-2/5 t-flex-col t-text-right t-font-body">
+      <div class="navbar__links t-w-2/5 t-flex-col t-text-right">
         <a v-for="(link, index) in Object.keys(linksObj)"
           :key="`topbar-link-${index}`"
           :href="linksObj[link]"
           target="blank"
-          class="navbar__links t-mr-1 t-text-xs t-no-underline"
+          style="border-radius: 30px"
+          class="navbar__links t-mr-1 t-text-xs t-no-underline t-shadow"
           :class="`
             t-text-${themeColors.tertiary}
+            hover:t-shadow-md-${themeColors.primary}
           `"
         >
           {{ link }}

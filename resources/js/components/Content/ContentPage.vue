@@ -26,8 +26,14 @@
         @showCodeThemeSwitch="codeThemeSwitchVisible=true"
         @hideCodeThemeSwitch="codeThemeSwitchVisible=false"/>
     <div
-        class="t-no-underline t-float-right t-text-sm t-font-body"
-        @click="scrollToTop">/^^^UP^^^/</div>
+        @click="scrollToTop"
+        style="width: 20px;height: 35px;display: flex;justify-content: center;align-items: center;"
+        class="t-no-underline t-float-right t-text-sm t-font-body
+         t-bg-grey-lightest t-text-grey t-px-2 t-rounded-full t-shadow"
+        :class="`hover:t-shadow-md-${themeColors.primary}`"
+        >
+        UP
+        </div>
   </div>
 </template>
 
