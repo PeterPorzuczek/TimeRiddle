@@ -768,7 +768,17 @@ config.shadows = {
   box: '0 10px 40px -6px rgba(0,0,0,.03)',
   'inner-sm': 'inset 0 -1px 0 0 rgba(0,0,0,.2),1px 1px 2px 0 rgba(0,0,0,.2)',
   'nm-light': '0 2px 12px 0 #dfe3eb',
-  'nm-dark': '0 2px 12px 0 #0000005e'
+  'nm-dark': '0 2px 12px 0 #0000005e',
+  'md-grey': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-red': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-orange': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-yellow': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-green': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-teal': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-blue': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-indigo': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-purple': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
+  'md-pink': `0 4px 8px 0 ${colors.orange}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
 };
 
 /*
