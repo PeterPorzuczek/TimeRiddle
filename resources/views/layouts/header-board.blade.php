@@ -16,4 +16,6 @@
     <!-- Fonts -->
     @include('layouts.header-parts.google-fonts')
 
+    @include('layouts.header-parts.fonts')
+
 </head>

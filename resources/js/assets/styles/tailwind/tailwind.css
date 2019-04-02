@@ -26,8 +26,9 @@
 }
 
 .t-font-main {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto  Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue  sans-serif;
+  font-family: Jost, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue sans-serif;
   font-size: initial;
+  letter-spacing: .01em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -76,6 +77,9 @@ h1, h2, h3, h4, h5, h6 {
   width:100%;
   padding-top: 5px;
   padding-bottom: 20px;
+  font-family: League Spartan, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue sans-serif;
+  letter-spacing: .01em;
+  -webkit-font-smoothing: antialiased;
 }
 p {
   width: 100%;
