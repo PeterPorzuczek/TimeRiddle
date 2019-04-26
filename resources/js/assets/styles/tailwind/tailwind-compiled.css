@@ -91,14 +91,24 @@ h6 {
   -webkit-font-smoothing: antialiased;
 }
 
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
 p {
   width: 100%;
   text-align: justify;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 ul {
   list-style-type: circle;
+  margin-top: 5px;
 }
 
 li {
