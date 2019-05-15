@@ -7,42 +7,47 @@
           v-if="index < contentElements.length-1"
           :is-dark="isDark"
           :color="color"
-          :code="contentElements[index+1]"/>
+          :code="contentElements[index+1]"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CodeHighlighter from './Code/CodeHighlighter.vue';
+import CodeHighlighter from "./Code/CodeHighlighter.vue";
 
 export default {
-  name: 'ContentBox',
+  name: "ContentBox",
   components: {
-    CodeHighlighter,
+    CodeHighlighter
   },
   props: {
     content: { type: Object, default: () => ({}) },
-    headerBackgroundName: { type: String, default: 'overcast' }
+    headerBackgroundName: { type: String, default: "overcast" }
   },
   computed: {
     contentElements() {
       return this.content && this.content.content
-        ? this.splitByPre(this.content.content) : [];
-    },
+        ? this.splitByPre(this.content.content)
+        : [];
+    }
   },
   watch: {
     contentElements(value) {
       if (value.length > 1) {
-        this.$emit('showCodeThemeSwitch');
+        this.$emit("showCodeThemeSwitch");
       } else {
-        this.$emit('hideCodeThemeSwitch');
+        this.$emit("hideCodeThemeSwitch");
       }
+      this.$nextTick(() => {
+        Prism.highlightAll();
+      });
     }
   },
   methods: {
     splitByPre(html) {
-      return html.split(/(<pre>.*?<\/pre>)/sg);
+      return html.split(/(<pre>.*?<\/pre>)/gs);
     },
     addClassNamesToElements(html) {
       let content = html;
@@ -51,13 +56,18 @@ export default {
       content = this.addToFirstH1Class(content);
       content = this.addH2Class(content);
 
-      return content
+      return content;
     },
     addBorderClass(html) {
-      return html.replace(/<blockquote>/ig, `<blockquote class="t-border-gradient-t-${this.themeColors.primary}">`);
+      return html.replace(
+        /<blockquote>/gi,
+        `<blockquote class="t-border-gradient-t-${this.themeColors.primary}">`
+      );
     },
     addH1Class(html) {
-      return html.replace(/<h1/g, `
+      return html.replace(
+        /<h1/g,
+        `
       <h1 class="
             t-text-${this.themeColors.quaternary}
             t-border t-border-r-0 t-border-t-0 t-border-b-0
@@ -68,10 +78,13 @@ export default {
             margin-left: -32px;
             padding-right: 25px;
         "
-        `);
+        `
+      );
     },
     addToFirstH1Class(html) {
-      return html.replace(/<h1/, `
+      return html.replace(
+        /<h1/,
+        `
       <h1 style="
             margin-left: -32px;
             padding-right: 25px;
@@ -85,11 +98,16 @@ export default {
             t-border t-border-r-0 t-border-t-0 t-border-b-0
             t-border-l-8 t-border-gradient-t-${this.themeColors.primary}
             t-pl-8 t-pb-2
-            t-bg-hero-${this.headerBackgroundName}-${this.themeColors.primary}-low
-        "`);
+            t-bg-hero-${this.headerBackgroundName}-${
+          this.themeColors.primary
+        }-low
+        "`
+      );
     },
     addH2Class(html) {
-      return html.replace(/<h2>/ig, `
+      return html.replace(
+        /<h2>/gi,
+        `
       <h2 class="
             t-text-${this.themeColors.tertiary}
             t-border t-border-r-0 t-border-t-0 t-border-b-8
@@ -100,8 +118,9 @@ export default {
             margin-left: -32px;
             padding-right: 25px;
             padding-bottom: 15px;
-        ">`);
-    },
-  },
+        ">`
+      );
+    }
+  }
 };
 </script>
