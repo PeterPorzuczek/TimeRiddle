@@ -81,6 +81,9 @@ export default {
       toggleIcon: toggleIcon
     };
   },
+  created() {
+      this.$root.$on('reset-view', this.reset);
+  },
   computed: {
     themeAddress() {
       return `${this.addressPrefix}${this.addressMiddle}${this.currentTheme}.min.css`;
@@ -90,6 +93,9 @@ export default {
     toggleAllCodes() {
       this.codeToggleAllCounter = this.codeToggleAllCounter + 1;
       this.$root.$emit('toggle-all-codes', this.codeToggleAllCounter % 2);
+    },
+    reset() {
+      this.codeToggleAllCounter = 0;
     },
   },
 };

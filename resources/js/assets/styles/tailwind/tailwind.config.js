@@ -14,14 +14,14 @@
   | config
   |-----------------------------------------------------------------------------
   |
-  | This variable contains the default Tailwind config. You don't have
+  | This variable contains the default Tailwind config.theme. You don't have
   | to use it, but it can sometimes be helpful to have available. For
   | example, you may choose to merge your custom configuration
   | values with some of the Tailwind defaults.
   |
 */
 
-const config = require('tailwindcss/defaultConfig')();
+const config = require('tailwindcss/defaultConfig');
 
 /*
   |-----------------------------------------------------------------------------
@@ -51,8 +51,8 @@ const colors = {
   'grey-darker': '#4b5761',
   'grey-dark': '#3d4852',
   'grey': '#b8c2cc',
-  'grey-light': '#f3f6f8',
-  'grey-lighter': '#edf1f3',
+  'grey-light': '#f7fafc',
+  'grey-lighter': '#f2f7f6',
   'grey-lightest': '#fafafa',
 
   'red-darkest': '#3b0d0c',
@@ -138,14 +138,14 @@ const bgcolors = colors;
   |-----------------------------------------------------------------------------
   |
   | The color palette defined above is also assigned to the "colors" key of
-  | your Tailwind config. This makes it easy to access them in your CSS
+  | your Tailwind config.theme. This makes it easy to access them in your CSS
   | using Tailwind's config helper. For example:
   |
   | .error { color: config('colors.red') }
   |
 */
 
-config.colors = colors;
+config.theme.colors = colors;
 
 /*
   |-----------------------------------------------------------------------------
@@ -159,7 +159,7 @@ config.colors = colors;
   | Class name: .text-{color}
   |
 */
-config.textColors = colors;
+config.theme.textColor = colors;
 
 /*
   |-----------------------------------------------------------------------------
@@ -178,7 +178,7 @@ config.textColors = colors;
   |
 */
 
-config.borderColors = colors;
+config.theme.borderColor = colors;
 
 /*
   |-----------------------------------------------------------------------------
@@ -193,7 +193,7 @@ config.borderColors = colors;
   |
 */
 
-config.backgroundColors = global.Object.assign(bgcolors, colors);
+config.theme.backgroundColor = global.Object.assign(bgcolors, colors);
 
 /*
   |-----------------------------------------------------------------------------
@@ -214,7 +214,7 @@ config.backgroundColors = global.Object.assign(bgcolors, colors);
   |
 */
 
-config.screens = {
+config.theme.screens = {
   't-sm': { min: '0px', max: '718px' },
   't-md': { min: '719px', max: '991px' },
   't-lg': { min: '992px', max: '1999px' },
@@ -238,7 +238,7 @@ config.screens = {
   |
 */
 
-config.fonts = {
+config.theme.fontFamily = {
   sans: [
     'system-ui',
     'BlinkMacSystemFont',
@@ -288,7 +288,7 @@ config.fonts = {
   |
 */
 
-config.textSizes = {
+config.theme.textSize = {
   xs: '.75rem',
   sm: '.8125rem',
   base: '1rem', // 16px
@@ -314,7 +314,7 @@ config.textSizes = {
 |
 */
 
-config.fontWeights = {
+config.theme.fontWeight = {
   hairline: 100,
   thin: 200,
   light: 300,
@@ -338,7 +338,7 @@ config.fontWeights = {
   |
 */
 
-config.leading = {
+config.theme.lineHeight = {
   none: 1,
   tight: 1.25,
   normal: 1.5,
@@ -357,7 +357,7 @@ config.leading = {
   |
 */
 
-config.tracking = {
+config.theme.letterSpacing = {
   tight: '-0.05em',
   normal: '0',
   wide: '0.05em',
@@ -376,7 +376,7 @@ config.tracking = {
   |
 */
 
-config.backgroundSize = {
+config.theme.backgroundSize = {
   auto: 'auto',
   cover: 'cover',
   contain: 'contain',
@@ -395,7 +395,7 @@ config.backgroundSize = {
   |
 */
 
-config.borderWidths = {
+config.theme.borderWidth = {
   0: '0px',
   default: '1px',
   4: '4px',
@@ -419,7 +419,7 @@ config.borderWidths = {
   |
 */
 
-config.borderRadius = {
+config.theme.borderRadius = {
   none: '0',
   sm: '.125rem',
   default: '.25rem',
@@ -446,7 +446,7 @@ config.borderRadius = {
   |
 */
 
-config.width = {
+config.theme.width = {
   auto: 'auto',
   px: '1px',
   1: '0.25rem',
@@ -487,6 +487,7 @@ config.width = {
   '4/5': '80%',
   '1/6': '16.66667%',
   '5/6': '83.33333%',
+  '7/10': '70%',
   '9/10': '90%',
   full: '100%',
   screen: '100vw',
@@ -507,7 +508,7 @@ config.width = {
   |
 */
 
-config.height = {
+config.theme.height = {
   auto: 'auto',
   px: '1px',
   1: '0.25rem',
@@ -551,7 +552,7 @@ config.height = {
   |
 */
 
-config.minWidth = {
+config.theme.minWidth = {
   0: '0',
   4: '1rem',
   6: '1.5rem',
@@ -600,7 +601,7 @@ config.minWidth = {
   |
 */
 
-config.minHeight = {
+config.theme.minHeight = {
   auto: 'auto',
   px: '1px',
   1: '0.25rem',
@@ -628,7 +629,7 @@ config.minHeight = {
   |
 */
 
-config.maxWidth = {
+config.theme.maxWidth = {
   xs: '20rem',
   sm: '30rem',
   md: '40rem',
@@ -655,7 +656,7 @@ config.maxWidth = {
   |
 */
 
-config.maxHeight = {
+config.theme.maxHeight = {
   full: '100%',
   screen: '100vh',
 };
@@ -675,7 +676,7 @@ config.maxHeight = {
 |
 */
 
-config.padding = {
+config.theme.padding = {
   px: '1px',
   0: '0',
   1: '0.25rem',
@@ -701,7 +702,7 @@ config.padding = {
 |
 */
 
-config.margin = {
+config.theme.margin = {
   auto: 'auto',
   px: '1px',
   0: '0',
@@ -728,7 +729,7 @@ config.margin = {
   |
 */
 
-config.negativeMargin = {
+config.theme.negativeMargin = {
   auto: 'auto',
   px: '1px',
   0: '0',
@@ -757,7 +758,7 @@ config.negativeMargin = {
   |
 */
 
-config.shadows = {
+config.theme.boxShadow = {
   default: '0 2px 4px 0 rgba(0,0,0,0.10)',
   sm: '1px 1px 2px 0 rgba(0,0,0,.2)',
   md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
@@ -767,7 +768,7 @@ config.shadows = {
   add: '0 10px 40px -6px rgba(0,0,0,.1)',
   box: '0 10px 40px -6px rgba(0,0,0,.03)',
   'inner-sm': 'inset 0 -1px 0 0 rgba(0,0,0,.2),1px 1px 2px 0 rgba(0,0,0,.2)',
-  'nm-light': '0 2px 12px 0 #dfe3eb',
+  'nm-light': ' rgba(0,0,0,.02) 0 4px 6px -1px,rgba(0,0,0,.06) 0 2px 4px -1px',
   'nm-dark': '0 2px 12px 0 #0000005e',
   'md-grey': `0 4px 8px 0 ${colors.grey}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
   'md-red': `0 4px 8px 0 ${colors.red}69, 0 2px 4px 0 rgba(0,0,0,0.08)`,
@@ -794,7 +795,7 @@ config.shadows = {
   |
 */
 
-config.zIndex = {
+config.theme.zIndex = {
   auto: 'auto',
   0: 0,
   10: 10,
@@ -822,7 +823,7 @@ config.zIndex = {
   |
 */
 
-config.opacity = {
+config.theme.opacity = {
   0: '0',
   25: '.25',
   50: '.5',
@@ -844,7 +845,7 @@ config.opacity = {
   |
 */
 
-config.svgFill = {
+config.theme.fill = {
   current: 'currentColor',
 };
 
@@ -862,13 +863,13 @@ config.svgFill = {
   |
 */
 
-config.svgStroke = {
+config.theme.stroke = {
   current: 'currentColor',
 };
 
 /*
 |-----------------------------------------------------------------------------
-| Modules                  https://tailwindcss.com/docs/configuration#modules
+| Variants                  https://tailwindcss.com/docs/configuration#modules
 |-----------------------------------------------------------------------------
 |
 | Here is where you control which modules are generated and what variants are
@@ -885,52 +886,71 @@ config.svgStroke = {
 |
 */
 
-config.modules = {
+config.theme.variants = {
+  alignContent: ['responsive'],
+  alignItems: ['responsive'],
+  alignSelf: ['responsive'],
   appearance: ['responsive'],
   backgroundAttachment: ['responsive'],
-  backgroundColors: ['responsive', 'hover'],
+  backgroundColor: ['responsive', 'hover', 'focus'],
   backgroundPosition: ['responsive'],
   backgroundRepeat: ['responsive'],
   backgroundSize: ['responsive'],
-  borderColors: ['responsive', 'hover'],
+  borderCollapse: ['responsive'],
+  borderColor: ['responsive', 'hover', 'focus'],
   borderRadius: ['responsive'],
   borderStyle: ['responsive'],
-  borderWidths: ['responsive'],
+  borderWidth: ['responsive'],
+  boxShadow: ['responsive', 'hover', 'focus'],
   cursor: ['responsive'],
   display: ['responsive'],
-  flexbox: ['responsive'],
+  fill: ['responsive'],
+  flex: ['responsive'],
+  flexDirection: ['responsive'],
+  flexGrow: ['responsive'],
+  flexShrink: ['responsive'],
+  flexWrap: ['responsive'],
   float: ['responsive'],
-  fonts: ['responsive'],
-  fontWeights: ['responsive', 'hover'],
+  fontFamily: ['responsive'],
+  fontSize: ['responsive'],
+  fontSmoothing: ['responsive'],
+  fontStyle: ['responsive'],
+  fontWeight: ['responsive', 'hover', 'focus'],
   height: ['responsive'],
-  leading: ['responsive'],
-  lists: ['responsive'],
+  inset: ['responsive'],
+  justifyContent: ['responsive'],
+  letterSpacing: ['responsive'],
+  lineHeight: ['responsive'],
+  listStylePosition: ['responsive'],
+  listStyleType: ['responsive'],
   margin: ['responsive'],
   maxHeight: ['responsive'],
   maxWidth: ['responsive'],
   minHeight: ['responsive'],
   minWidth: ['responsive'],
-  negativeMargin: ['responsive'],
+  objectFit: ['responsive'],
+  objectPosition: ['responsive'],
   opacity: ['responsive'],
+  order: ['responsive'],
+  outline: ['responsive', 'focus'],
   overflow: ['responsive'],
   padding: ['responsive'],
   pointerEvents: ['responsive'],
   position: ['responsive'],
   resize: ['responsive'],
-  shadows: ['responsive', 'hover', 'focus'],
-  svgFill: [],
-  svgStroke: [],
+  stroke: ['responsive'],
+  tableLayout: ['responsive'],
   textAlign: ['responsive'],
-  textColors: ['responsive', 'hover'],
-  textSizes: ['responsive'],
-  textStyle: ['responsive', 'hover'],
-  tracking: ['responsive'],
+  textColor: ['responsive', 'hover', 'focus'],
+  textDecoration: ['responsive', 'hover', 'focus'],
+  textTransform: ['responsive'],
   userSelect: ['responsive'],
   verticalAlign: ['responsive'],
   visibility: ['responsive'],
   whitespace: ['responsive'],
   width: ['responsive'],
-  zIndex: ['responsive'],
+  wordBreak: ['responsive'],
+  zIndex: ['responsive']
 };
 
 /*
@@ -948,10 +968,6 @@ config.modules = {
 */
 
 config.plugins = [
-  require('tailwindcss/plugins/container')({
-    // center: true,
-    // padding: '1rem',
-  }),
   require('tailwindcss-border-gradients')({
     variants: ['responsive'],
     directions: {
@@ -1040,7 +1056,7 @@ config.plugins = [
     },
     opacity: {
       default: "0.1",
-      "low": "0.03"
+      "low": "0.015"
     }
   })
 ];
@@ -1055,8 +1071,6 @@ config.plugins = [
   |
 */
 
-config.options = {
-  prefix: 't-',
-};
+config.prefix = 't-';
 
 module.exports = config;

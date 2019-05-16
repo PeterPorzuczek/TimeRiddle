@@ -1,6 +1,6 @@
 <template>
   <div
-    class="navbar "
+    class="navbar"
     :class="[
     isDark
     ? `
@@ -16,6 +16,7 @@
       t-border
       t-border-r-0 t-border-t-0 t-border-b-0
       t-border-l-8
+      t-items-center t-justify-center
     `]"
     >
     <div class="t-flex t-w-full">
@@ -23,7 +24,8 @@
       <h1
         class="navbar__title t-w-3/5 t-flex-col
           t-sm:t-text-sm t-sm:t-pt-1 t-sm:t-leading-normal
-          t-md:t-text-sm"
+          t-md:t-text-sm t-flex t-m-auto t-align-middle
+          t-justify-center"
         :class="`
             t-text-${themeColors.quaternary}
         `">{{ title }}</h1>
@@ -85,7 +87,7 @@ export default {
 .navbar__title {
   margin: 0px;
   padding: 0px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 2;
 }
 @media (min-width: 453px) and (max-width: 700px) {

@@ -2,7 +2,7 @@
   <div
     class="content-page
       t-sm:t-p-2 t-sm:t--m-2 t-p-8
-      t-sm:t-w-full t-w-9/10
+      t-sm:t-w-full t-w-5/6
       t-rounded-sm t-relative
       t-overflow-hidden
     "
