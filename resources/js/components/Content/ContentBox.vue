@@ -26,6 +26,9 @@ export default {
     content: { type: Object, default: () => ({}) },
     headerBackgroundName: { type: String, default: "overcast" }
   },
+  created() {
+      this.$root.$on('reset-view', this.reset);
+  },
   computed: {
     contentElements() {
       return this.content && this.content.content
@@ -34,15 +37,18 @@ export default {
     }
   },
   watch: {
-    contentElements(value) {
-      if (value.length > 1) {
-        this.$emit("showCodeThemeSwitch");
-      } else {
-        this.$emit("hideCodeThemeSwitch");
-      }
-      this.$nextTick(() => {
-        Prism.highlightAll();
-      });
+    contentElements: {
+      handler: function (newValue) {
+        if (newValue.length > 1) {
+            this.$emit("showCodeThemeSwitch");
+        } else {
+            this.$emit("hideCodeThemeSwitch");
+        }
+      },
+      deep: true
+    },
+    isDark() {
+        this.reset();
     }
   },
   methods: {
@@ -120,7 +126,12 @@ export default {
             padding-bottom: 15px;
         ">`
       );
-    }
+    },
+    reset() {
+        this.$nextTick(() => {
+            Prism.highlightAll();
+        });
+    },
   }
 };
 </script>
