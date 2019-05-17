@@ -150,7 +150,7 @@ li code {
   background-color: #bbbbbb24;
   margin: 2px;
   padding: 5px;
-  font-size: 1em !important;
+  font-family: "Roboto Mono",monospace !important;
 }
 h3 code {
   background-color: #bbbbbb24;
