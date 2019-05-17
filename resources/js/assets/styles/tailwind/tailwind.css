@@ -183,6 +183,8 @@ code, pre {
   font-size: .80rem !important;
   overflow: auto;
   padding-right: 0;
+  font-family: "Roboto Mono",monospace !important;
+  line-height: 1.5em !important;
 }
 code[class*=language-], pre[class*=language-] {
     text-shadow: 0 1px transparent;
