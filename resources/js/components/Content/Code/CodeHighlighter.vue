@@ -1,6 +1,7 @@
 <template>
   <div>
     <div
+        v-if = "!alwaysVisible"
         @click="showHide"
         class="code-toggle t-fill-current"
         :class="`
@@ -8,7 +9,7 @@
             t-bg-${themeColors.contentBackgroundTertiary}
         `"
         v-html="toggleIcon"></div>
-    <div v-show="visible" v-html="addLineNumbersClass(code)"/>
+    <div v-show="alwaysVisible || visible" v-html="addLineNumbersClass(code)"/>
   </div>
 </template>
 
@@ -30,11 +31,19 @@ export default {
     this.$root.$on('reset-view', this.reset);
     this.$root.$on('toggle-all-codes', this.changeVisibilty);
   },
+  computed: {
+      alwaysVisible() {
+          return this.code.includes('class="show language');
+      }
+  },
   watch: {
     code() {
       this.refreshHighlight();
     },
     visible() {
+      this.refreshHighlight();
+    },
+    alwaysVisible() {
       this.refreshHighlight();
     },
   },

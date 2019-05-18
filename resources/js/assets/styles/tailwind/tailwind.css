@@ -151,6 +151,7 @@ li code {
   margin: 2px;
   padding: 5px;
   font-family: "Roboto Mono",monospace !important;
+  word-wrap: anywhere;
 }
 h3 code {
   background-color: #bbbbbb24;
