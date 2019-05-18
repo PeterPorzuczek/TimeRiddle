@@ -131,7 +131,7 @@ class QuestController extends Controller
               $quest->topic_id = $request->input('topic_id');
               $quest->content = $request->input('content');
 
-              $codeRegexPattern = '/^(([ \t]*> `{3,4}|`{3,4})(?!.*show.*)([^\n]*)([\s\S]+?)(^[ \t]*\2))/m';
+              $codeRegexPattern = '/^(([ \t]*> `{3,4}|`{3,4})([^\n]*)([\s\S]+?)(^[ \t]*\2))/m';
               $quest->content_no_code = preg_replace($codeRegexPattern, '', $request->input('content'));
 
               $quest->content_html = Markdown::convertToHtml($request->input('content'));
@@ -237,7 +237,7 @@ class QuestController extends Controller
               $quest->topic_id = $request->input('topic_id');
               $quest->content = $request->input('content');
 
-              $codeRegexPattern = '/^(([ \t]*> `{3,4}|`{3,4})(?!.*show.*)([^\n]*)([\s\S]+?)(^[ \t]*\2))/m';
+              $codeRegexPattern = '/^(([ \t]*> `{3,4}|`{3,4})([^\n]*)([\s\S]+?)(^[ \t]*\2))/m';
               $quest->content_no_code = preg_replace($codeRegexPattern, '', $request->input('content'));
 
               $quest->content_html = Markdown::convertToHtml($request->input('content'));
