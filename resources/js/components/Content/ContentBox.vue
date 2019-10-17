@@ -62,6 +62,8 @@ export default {
       content = this.addToFirstH1Class(content);
       content = this.addH2Class(content);
 
+      content = this.addTargetToLinks(content);
+
       return content;
     },
     addBorderClass(html) {
@@ -125,6 +127,12 @@ export default {
             padding-right: 25px;
             padding-bottom: 15px;
         ">`
+      );
+    },
+    addTargetToLinks(html) {
+      return html.replace(
+        /<a /gi,
+        `<a target="_blank" `
       );
     },
     reset() {

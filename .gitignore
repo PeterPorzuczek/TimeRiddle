@@ -11,3 +11,4 @@ npm-debug.log
 yarn-error.log
 database.sqlite
 *.log
+.DS_Store

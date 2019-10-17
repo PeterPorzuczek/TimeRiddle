@@ -1,8 +1,13 @@
-@tailwind base
+@tailwind base;
+
+a {
+  word-break: break-word;
+}
 
 .t-bg-main-light {
   background: #ebeff5;
 }
+
 .t-bg-main-dark {
   /* background: #494b4e; */
 }

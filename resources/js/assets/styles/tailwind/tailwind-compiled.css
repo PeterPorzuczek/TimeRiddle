@@ -1,4 +1,8 @@
-@tailwind base
+@tailwind base;
+
+a {
+  word-break: break-word;
+}
 
 .t-bg-main-light {
   background: #ebeff5;
