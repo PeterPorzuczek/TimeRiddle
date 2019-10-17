@@ -11,7 +11,7 @@
         "tailwind": "./node_modules/.bin/tailwind build ./resources/js/assets/styles/tailwind/tailwind.css -c ./resources/js/assets/styles/tailwind/tailwind.config.js -o ./resources/js/assets/styles/tailwind/tailwind-compiled.css"
     },
     "devDependencies": {
-        "axios": "^0.18.0",
+        "axios": "^0.18.1",
         "bootstrap": "^4.0.0",
         "cross-env": "^5.1",
         "jquery": "^3.2",
