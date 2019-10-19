@@ -40,17 +40,9 @@
         <div class="mb-4">
             <div class="row">Content (Markdown)</div>
 
-            @if($quest->show_code)
             <div class="row">
                 {!! $quest->content_html !!}
             </div>
-            @endif
-
-            @if(!$quest->show_code)
-            <div class="row">
-                {!! $quest->content_html_no_code !!}
-            </div>
-            @endif
 
             <div class="row">
                 <textarea  rows="20" cols="50" type="text" disabled style="width: 100%; background: white; border: none;">{{{ $quest->content }}}</textarea>

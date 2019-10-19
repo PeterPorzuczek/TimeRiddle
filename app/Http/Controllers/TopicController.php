@@ -44,6 +44,8 @@ class TopicController extends Controller
             $topic = $topic->with('quests');
         }
 
+        $topics = $topics->sortBy('index');
+
         return !empty($courseId)
         ? view('manage.topic.index')->with(['topics'=> $topics, 'courseId'=> $courseId])
         : view('manage.topic.index')->with('topics', $topics);

@@ -55,6 +55,8 @@ class QuestController extends Controller
             }
         }
 
+        $quests = $quests->sortBy('index');
+
         $altEnd = !empty($courseId)
             ? view('manage.quest.index')->with(['quests'=> $quests, 'courseId'=> $courseId])
             : view('manage.quest.index')->with('quests', $quests);
