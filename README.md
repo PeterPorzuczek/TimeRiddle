@@ -5,9 +5,9 @@
 > The aim of the project is to publish the code together with the tasks in a way that is clear and accessible to the student. The ability to disable code publication makes it possible for the student to work on the assignments themselves and when the teacher decides to publish the code, they can do so immediately.
 
 ## Live Preview
-Example course: http://porzuczek.pl:8000/board/TJJ2019/22clye0wcexo9g5w
+Example course: http://porzuczek.pl/board/TJJ2019/22clye0wcexo9g5w
 
-Register and test it yourself: http://porzuczek.pl:8000/register
+Register and test it yourself: http://porzuczek.pl/register
 
 ## Preview
 ### Example course
@@ -26,3 +26,8 @@ To run application
     $ php artisan key:generate
 	$ php artisan serve
 
+To optimize application
+----
+	$ php artisan route:cache
+    $ php artisan config:cache
+	$ php artisan optimize

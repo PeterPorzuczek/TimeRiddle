@@ -2,7 +2,7 @@
   <div class="t-pb-8">
     <div v-for="(contentElement, index) in contentElements" :key="`key-${index}`">
       <div v-if="!(index % 2)" style="margin-bottom: 50px;">
-        <div v-html="addClassNamesToElements(contentElement)"/>
+        <div v-html="addPropertiesToElements(contentElement)"/>
         <code-highlighter
           v-if="index < contentElements.length-1"
           :is-dark="isDark"
@@ -55,7 +55,7 @@ export default {
     splitByPre(html) {
       return html.split(/(<pre>.*?<\/pre>)/gs);
     },
-    addClassNamesToElements(html) {
+    addPropertiesToElements(html) {
       let content = html;
       content = this.addBorderClass(content);
       content = this.addH1Class(content);
@@ -97,7 +97,7 @@ export default {
             margin-left: -32px;
             padding-right: 25px;
             padding-top: 65px;
-            margin-top: -40px;
+            margin-top: -30px;
             transition: all .28s ease-in-out;
             box-shadow: 0 2px 2px 0 rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.06);
         "

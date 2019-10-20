@@ -53,7 +53,7 @@ a {
 }
 
 [class*='t-'] {
-  transition: all .28s ease-in-out;
+  transition: all .40s ease-in-out;
 }
 
 .t-transition-longer {
