@@ -104,6 +104,7 @@ p {
   width: 100%;
   text-align: justify;
   line-height: 2rem;
+  line-height: 1.8;
 }
 
 ul {
@@ -114,11 +115,20 @@ ul {
 li {
   text-align: justify;
   line-height: 2rem;
+  line-height: 1.8;
 }
 
 img {
   border-radius: 4px;
   border: 1px dashed;
+  margin-left: 32px;
+}
+
+.t-light img {
+  opacity: 1;
+}
+
+.t-dark img {
   opacity: .3;
 }
 
@@ -218,6 +228,10 @@ code[class*=language-], pre[class*=language-] {
   line-height: 1.5em !important;
 }
 
+pre[class*=language-] {
+    margin-left: 32px !important;
+}
+
 .token.operator, .token.url {
   background: none;
 }
@@ -251,7 +265,7 @@ hr {
 
 @media (max-width: 752px) {
   img {
-    width: 99%;
+    width: 92%;
   }
 }
 
