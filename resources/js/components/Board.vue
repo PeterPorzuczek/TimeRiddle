@@ -79,7 +79,7 @@ export default {
     };
   },
   props: {
-    refreshRate: { type: Number, default: 20000 },
+    refreshRate: { type: Number, default: 35000 },
     courseAbbreviation: { type: String, default: '' },
     coursePassword: { type: String, default: '' },
     courseLearnEndpoint: { type: String, default: '' },
