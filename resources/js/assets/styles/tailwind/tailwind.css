@@ -205,6 +205,10 @@ code[class*=language-], pre[class*=language-] {
 }
 pre[class*=language-] {
     margin-left: 32px !important;
+    margin-right: 32px !important;
+}
+.toolbar-item {
+    margin-right: 32px !important;
 }
 .token.operator, .token.url {
   background: none;
