@@ -24,7 +24,7 @@ To run application
 ----
 	$ composer install
     $ php artisan key:generate
-	$ php artisan serve
+	$ php artisan serve --host 0.0.0.0 --port 90
 
 To optimize application
 ----

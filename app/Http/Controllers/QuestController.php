@@ -148,7 +148,7 @@ class QuestController extends Controller
               return redirect()->route('quests.topics.filter', ["courseId"=>$quest->topic->course_id, "topicId"=>$quest->topic_id])->with('success', 'Quest saved!');
           }
 
-          return redirect('/quests')->with('error', 'Course problems!');
+          return redirect()->action('QuestController@index')->with('error', 'Course problems!');
     }
 
     /**
@@ -254,7 +254,7 @@ class QuestController extends Controller
               return redirect()->route('quests.topics.filter', ["courseId"=>$quest->topic->course_id, "topicId"=>$quest->topic_id])->with('success', 'Quest saved!');
           }
 
-          return redirect('/quests')->with('error', 'Course problems!');
+          return redirect()->action('QuestController@index')->with('error', 'Course problems!');
     }
 
     /**

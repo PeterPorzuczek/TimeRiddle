@@ -85,7 +85,7 @@ class CourseController extends Controller
 
         $course->save();
 
-        return redirect('/courses')->with('success', 'Course saved!');
+        return redirect()->action('CourseController@index')->with('success', 'Course saved!');
     }
 
     /**
@@ -168,7 +168,7 @@ class CourseController extends Controller
 
         $course->save();
 
-        return redirect('/courses')->with('success', 'Course updated!');
+        return redirect()->action('CourseController@index')->with('success', 'Course updated!');
     }
 
     /**
@@ -187,6 +187,6 @@ class CourseController extends Controller
 
         $course->delete();
 
-        return redirect('/courses')->with('success', 'Course Deleted');
+        return redirect()->action('CourseController@index')->with('success', 'Course Deleted');
     }
 }

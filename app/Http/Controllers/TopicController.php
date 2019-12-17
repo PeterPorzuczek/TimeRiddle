@@ -101,7 +101,7 @@ class TopicController extends Controller
             return redirect()->route('topics.filter', [$topic->course_id])->with('success', 'Topic saved!');
         }
 
-        return redirect('/topics')->with('error', 'Course problems!');
+        return redirect()->action('TopicController@index')->with('error', 'Course problems!');
     }
 
     /**
@@ -180,7 +180,7 @@ class TopicController extends Controller
             return redirect()->route('topics.filter', [$topic->course_id])->with('success', 'Topic saved!');
           }
 
-          return redirect('/topics')->with('error', 'Course problems!');
+          return redirect()->action('TopicController@index')->with('error', 'Course problems!');
     }
 
     /**

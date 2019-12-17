@@ -14,28 +14,36 @@ Route::get('/board/{courseName}/{coursePassword}', 'LearnController@showBoard');
 
 Route::get('/learn/{courseName}/{coursePassword}', 'LearnController@learn');
 
-Auth::routes();
+Route::prefix('t')->group(function () {
 
-Route::get('/courses', 'ManageController@index');
+    Route::prefix('management')->group(function () {
 
-Route::get('/photos', 'PhotoController@index');
+        Auth::routes();
 
-Route::resource('photos', 'PhotoController');
+        Route::get('/courses', 'ManageController@index');
 
-Route::get('/quests/filter/{courseId?}/{topicId?}', 'QuestController@index')->name('quests.topics.filter');
+        Route::get('/photos', 'PhotoController@index');
 
-Route::get('/quests/filter/{courseId?}', 'QuestController@index')->name('quests.filter');
+        Route::resource('photos', 'PhotoController');
 
-Route::get('/quests', 'QuestController@index');
+        Route::get('/quests/filter/{courseId?}/{topicId?}', 'QuestController@index')->name('quests.topics.filter');
 
-Route::resource('quests', 'QuestController');
+        Route::get('/quests/filter/{courseId?}', 'QuestController@index')->name('quests.filter');
 
-Route::get('/topics/filter/{courseId?}', 'TopicController@index')->name('topics.filter');
+        Route::get('/quests', 'QuestController@index');
 
-Route::get('/topics', 'TopicController@index');
+        Route::resource('quests', 'QuestController');
 
-Route::resource('topics', 'TopicController');
+        Route::get('/topics/filter/{courseId?}', 'TopicController@index')->name('topics.filter');
 
-Route::get('/courses', 'CourseController@index');
+        Route::get('/topics', 'TopicController@index');
 
-Route::resource('courses', 'CourseController');
+        Route::resource('topics', 'TopicController');
+
+        Route::get('/courses', 'CourseController@index');
+
+        Route::resource('courses', 'CourseController');
+
+    });
+
+});

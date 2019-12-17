@@ -68,7 +68,7 @@ class PhotoController extends Controller
 
         $photo->save();
 
-        return redirect('/photos')->with('success', 'Photo saved');
+        return redirect()->action('PhotoController@index')->with('success', 'Photo saved');
     }
 
     /**
@@ -122,7 +122,7 @@ class PhotoController extends Controller
       if(Storage::delete('public/photos/'.$photo->file_name)){
         $photo->delete();
 
-        return redirect('/photos')->with('success', 'Photo Deleted');
+        return redirect()->action('PhotoController@index')->with('success', 'Photo Deleted');
       }
     }
 }
