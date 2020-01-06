@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "http://127.0.0.1:8000/:splat"
-  status = 200
