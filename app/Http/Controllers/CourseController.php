@@ -82,6 +82,8 @@ class CourseController extends Controller
         $course->user_id = auth()->user()->id;
         $course->theme = $request->input('theme');
         $course->dark = $request->input('dark') === 'dark';
+        $course->description = strlen($request->input('description')) === 0
+            ? " " : $request->input('description');
 
         $course->save();
 
@@ -165,6 +167,8 @@ class CourseController extends Controller
         $course->user_id = auth()->user()->id;
         $course->theme = $request->input('theme');
         $course->dark = $request->input('dark') === 'dark';
+        $course->description = strlen($request->input('description')) === 0
+            ? " " : $request->input('description');
 
         $course->save();
 

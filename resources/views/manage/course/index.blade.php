@@ -25,10 +25,13 @@
                             <h4>
                                 <em>{{ $course->name }}</em> - topics: {{ count($course->topics) }}
                             </h4>
+                            <h5>
+                                <em>{{ $course->description }}</em>
+                            </h5>
                             <h6><a href="{{ url('/board') }}/{{$course->abbreviation}}/{{$course->password}}" target="_blank">{{ url('/board') }}/{{$course->abbreviation}}/{{$course->password}}</a></h6>
                             <h6><a href="{{ url('/learn') }}/{{$course->abbreviation}}/{{$course->password}}" target="_blank">{{ url('/learn') }}/{{$course->abbreviation}}/{{$course->password}}</a></h6>
                         </div>
-                        <div class="row mb-2">
+                        <div class="row mb-2 pt-2">
                             <a href="courses/{{ $course->id }}" class="btn btn-info mr-2" target="_blank">Detail</a>
                             <a href="courses/{{ $course->id }}/edit" class="btn btn-success mr-2" target="_blank">Edit</a>
                             <form method="POST" action="courses/{{$course->id}}" onsubmit="return confirm('Do you really want to delete?');">
@@ -39,6 +42,7 @@
                             <a href="{{ route('topics.filter', $course->id) }}" class="btn btn-primary mr-2" target="_blank">Topics</a>
                             <a href="{{ route('quests.filter', $course->id) }}" class="btn btn-warning mr-2" target="_blank">Quests</a>
                         </div>
+                        <hr />
                     </div>
                 @endif
             @endforeach

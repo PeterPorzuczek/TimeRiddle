@@ -32,6 +32,11 @@
     </div>
 
     <div class="form-group">
+        <label>Description</label>
+        <input type="text" name="description" class="form-control">
+    </div>
+
+    <div class="form-group">
         <label>Abbreviation</label>
         <input type="text" name="abbreviation" class="form-control">
     </div>

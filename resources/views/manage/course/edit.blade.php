@@ -32,6 +32,11 @@
     </div>
 
     <div class="form-group">
+        <label>Description</label>
+        <input type="text" name="description" class="form-control" value="{{$course->description}}">
+    </div>
+
+    <div class="form-group">
         <label>Abbreviation</label>
         <input type="text" name="abbreviation" class="form-control" value="{{$course->abbreviation}}">
     </div>

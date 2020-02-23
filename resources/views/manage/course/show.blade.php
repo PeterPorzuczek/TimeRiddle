@@ -23,6 +23,11 @@
         </div>
 
         <div class="mb-4">
+            <div class="row">Description</div>
+            <div class="row">{{ $course->description }}</div>
+        </div>
+
+        <div class="mb-4">
             <div class="row">Abbreviation</div>
             <div class="row">{{ $course->abbreviation }}</div>
         </div>

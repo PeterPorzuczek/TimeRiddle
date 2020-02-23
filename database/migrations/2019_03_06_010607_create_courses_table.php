@@ -24,6 +24,7 @@ class CreateCoursesTable extends Migration
             $table->text('links')->nullable();
             $table->string('theme');
             $table->boolean('dark');
+            $table->string('description');
 
             $table->timestamps();
         });
