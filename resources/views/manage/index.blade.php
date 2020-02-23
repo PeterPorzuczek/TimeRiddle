@@ -9,7 +9,7 @@
 
             <div class="row">
                 <div class="d-flex justify-content-center col-sm-12 col-md-3 mb-3">
-                    <a class="btn btn-primary" href="/courses">
+                    <a class="btn btn-primary" href="/t/management/courses">
                         courses
                     </a>
                 </div>
