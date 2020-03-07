@@ -63,7 +63,7 @@ class TopicController extends Controller
         $user = User::find($userId);
 
         return !empty($request->input('courseId'))
-        ? view('manage.topic.create')->with(['courses'=> $user->courses, 'courseId'=> $request->input('courseId') ])
+        ? view('manage.topic.create')->with(['courses'=> $user->courses, 'courseId'=> $request->input('courseId'), 'courseTopicsCount'=> count($user->courses->find($request->input('courseId'))->topics) ])
         : view('manage.topic.create')->with('courses', $user->courses);
     }
 

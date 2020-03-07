@@ -49,7 +49,12 @@
 
     <div class="form-group">
         <label>Index</label>
+        @if($courseTopicsCount)
+        <input type="number" name="index" class="form-control" value="{{$courseTopicsCount+1}}">
+        @endif
+        @if(!$courseTopicsCount)
         <input type="number" name="index" class="form-control" value="0">
+        @endif
     </div>
 
     <div class="form-group">
