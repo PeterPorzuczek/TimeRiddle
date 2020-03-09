@@ -9,6 +9,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+    @include('layouts.header-parts.google-tag-manager')
+
     @include('layouts.header-parts.prism-js')
 
     @include('layouts.header-parts.prism-css')
