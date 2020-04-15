@@ -5,9 +5,7 @@
 > The aim of the project is to publish the code together with the tasks in a way that is clear and accessible to the student. The ability to disable code publication makes it possible for the student to work on the assignments themselves and when the teacher decides to publish the code, they can do so immediately.
 
 ## Live Preview
-Example course: http://porzuczek.pl/board/TJJ2019/22clye0wcexo9g5w
-
-Register and test it yourself: http://porzuczek.pl/register
+Example course: http://porzuczek.pl/board/SIWJP191/zt9360j891wac0kq
 
 ## Preview
 ### Example course
