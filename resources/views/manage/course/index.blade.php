@@ -8,11 +8,6 @@
                 Add
             </a>
         </div>
-        <div class="row col-6 mr-2 justify-content-end">
-            <a class="btn btn-info" href="{{ route('photos.index') }}">
-                Photos
-            </a>
-        </div>
     </div>
 @endsection
 @section('card-content')
