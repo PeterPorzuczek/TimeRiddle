@@ -4,7 +4,7 @@
         style="margin-top: 12px;"
         :class="full
           ? 't-flex t-w-full t-justify-center'
-          : 't-flex t-md:t-w-4/5 t-lg:t-w-4/5 t-sm:t-w-full t-justify-center'">
+          : 't-flex t-w-4/5 t-md:t-w-4/5 t-lg:t-w-4/5 t-sm:t-w-full t-justify-center'">
         <slot />
       </div>
     </div>
