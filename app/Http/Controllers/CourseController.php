@@ -28,6 +28,8 @@ class CourseController extends Controller
 
         $courses = $user->courses;
 
+        $courses = $courses->reverse();
+
         foreach ($courses as &$course) {
             $course = $course->with('topics');
         }

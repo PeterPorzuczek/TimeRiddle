@@ -48,6 +48,7 @@
                                 <input type="hidden" name="_method" value="DELETE">
                                 <button type="submit" class="btn btn-danger">Delete</button>
                             </form>
+                            <a href="{{ route('problems.quests.topics.filter', ['courseId' => $quest->topic->course_id, 'topicId' => $quest->topic->id, 'questId' => $quest->id]) }}" class="btn btn-warning ml-2">Problems</a>
                         </div>
                     </div>
                 @endif
