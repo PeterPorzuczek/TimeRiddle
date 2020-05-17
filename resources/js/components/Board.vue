@@ -22,6 +22,7 @@
                     :is-dark="dark"
                     :color="theme"
                     :content="current"
+                    :endpoint="endpoint"
                     :header-background-name=
                         "headerBackgroundPatternName">
                     <theme-changer
@@ -83,7 +84,6 @@ export default {
     courseAbbreviation: { type: String, default: '' },
     coursePassword: { type: String, default: '' },
     courseLearnEndpoint: { type: String, default: '' },
-
   },
   async created() {
     await this.fetch();
@@ -119,13 +119,16 @@ export default {
 
       return result;
     },
+    endpoint() {
+        return `${this.courseLearnEndpoint}/${this.courseAbbreviation}/${this.coursePassword}`
+    }
   },
   methods: {
     async fetch() {
       try {
         const coursesResponse = this.courseLearnEndpoint
           ? await axios.get(
-            `${this.courseLearnEndpoint}/${this.courseAbbreviation}/${this.coursePassword}`,
+            this.endpoint,
           )
           : {};
         if (Array.isArray(coursesResponse.data)
