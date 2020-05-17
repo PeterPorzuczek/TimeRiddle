@@ -67,16 +67,16 @@ class LearnController extends Controller
 
     public function findProblem($courseName, $coursePassword, $problemPassword)
     {
-        if (strlen($problemPassword) < 10) {
+        if (strlen($problemPassword) < 10 ||
+            substr_count($problemPassword, ".") !== 5 ||
+            substr_count($problemPassword, "-") === 0 ||
+            !is_numeric($problemPassword[strlen($problemPassword)-1])) {
             return array('error'=>'1');
         }
 
         return Course
         ::select(
-            'id',
-            'name AS title',
-            'links',
-            'theme')
+            'id')
         ->where('abbreviation', '=' , $courseName)
         ->where('password', '=' , $coursePassword)
         ->with([
@@ -121,7 +121,7 @@ class LearnController extends Controller
         ->get();
     }
 
-    public function addSolution($courseName, $coursePassword, $problemPassword, Request $request)
+    public function addSolution($courseName, $coursePassword, $problemPassword, $questId, $topicId, Request $request)
     {
         if (strlen($problemPassword) < 10) {
             return array('error'=>'1');
@@ -129,10 +129,7 @@ class LearnController extends Controller
 
         $course = Course
         ::select(
-            'id',
-            'name AS title',
-            'links',
-            'theme')
+            'id')
         ->where('abbreviation', '=' , $courseName)
         ->where('password', '=' , $coursePassword)
         ->with([
@@ -173,11 +170,11 @@ class LearnController extends Controller
         ])
         ->get();
 
-        if (count($course[0]->topics[0]->quests[0]->problems) > 0) {
+        if (count($course[0]->topics->find($topicId)->quests->find($questId)->problems) > 0) {
             $solution = new Solution;
             $solution->link = empty($request->input('link')) ? '' : $request->input('link');
             $solution->password = $problemPassword;
-            $solution->problem_id = $course[0]->topics[0]->quests[0]->problems[0]->id;
+            $solution->problem_id = $course[0]->topics->find($topicId)->quests->find($questId)->problems[0]->id;
 
             $solution->save();
 

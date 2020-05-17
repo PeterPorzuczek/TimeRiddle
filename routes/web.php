@@ -16,7 +16,7 @@ Route::get('/learn/{courseName}/{coursePassword}', 'LearnController@learn');
 
 Route::get('/learn/{courseName}/{coursePassword}/problem/{problemPassword}/', 'LearnController@findProblem');
 
-Route::post('/learn/{courseName}/{coursePassword}/problem/{problemPassword}/', 'LearnController@addSolution');
+Route::post('/learn/{courseName}/{coursePassword}/problem/{problemPassword}/{questId}/{topicId}', 'LearnController@addSolution');
 
 Route::prefix('t')->group(function () {
 

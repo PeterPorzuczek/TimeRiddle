@@ -53,7 +53,7 @@
 
     <div class="form-group">
         <label>Mark</label>
-        <input type="number" name="mark" class="form-control" value="{{$solution->mark}}">
+        <input type="text" name="mark" class="form-control" value="{{$solution->mark}}">
     </div>
 
     <div class="form-group">

@@ -57,7 +57,7 @@ class SolutionController extends Controller
             }
 
             $problems = new Collection();
-            foreach ($problems as $problem) {
+            foreach ($quests as $quest) {
                 $problems = $problems->merge($quest->problems);
             }
 
@@ -66,8 +66,8 @@ class SolutionController extends Controller
             }
 
             $solutions = new Collection();
-            foreach ($solutions as $solution) {
-                $solutions = $solutions->merge($solution->problems);
+            foreach ($problems as $problem) {
+                $solutions = $solutions->merge($problem->solutions);
             }
 
             foreach ($solutions as &$solution) {

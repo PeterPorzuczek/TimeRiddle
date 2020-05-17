@@ -37,7 +37,7 @@
                     <div>
                         <div class="row">
                             <h4>
-                                {{ $solution->password }} - problem: {{ $solution->problem->name }} - quest: {{ $solution->problem->quest->name }} - topic: <strong>{{ $solution->problem->quest->topic->name }}</strong> - course: <em>{{ $solution->problem->quest->topic->course->name }}</em>
+                                Mark: {{ $solution->mark }} - {{ $solution->password }} - problem: {{ $solution->problem->name }} - quest: {{ $solution->problem->quest->name }} - topic: <strong>{{ $solution->problem->quest->topic->name }}</strong> - course: <em>{{ $solution->problem->quest->topic->course->name }}</em>
                             </h4>
                         </div>
                         <div class="row mb-2">

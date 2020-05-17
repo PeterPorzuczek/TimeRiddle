@@ -56,7 +56,7 @@ class ProblemController extends Controller
             }
 
             $problems = new Collection();
-            foreach ($problems as $problem) {
+            foreach ($quests as $quest) {
                 $problems = $problems->merge($quest->problems);
             }
 

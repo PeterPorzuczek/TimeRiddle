@@ -118,16 +118,25 @@ export default {
             `${this.endpoint}/problem/${this.password}`,
           )
           : {};
+
         if (Array.isArray(problemsResponse.data)
           && problemsResponse.data && problemsResponse.data.length > 0) {
-            if (problemsResponse.data[0].topics[0].quests[0].problems.length > 0) {
-                this.additionalContent = problemsResponse.data[0].topics[0].quests[0].problems;
-                this.solution.link = problemsResponse.data[0].topics[0].quests[0].problems[0].solutions.length > 0 ?
-                    problemsResponse.data[0].topics[0].quests[0].problems[0].solutions[0].link : '';
-                this.solution.grade = problemsResponse.data[0].topics[0].quests[0].problems[0].solutions.length > 0 ?
-                    problemsResponse.data[0].topics[0].quests[0].problems[0].solutions[0].grade : '';
-                this.solution.explanation.content = problemsResponse.data[0].topics[0].quests[0].problems[0].solutions.length > 0 ?
-                    problemsResponse.data[0].topics[0].quests[0].problems[0].solutions[0]['explanation'] : '';
+            if (problemsResponse.data[0]
+                    .topics.filter(topic => topic.id === this.content.topic_id)[0]
+                    .quests.filter(quest => quest.id === this.content.id)[0].problems.length > 0) {
+
+                this.additionalContent = problemsResponse.data[0]
+                    .topics.filter(topic => topic.id === this.content.topic_id)[0]
+                    .quests.filter(quest => quest.id === this.content.id)[0].problems;
+
+                this.solution.link = this.additionalContent[0].solutions.length > 0 ?
+                    this.additionalContent[0].solutions[0].link : '';
+
+                this.solution.grade = this.additionalContent[0].solutions.length > 0 ?
+                    this.additionalContent[0].solutions[0].grade : '';
+
+                this.solution.explanation.content = this.additionalContent[0].solutions.length > 0 ?
+                    this.additionalContent[0].solutions[0]['explanation'] : '';
            } else {
                 this.additionalContent = [];
             }
@@ -141,7 +150,7 @@ export default {
         body.set('link', this.solution.link);
         const solutionResponse = this.endpoint
           ? await axios.post(
-            `${this.endpoint}/problem/${this.password}`,
+            `${this.endpoint}/problem/${this.password}/${this.content.id}/${this.content.topic_id}`,
             body
           )
           : {};
