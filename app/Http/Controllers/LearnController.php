@@ -162,7 +162,7 @@ class LearnController extends Controller
             'topics.quests.problems.solutions' => function($query) use ($problemPassword) {
                 $query
                 ->where('problem_id', '!=' , 0)
-                ->where('password', '=' , $problemPassword)
+                ->where('password', '=' , trim($problemPassword))
                 ->select([
                     'problem_id',
                     'link']);
@@ -173,7 +173,7 @@ class LearnController extends Controller
         if (count($course[0]->topics->find($topicId)->quests->find($questId)->problems) > 0) {
             $solution = new Solution;
             $solution->link = empty($request->input('link')) ? '' : $request->input('link');
-            $solution->password = $problemPassword;
+            $solution->password = trim($problemPassword);
             $solution->problem_id = $course[0]->topics->find($topicId)->quests->find($questId)->problems[0]->id;
 
             $solution->save();
