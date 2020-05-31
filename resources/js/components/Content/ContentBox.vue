@@ -25,7 +25,8 @@ export default {
   },
   props: {
     content: { type: Object, default: () => ({}) },
-    headerBackgroundName: { type: String, default: "overcast" }
+    headerBackgroundName: { type: String, default: "overcast" },
+    headerOn: { type: Boolean, default: true }
   },
   created() {
       this.$root.$on('reset-view', this.reset);
@@ -60,7 +61,9 @@ export default {
       let content = html;
       content = this.addBorderClass(content);
       content = this.addH1Class(content);
-      content = this.addToFirstH1Class(content);
+      if (this.headerOn) {
+        content = this.addToFirstH1Class(content);
+      }
       content = this.addH2Class(content);
 
       content = this.addTargetToLinks(content);

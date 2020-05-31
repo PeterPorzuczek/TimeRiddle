@@ -75,6 +75,16 @@ class SolutionController extends Controller
             }
         }
 
+        $solutions = $solutions->groupBy('password')->flatMap(function ($items) {
+            $quantity = $items->count(); return $items->map(function ($item) use ($quantity) {
+                $item->quantity = $quantity; return $item; });
+        });
+
+        $solutions = $solutions->sortBy(function($solution)
+        {
+          return '-' . $solution->quantity . '-' . $solution->problem->name . '-' . $solution->password . '-' . strtotime($solution->created_at) ;
+        });
+
         $altEnd = !empty($courseId)
             ? view('manage.solution.index')->with(['solutions'=> $solutions, 'courseId'=> $courseId])
             : view('manage.solution.index')->with('solutions', $solutions);

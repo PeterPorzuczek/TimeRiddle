@@ -34,6 +34,7 @@
                 <button @click="fetchProblems" class="t-text-sm t-bg-white t-text-black t-py-2 t-px-4 t-rounded t-m-1 t-border">Więcej</button>
             </div>
                 <content-box v-else
+                    :header-on="false"
                     :is-dark="isDark"
                     :color="color"
                     :content="additionalContent[0]"
@@ -41,6 +42,12 @@
                     @showCodeThemeSwitch="codeThemeSwitchVisible=true"
                     @hideCodeThemeSwitch="codeThemeSwitchVisible=false">
                     <div>
+                        <h2 :class="`t-text-${this.themeColors.tertiary} t-border-gradient-b-${this.themeColors.primary}`"
+                            class="t-border t-border-r-0 t-border-t-0 t-border-b-0 t-border-l-8 t-pl-8 t-pb-2 "
+                            style=" margin-left: -32px; padding-right: 25px; padding-bottom: 15px;"
+                            >
+                            Rozwiązanie
+                        </h2>
                         <div>
                             <input v-model="solution.link" class="t-input t-appearance-none t-rounded-sm
                                 t-py-2 t-px-3 t-outline-none t-h-full
@@ -48,10 +55,14 @@
                                 t-text-sm"/>
                             <button @click="sendSolution" v-if="!hideSend && (!solution.grade || Number(solution.grade) < 3)" class="t-text-sm t-bg-white t-text-black t-py-2 t-px-4 t-rounded t-m-1 t-border">Wyślij</button>
                         </div>
-                        <div class="t-pt-2">
+                        <h2 :class="`t-text-${this.themeColors.tertiary} t-border-gradient-b-${this.themeColors.primary}`"
+                            class="t-border t-border-r-0 t-border-t-0 t-border-b-0 t-border-l-8 t-pl-8 t-pb-2 "
+                            style=" margin-left: -32px; padding-right: 25px; padding-bottom: 15px;"
+                            >
                             Ocena: {{ solution.grade }}
-                        </div>
+                        </h2>
                         <content-box v-if="solution.explanation.content"
+                            :header-on="false"
                             :is-dark="isDark"
                             :color="color"
                             :content="solution.explanation"
