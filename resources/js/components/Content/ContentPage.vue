@@ -126,7 +126,7 @@ export default {
       try {
         const problemsResponse = this.endpoint
           ? await axios.get(
-            `${this.endpoint}/problem/${this.password}`,
+            `${this.endpoint}/problem/${this.password.trim()}`,
           )
           : {};
 
