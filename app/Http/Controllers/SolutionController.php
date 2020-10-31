@@ -82,8 +82,8 @@ class SolutionController extends Controller
 
         $solutions = $solutions->sortBy(function($solution)
         {
-          return '-' . $solution->quantity . '-' . $solution->problem->name . '-' . $solution->password . '-' . strtotime($solution->created_at) ;
-        });
+          return strtotime($solution->created_at) . '-' . $solution->quantity . '-' . $solution->problem->name . '-' . $solution->password;
+        })->reverse();
 
         $altEnd = !empty($courseId)
             ? view('manage.solution.index')->with(['solutions'=> $solutions, 'courseId'=> $courseId])
