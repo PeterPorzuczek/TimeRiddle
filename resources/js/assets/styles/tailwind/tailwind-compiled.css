@@ -102,7 +102,7 @@ h3, h4, h5, h6 {
 
 p {
   width: 100%;
-  text-align: justify;
+  text-align: left;
   line-height: 2rem;
   line-height: 1.8;
 }
@@ -113,7 +113,7 @@ ul {
 }
 
 li {
-  text-align: justify;
+  text-align: left;
   line-height: 2rem;
   line-height: 1.8;
 }

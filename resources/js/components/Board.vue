@@ -89,14 +89,6 @@ export default {
     await this.fetch();
     setInterval(() => this.fetch(), this.refreshRate);
   },
-  mounted: function () {
-    this.$nextTick(function () {
-        this.changeBackgroundPatterns();
-        window.setInterval(() => {
-            this.changeBackgroundPatterns();
-        }, this.refreshRate);
-    })
-  },
   computed: {
     current() {
       // eslint-disable-next-line
@@ -134,12 +126,15 @@ export default {
         if (Array.isArray(coursesResponse.data)
           && coursesResponse.data && coursesResponse.data.length > 0) {
           const coursesFormatted = this.format(coursesResponse.data);
-          this.courses = coursesFormatted;
-          this.theme = Object.keys(this.currentCourse).length > 0 ? this.theme : this.courses[0].theme;
-          this.dark = Object.keys(this.currentCourse).length > 0 ? this.dark : this.courses[0]['is_night'];
-          // eslint-disable-next-line
-          this.currentCourse = this.courses[0];
-          this.currentCourseTopicId = !this.currentCourseTopicId ? this.courses[0].topics[0].id : this.currentCourseTopicId;
+          if (JSON.stringify(this.courses) !== JSON.stringify(coursesFormatted)) {
+            this.changeBackgroundPatterns();
+            this.courses = coursesFormatted;
+            this.theme = Object.keys(this.currentCourse).length > 0 ? this.theme : this.courses[0].theme;
+            this.dark = Object.keys(this.currentCourse).length > 0 ? this.dark : this.courses[0]['is_night'];
+            this.currentCourse = this.courses[0];
+            // eslint-disable-next-line
+            this.currentCourseTopicId = !this.currentCourseTopicId ? this.courses[0].topics[0].id : this.currentCourseTopicId;
+          }
         }
       } catch (ex) {
         this.courses = [];

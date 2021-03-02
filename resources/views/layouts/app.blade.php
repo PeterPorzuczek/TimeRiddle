@@ -8,5 +8,5 @@
     </body>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}?v=0.8"></script>
+    <script src="{{ asset('js/app.js') }}?v=0.12"></script>
 </html>
