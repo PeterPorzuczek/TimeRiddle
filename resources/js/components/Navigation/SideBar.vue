@@ -6,7 +6,7 @@
         t-bg-transparent
         t-text-${themeColors.quaternary}
       `"
-      style="margin-top: -43px; padding: 5px; padding-left: 20px; overflow: hidden;"
+      style="margin-top: -43px; padding: 5px; padding-left: 20px; overflow: hidden; cursor: pointer"
       @click="onShowMenuClick"> ☰ </span>
     <sidebar-menu
       :is-dark="isDark"
@@ -159,6 +159,7 @@ export default {
   font-weight: normal;
 }
 .v-sidebar-menu .vsm-link {
+    cursor: pointer;
     overflow: hidden !important;
 }
 </style>
