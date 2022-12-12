@@ -21,8 +21,8 @@
                 <content-page
                     :is-dark="dark"
                     :color="theme"
-                    :content="current"
                     :endpoint="endpoint"
+                    :content="current"
                     :header-background-name=
                         "headerBackgroundPatternName">
                     <theme-changer
@@ -160,9 +160,9 @@ export default {
     },
     changeBackgroundPatterns() {
         this.headerBackgroundPatternName = this.patterns[
-            Math.floor(Math.random()*this.patterns.length)];
+            Math.floor(Math.random() * this.patterns.length)];
         this.mainBackgroundPatternName = this.patterns[
-            Math.floor(Math.random()*this.patterns.length)];
+            Math.floor(Math.random() * this.patterns.length)];
     },
     changeHue(value){
         this.dark = value;

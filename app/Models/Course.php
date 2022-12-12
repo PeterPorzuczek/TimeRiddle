@@ -23,14 +23,16 @@ class Course extends Model
         date_default_timezone_set('Europe/Warsaw');
         $hour = date('H', time());
 
-        return !($hour > 6 && $hour < 19);
-    }
-
-    public function user(){
-      return $this->belongsTo('App\User');
+        return !($hour > 7 && $hour < 19);
     }
 
     public function topics() {
-        return $this->hasMany('App\Topic');
+        return
+            $this->hasMany('App\Models\Topic');
+    }
+
+    public function user(){
+      return
+        $this->belongsTo('App\Models\User');
     }
 }

@@ -5,6 +5,7 @@
 > The aim of the project is to publish the code together with the tasks in a way that is clear and accessible to the student. The ability to disable code publication makes it possible for the student to work on the assignments themselves and when the teacher decides to publish the code, they can do so immediately.
 
 ## Preview
+
 ### Example course
 <div>
 	<img src="https://i.imgur.com/qvVdrG3.png" alt="app-preview" width="70%">

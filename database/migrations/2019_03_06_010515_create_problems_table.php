@@ -18,8 +18,8 @@ class CreateProblemsTable extends Migration
 
             $table->integer('quest_id');
 
-            $table->integer('index');
             $table->string('name');
+            $table->integer('index');
             $table->text('content')->nullable();
             $table->text('content_no_code')->nullable();
             $table->text('content_html')->nullable();
