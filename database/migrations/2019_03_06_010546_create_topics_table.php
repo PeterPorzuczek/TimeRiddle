@@ -18,11 +18,11 @@ class CreateTopicsTable extends Migration
 
             $table->integer('course_id');
 
-            $table->integer('index');
             $table->string('name');
+            $table->integer('index');
             $table->boolean('public');
-            $table->text('description')->nullable();
             $table->text('description_html')->nullable();
+            $table->text('description')->nullable();
             $table->text('links')->nullable();
 
             $table->timestamps();

@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use GrahamCampbell\Markdown\Facades\Markdown;
 
-use App\User;
-use App\Quest;
+use App\Models\User;
+use App\Models\Quest;
 
 class QuestController extends Controller
 {

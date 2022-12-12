@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Collection;
 use GrahamCampbell\Markdown\Facades\Markdown;
 
-use App\User;
-use App\Topic;
+use App\Models\User;
+use App\Models\Topic;
 
 class TopicController extends Controller
 {
@@ -90,8 +90,8 @@ class TopicController extends Controller
             $topic = new Topic;
             $topic->index = $request->input('index');
             $topic->name = $request->input('name');
-            $topic->description = $request->input('description');
             $topic->description_html = Markdown::convertToHtml($request->input('description'));
+            $topic->description = $request->input('description');
             $topic->course_id = $request->input('course_id');
             $topic->links = $request->input('links');
             $topic->public = $request->input('public') === 'public';
@@ -113,13 +113,9 @@ class TopicController extends Controller
     public function show($id)
     {
         $_topic = Topic::find($id);
-
         $userId = auth()->user()->id;
-
         $user = User::find($userId);
-
         $topic = $user->courses->find($_topic->course_id)->topics->find($id);
-
         $topic->description_html = str_replace("{{", "{spc{", $topic->description_html);
 
         return view('manage.topic.show')->with('topic', $topic);
@@ -134,11 +130,8 @@ class TopicController extends Controller
     public function edit($id)
     {
         $_topic = Topic::find($id);
-
         $userId = auth()->user()->id;
-
         $user = User::find($userId);
-
         $topic = $user->courses->find($_topic->course_id)->topics->find($id);
 
         return view('manage.topic.edit')->with('topic', $topic)->with('courses', $user->courses);
@@ -192,13 +185,9 @@ class TopicController extends Controller
     public function destroy($id)
     {
         $_topic = Topic::find($id);
-
         $userId = auth()->user()->id;
-
         $user = User::find($userId);
-
         $topic = $user->courses->find($_topic->course_id)->topics->find($id);
-
         $topic->delete();
 
         return redirect()->route('topics.filter', [$topic->course_id])->with('success', 'Topic Deleted!');
