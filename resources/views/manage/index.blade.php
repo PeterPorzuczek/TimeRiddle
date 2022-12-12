@@ -23,11 +23,6 @@
                         quests
                     </a>
                 </div>
-                <div class="d-flex justify-content-center col-sm-12 col-md-3 mb-3">
-                    <a class="btn btn-light" href="/photos">
-                        photos
-                    </a>
-                </div>
             </div>
 
             <div class="row">

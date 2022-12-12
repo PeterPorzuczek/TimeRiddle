@@ -18,8 +18,8 @@ class CreateQuestsTable extends Migration
 
             $table->integer('topic_id');
 
-            $table->integer('index');
             $table->string('name');
+            $table->integer('index');
             $table->text('content')->nullable();
             $table->text('content_no_code')->nullable();
             $table->text('content_html')->nullable();

@@ -28,8 +28,8 @@
     </div>
     <div class="t-hidden">
       <link
-        rel="stylesheet"
-        :href="themeAddress">
+        :href="themeAddress"
+        rel="stylesheet">
     </div>
   </div>
 </template>
@@ -90,12 +90,12 @@ export default {
     },
   },
   methods: {
+    reset() {
+      this.codeToggleAllCounter = 0;
+    },
     toggleAllCodes() {
       this.codeToggleAllCounter = this.codeToggleAllCounter + 1;
       this.$root.$emit('toggle-all-codes', this.codeToggleAllCounter % 2);
-    },
-    reset() {
-      this.codeToggleAllCounter = 0;
     },
   },
 };

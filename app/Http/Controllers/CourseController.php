@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-use App\User;
-use App\Course;
+use App\Models\User;
+use App\Models\Course;
 
 class CourseController extends Controller
 {

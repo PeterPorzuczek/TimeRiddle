@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-use App\Course;
-use App\Problem;
-use App\Solution;
+use App\Models\Course;
+use App\Models\Problem;
+use App\Models\Solution;
 
 class LearnController extends Controller
 {
