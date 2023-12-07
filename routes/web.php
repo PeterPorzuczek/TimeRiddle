@@ -29,15 +29,11 @@ Route::prefix('t')->group(function () {
         Route::get('/courses', 'ManageController@index');
 
 
-
-
         Route::get('/solutions/filter/{courseId?}/{topicId?}/{questId?}/{problemId?}/', 'SolutionController@index')->name('solutions.problems.quests.topics.filter');
 
         Route::get('/solutions', 'SolutionController@index');
 
         Route::resource('solutions', 'SolutionController');
-
-
 
 
         Route::get('/problems/filter/{courseId?}/{topicId?}/{questId?}/', 'ProblemController@index')->name('problems.quests.topics.filter');
@@ -47,7 +43,6 @@ Route::prefix('t')->group(function () {
         Route::resource('problems', 'ProblemController');
 
 
-
         Route::get('/quests/filter/{courseId}/{topicId?}', 'QuestController@index')->name('quests.topics.filter');
 
         Route::get('/quests/filter/{courseId?}/', 'QuestController@index')->name('quests.filter');
@@ -55,7 +50,6 @@ Route::prefix('t')->group(function () {
         Route::get('/quests', 'QuestController@index');
 
         Route::resource('quests', 'QuestController');
-
 
 
         Route::get('/topics/filter/{courseId?}', 'TopicController@index')->name('topics.filter');

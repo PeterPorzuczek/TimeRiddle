@@ -3,6 +3,6 @@
 @section('app-content')
 <board
       course-learn-endpoint="{{ url('/learn') }}"
-      course-abbreviation="{{$courseName}}"
-      course-password="{{$coursePassword}}"/>
+      course-password="{{$coursePassword}}"
+      course-abbreviation="{{$courseName}}"/>
 @endsection

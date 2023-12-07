@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Request;
 use GrahamCampbell\Markdown\Facades\Markdown;
 
-use App\User;
-use App\Problem;
+use App\Models\User;
+use App\Models\Problem;
 
 class ProblemController extends Controller
 {
