@@ -15,7 +15,7 @@
 	<img src="https://i.imgur.com/qvVdrG3.png" alt="app-preview" width="70%">
 </div>
 
-(Live demo)[http://porzuczek.pl/board/24PON1231/9tw4js49ry9qsejmY]
+[Live demo](http://porzuczek.pl/board/24PON1231/9tw4js49ry9qsejmY)
 
 ### Admin panel
 <div>
