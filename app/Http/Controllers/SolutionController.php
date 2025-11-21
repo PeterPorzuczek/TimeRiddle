@@ -23,72 +23,53 @@ class SolutionController extends Controller
      */
     public function index($courseId = null, $topicId = null, $questId = null, $problemId = null)
     {
-        $userId = auth()->user()->id;
-        $user = User::find($userId);
-        $courses = $user->courses;
-
-        if (!empty($courseId)) {
-            $courses = [$user->courses->find($courseId)];
-        }
-
-        $problems = new Collection();
-        if (!empty($problemId)) {
-            $topic = $courses[0]->topics->find($topicId);
-            $quest = $topic->quests->find($questId);
-            $problem = $quest->problems->find($problemId);
-            $solutions = $problem->solutions;
-        } else {
-            $topics = new Collection();
-            foreach ($courses as $course) {
-                $topics = $topics->merge($course->topics);
+        $user = auth()->user();
+    
+        $courseIds = $user->courses()->pluck('id');
+    
+        $query = Solution::with(['problem.quest.topic.course']);
+    
+        $query->whereHas('problem.quest.topic.course', function ($q) use ($courseIds, $courseId) {
+            $q->whereIn('id', $courseIds);
+            if (!empty($courseId)) {
+                $q->where('id', $courseId);
             }
-
-            foreach ($topics as &$topic) {
-                $topic = $topic->with('course');
-            }
-
-            $quests = new Collection();
-            foreach ($topics as $topic) {
-                $quests = $quests->merge($topic->quests);
-            }
-
-            foreach ($quests as &$quest) {
-                $quest = $quest->with('topic');
-            }
-
-            $problems = new Collection();
-            foreach ($quests as $quest) {
-                $problems = $problems->merge($quest->problems);
-            }
-
-            foreach ($problems as &$problem) {
-                $problem = $problem->with('quest');
-            }
-
-            $solutions = new Collection();
-            foreach ($problems as $problem) {
-                $solutions = $solutions->merge($problem->solutions);
-            }
-
-            foreach ($solutions as &$solution) {
-                $solution = $solution->with('problem');
-            }
-        }
-
-        $solutions = $solutions->groupBy('password')->flatMap(function ($items) {
-            $quantity = $items->count(); return $items->map(function ($item) use ($quantity) {
-                $item->quantity = $quantity; return $item; });
         });
-
-        $solutions = $solutions->sortBy(function($solution)
-        {
-          return strtotime($solution->created_at) . '-' . $solution->quantity . '-' . $solution->problem->name . '-' . $solution->password;
+    
+        if (!empty($topicId)) {
+            $query->whereHas('problem.quest.topic', function ($q) use ($topicId) {
+                $q->where('id', $topicId);
+            });
+        }
+    
+        if (!empty($questId)) {
+            $query->whereHas('problem.quest', function ($q) use ($questId) {
+                $q->where('id', $questId);
+            });
+        }
+    
+        if (!empty($problemId)) {
+            $query->where('problem_id', $problemId);
+        }
+    
+        $solutions = $query->get();
+    
+        $solutions = $solutions->groupBy('password')->flatMap(function ($items) {
+            $quantity = $items->count();
+            return $items->map(function ($item) use ($quantity) {
+                $item->quantity = $quantity;
+                return $item;
+            });
+        });
+    
+        $solutions = $solutions->sortBy(function ($solution) {
+            return strtotime($solution->created_at) . '-' . $solution->quantity . '-' . $solution->problem->name . '-' . $solution->password;
         })->reverse();
-
+    
         $altEnd = !empty($courseId)
             ? view('manage.solution.index')->with(['solutions'=> $solutions, 'courseId'=> $courseId])
             : view('manage.solution.index')->with('solutions', $solutions);
-
+    
         return !empty($courseId) && !empty($topicId) && !empty($questId) && !empty($problemId)
             ? view('manage.solution.index')->with(['solutions'=> $solutions, 'courseId'=> $courseId, 'topicId'=> $topicId, 'questId' => $questId, 'problemId' => $problemId])
             : $altEnd;
@@ -254,57 +235,34 @@ class SolutionController extends Controller
      */
     public function edit($id)
     {
-        $userId = auth()->user()->id;
-        $user = User::find($userId);
-
-        $_solution = Solution::find($id);
+        $user = auth()->user();
+    
+        $user->load([
+            'courses.topics.quests.problems.solutions',
+        ]);
+    
         $solution = $user->courses
-            ->find($_solution->problem->quest->topic->course_id)->topics
-            ->find($_solution->problem->quest->topic_id)->quests
-            ->find($_solution->problem->quest_id)->problems
-            ->find($_solution->problem_id)->solutions->find($id);
-
-        $courses = $user->courses;
-
-        $topics = new Collection();
-        foreach ($courses as $course) {
-            $topics = $topics->merge($course->topics);
+            ->flatMap->topics
+            ->flatMap->quests
+            ->flatMap->problems
+            ->flatMap->solutions
+            ->firstWhere('id', $id);
+    
+        if (! $solution) {
+            abort(404);
         }
-
-        foreach ($topics as &$topic) {
-            $topic = $topic->with('course');
-        }
-
-        $quests = new Collection();
-        foreach ($topics as $topic) {
-            $quests = $quests->merge($topic->quests);
-        }
-
-        foreach ($quests as &$quest) {
-            $quest = $quest->with('topic');
-        }
-
-        $problems = new Collection();
-        foreach ($quests as $quest) {
-            $problems = $problems->merge($quest->problems);
-        }
-
-        foreach ($problems as &$problem) {
-            $problem = $problem->with('quest');
-        }
-
-        $solutions = new Collection();
-        foreach ($solutions as $solution) {
-            $solutions = $solutions->merge($solution->problems);
-        }
-
-        foreach ($solutions as &$solution) {
-            $solution = $solution->with('problem');
-        }
-
+    
+        $problems = $user->courses
+            ->flatMap->topics
+            ->flatMap->quests
+            ->flatMap->problems;
+    
         $solution->summary = str_replace("{{", "{spc{", $solution->summary);
-
-        return view('manage.solution.edit')->with('solution', $solution)->with('problems', $problems);
+    
+        return view('manage.solution.edit', [
+            'solution' => $solution,
+            'problems' => $problems,
+        ]);
     }
 
     /**
