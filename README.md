@@ -4,10 +4,6 @@
 >
 > The aim of the project is to publish the code together with the tasks in a way that is clear and accessible to the student. The ability to disable code publication makes it possible for the student to work on the assignments themselves and when the teacher decides to publish the code, they can do so immediately.
 
-# Join Our Community
-
-[![Stargazers repo roster for @PeterPorzuczek/TimeRiddle](https://reporoster.com/stars/PeterPorzuczek/TimeRiddle)](https://github.com/PeterPorzuczek/TimeRiddle/stargazers)
-
 ## Preview
 
 ### Example course
@@ -15,7 +11,7 @@
 	<img src="https://i.imgur.com/qvVdrG3.png" alt="app-preview" width="70%">
 </div>
 
-[Live demo](http://porzuczek.pl/board/24PON1231/9tw4js49ry9qsejmY)
+[Live demo](https://porzuczek.pl/board/S2231ISI23/shabibilgwc2s215)
 
 ### Admin panel
 <div>
